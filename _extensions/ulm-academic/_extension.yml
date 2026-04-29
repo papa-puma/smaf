@@ -1,0 +1,16 @@
+title: Ulm Academic
+author: Institute of Strategic Management and Finance, Ulm University
+version: 0.1.0
+quarto-required: ">=1.5.0"
+contributes:
+  formats:
+    revealjs:
+      theme: [default, theme.scss]
+      logo: assets/logos/uulm.svg
+      footer: "SMF · Ulm University"
+      slide-number: c/t
+      progress: true
+      width: 1280
+      height: 720
+      transition: fade
+      highlight-style: github

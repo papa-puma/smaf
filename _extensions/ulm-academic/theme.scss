@@ -1,0 +1,204 @@
+/*-- scss:defaults --*/
+
+// =====================================================
+// Ulm SMF — reveal.js theme
+// Brand reference: https://hneth.github.io/unikn/reference/uni_ulm_1.html
+// =====================================================
+
+// ---- Brand palette ----
+$ulm-blue:    #7D9AAA;
+$ulm-dark:    #575756;
+$ulm-accent:  #A9A28D;
+$ulm-bg:      #FFFFFF;
+$ulm-bg-alt:  #F5F4F0;
+$ulm-blue-deep: #3F5562;
+
+// ---- Reveal.js variable overrides ----
+$body-bg:           $ulm-bg;
+$body-color:        $ulm-dark;
+$link-color:        $ulm-blue;
+$link-color-hover:  $ulm-blue-deep;
+$selection-bg:      rgba(125, 154, 170, 0.35);
+
+// ---- Typography ----
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+$font-family-sans-serif: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-monospace:  "JetBrains Mono", "SF Mono", Menlo, Consolas, monospace !default;
+
+$presentation-font-size-root: 36px;
+$presentation-h1-font-size:   2.0em;
+$presentation-h2-font-size:   1.45em;
+$presentation-h3-font-size:   1.15em;
+$presentation-h4-font-size:   1.0em;
+$presentation-heading-font:   "Inter", sans-serif;
+$presentation-heading-color:  $ulm-dark;
+$presentation-heading-weight: 600;
+$presentation-line-height:    1.5;
+
+/*-- scss:rules --*/
+
+// ---- Layout polish ----
+.reveal {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.005em;
+}
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+  letter-spacing: -0.01em;
+  text-transform: none;
+}
+
+.reveal h2 {
+  border-bottom: 2px solid $ulm-blue;
+  padding-bottom: 0.25em;
+  margin-bottom: 0.6em;
+}
+
+// Title slide treatment
+.reveal section.title-slide {
+  text-align: left;
+  background: linear-gradient(135deg, $ulm-bg 0%, $ulm-bg-alt 100%);
+
+  h1.title {
+    color: $ulm-dark;
+    font-size: 1.7em;
+    border-left: 6px solid $ulm-blue;
+    padding-left: 0.5em;
+    margin-bottom: 0.4em;
+  }
+  .subtitle {
+    color: $ulm-blue-deep;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.0em;
+  }
+  .quarto-title-author-name,
+  .institute,
+  .date {
+    color: $ulm-dark;
+    font-size: 0.7em;
+    margin-top: 0.4em;
+  }
+}
+
+// Logo position polish
+.reveal .slide-logo {
+  max-height: 60px !important;
+  bottom: auto !important;
+  top: 12px;
+  right: 18px;
+}
+
+// Footer styling
+.reveal .footer {
+  color: $ulm-dark;
+  opacity: 0.65;
+  font-size: 0.55em;
+  letter-spacing: 0.04em;
+}
+
+// Progress bar
+.reveal .progress {
+  color: $ulm-blue;
+  height: 4px;
+}
+
+// Slide number
+.reveal .slide-number {
+  background: transparent;
+  color: $ulm-dark;
+  opacity: 0.55;
+  font-size: 0.55em;
+  font-family: "Inter", sans-serif;
+}
+
+// Links
+.reveal a {
+  color: $ulm-blue;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(125, 154, 170, 0.4);
+  transition: all 0.15s ease-in-out;
+}
+.reveal a:hover {
+  color: $ulm-blue-deep;
+  border-bottom-color: $ulm-blue-deep;
+}
+
+// Code blocks
+.reveal pre {
+  background: $ulm-bg-alt;
+  border-left: 3px solid $ulm-blue;
+  border-radius: 4px;
+  box-shadow: none;
+  font-size: 0.7em;
+}
+.reveal code {
+  font-family: "JetBrains Mono", monospace;
+  color: $ulm-blue-deep;
+}
+
+// Block quotes
+.reveal blockquote {
+  border-left: 4px solid $ulm-accent;
+  background: $ulm-bg-alt;
+  padding: 0.6em 1em;
+  font-style: normal;
+  color: $ulm-dark;
+  box-shadow: none;
+}
+
+// Tables
+.reveal table {
+  border-collapse: collapse;
+  font-size: 0.75em;
+}
+.reveal table th {
+  background: $ulm-blue;
+  color: $ulm-bg;
+  padding: 0.4em 0.7em;
+  text-align: left;
+}
+.reveal table td {
+  padding: 0.35em 0.7em;
+  border-bottom: 1px solid rgba(87, 87, 86, 0.15);
+}
+.reveal table tr:nth-child(even) td {
+  background: $ulm-bg-alt;
+}
+
+// Callouts (Quarto native)
+.reveal .callout {
+  border-left-width: 4px;
+  border-radius: 4px;
+  font-size: 0.85em;
+  margin: 0.5em 0;
+}
+.reveal .callout-note   { border-left-color: $ulm-blue !important; }
+.reveal .callout-tip    { border-left-color: $ulm-accent !important; }
+.reveal .callout-warning{ border-left-color: #c98a3d !important; }
+.reveal .callout-important{ border-left-color: #b65454 !important; }
+
+// "Section" slides — visually distinct dividers
+.reveal section.section-divider {
+  background: $ulm-blue;
+  color: $ulm-bg;
+  h1, h2, h3 {
+    color: $ulm-bg;
+    border: none;
+  }
+}
+
+// Lists tightened
+.reveal ul, .reveal ol {
+  margin-left: 1em;
+}
+.reveal li {
+  margin-bottom: 0.25em;
+}
+
+// Math sizing
+.reveal .math {
+  font-size: 1.05em;
+}

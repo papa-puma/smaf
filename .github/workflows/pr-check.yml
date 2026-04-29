@@ -1,0 +1,41 @@
+name: PR render check
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  render-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: "1.5.57"
+
+      - name: Set up Python (for dashboard)
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Python dependencies
+        run: pip install --upgrade pip pandas matplotlib jupyter
+
+      - name: Set up TinyTeX
+        run: quarto install tinytex --no-prompt
+
+      - name: Render (no deploy)
+        run: quarto render
+
+      - name: Upload rendered site as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: rendered-site
+          path: _site
+          retention-days: 7

@@ -1,0 +1,48 @@
+meta:
+  name: "SMF Ulm Teaching"
+  link: https://www.uni-ulm.de/mawi/strategische-unternehmensfuehrung-und-finanzierung/
+
+logo:
+  small: assets/logos/smf.svg
+  medium: assets/logos/smf.svg
+  large: assets/logos/uulm.svg
+
+color:
+  palette:
+    ulm-blue: "#7D9AAA"
+    ulm-dark: "#575756"
+    ulm-accent: "#A9A28D"
+    ulm-bg: "#FFFFFF"
+    ulm-bg-alt: "#F5F4F0"
+  primary: ulm-blue
+  secondary: ulm-dark
+  tertiary: ulm-accent
+  background: ulm-bg
+  foreground: ulm-dark
+  link: ulm-blue
+
+typography:
+  fonts:
+    - family: Inter
+      source: google
+      weight: [300, 400, 500, 600, 700]
+    - family: "Source Serif 4"
+      source: google
+      weight: [400, 600, 700]
+    - family: "JetBrains Mono"
+      source: google
+      weight: [400, 500]
+  base:
+    family: Inter
+    size: 1.05rem
+    line-height: 1.6
+  headings:
+    family: Inter
+    weight: 600
+    color: ulm-dark
+  monospace:
+    family: "JetBrains Mono"
+    size: 0.9em
+  link:
+    color: ulm-blue
+    decoration: underline

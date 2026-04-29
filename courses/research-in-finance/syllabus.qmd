@@ -1,0 +1,112 @@
+---
+title: "Syllabus — Research in Finance"
+subtitle: "Winter 2025/2026"
+format:
+  html: default
+  pdf: default
+listing:
+  - id: timetable-listing
+    contents: lectures/*/slides.qmd
+    type: table
+    fields: [week, date, title, topics]
+    field-display-names:
+      week: "Week"
+      date: "Date"
+      title: "Session"
+      topics: "Topics"
+    sort: "date asc"
+    filter-ui: false
+    page-size: 30
+---
+
+## Course information
+
+| | |
+|---|---|
+| **Title** | Research in Finance |
+| **Term** | Winter 2025/2026 |
+| **Level** | Master / PhD |
+| **ECTS** | 6 |
+| **Exam number** | 13337 |
+| **Instructors** | Prof. Dr. Andre Guettler · Oliver Padmaperuma |
+| **Contact** | [oliver.padmaperuma@uni-ulm.de](mailto:oliver.padmaperuma@uni-ulm.de) |
+| **Location** | Helmholtzstraße 22, Ulm |
+| **Language** | English |
+
+## Course objectives
+
+This course teaches the practical craft of empirical finance research. Students learn to manage and analyze financial data in R, write up results in LaTeX/Overleaf, and critically read finance papers. The course culminates in two graded deliverables: a group problem set replicating a CFTC futures-position study and an individual referee report on a doctoral presentation.
+
+## Learning outcomes
+
+By the end of the term, students will be able to:
+
+1. Set up R/RStudio and use the language fluently for data analysis (vectors, data frames, functions, loops).
+2. Import financial data from APIs and CSVs, cleanse, merge, transform, and visualize it with `tidyverse`/`ggplot2`.
+3. Apply standard statistical tests (correlation, t-test, Wilcoxon, Shapiro-Wilk, KS) and run linear regressions with fixed effects and clustered standard errors.
+4. Produce publication-ready LaTeX tables (`stargazer`) and embed analyses in an Overleaf write-up.
+5. Critique an empirical finance paper using a structured referee-report checklist.
+
+## Prerequisites
+
+- Bachelor-level statistics / econometrics.
+- Comfort with one statistical software environment is helpful but not required — the course teaches R from the ground up.
+
+## Required materials
+
+- Laptop with R and RStudio installed (instructions given in Lecture 1).
+- A free Nasdaq Data Link (Quandl) API key.
+- An Overleaf account (uni email).
+
+## Recommended reading
+
+- Wickham, H., & Çetinkaya-Rundel, M. (2023). *R for Data Science* (2nd ed.). Free online: <https://r4ds.hadley.nz/>
+- Scheuch, C., Voigt, S., & Weiss, P. (2023). *Tidy Finance with R*. Free online: <https://www.tidy-finance.org/r/>
+- Angrist, J. D., & Pischke, J.-S. (2009). *Mostly Harmless Econometrics: An Empiricist's Companion*. Princeton University Press.
+- Cochrane, J. H. *Writing Tips for Ph.D. Students* (available on Moodle).
+
+## Timetable
+
+::: {#timetable-listing}
+:::
+
+> Adding a new lecture folder under `lectures/` automatically updates this table — no manual edits needed.
+
+## Assessment & grading
+
+| Component | Weight | Deadline |
+|---|---|---|
+| Assignment I — Problem Set (group, R + LaTeX) | 50% | 19 January 2026, midnight |
+| Assignment II — Referee Report (group of up to 5) | 50% | 3 February 2026 |
+
+There is **no written final exam**. Registration in `campusonline` for exam **13337** is mandatory by **30 November 2025**. Without registration you cannot submit either deliverable.
+
+**Grading scale:** German scale 1.0 (excellent) – 5.0 (fail). 4.0 is passing. Registered students who do not submit receive 5.0.
+
+### Submission rules
+
+- Submit by **email** to [oliver.padmaperuma@uni-ulm.de](mailto:oliver.padmaperuma@uni-ulm.de) with [andre.guettler@uni-ulm.de](mailto:andre.guettler@uni-ulm.de) in CC.
+- Use the subject and file-naming pattern **`RiF2025_ProblemSet_surname1_surname2_...`** (or `_RefereeReport_`).
+- If attachment size is an issue, share a cloud link in the email body.
+
+## Policies
+
+### Group work
+
+- Problem set: groups of up to **five** students.
+- Referee report: groups of up to **five** students.
+- Declare group composition on the cover page.
+
+### Academic integrity
+
+All work must be your group's own; cite all sources. Use of LLMs (e.g., ChatGPT) is permitted **only to refine** writing and ideas — not to generate the substantive content — and must be disclosed.
+
+### Questions
+
+Asking questions **during or immediately after class** is preferred. Administrative matters (study program, exam eligibility, formalities) should go to the registrar's office: [studiensekretariat@uni-ulm.de](mailto:studiensekretariat@uni-ulm.de).
+
+## Contact
+
+- **Prof. Dr. Andre Guettler** — Helmholtzstraße 22, Room 205 · [andre.guettler@uni-ulm.de](mailto:andre.guettler@uni-ulm.de) · +49 731 50 31 030
+- **Oliver Padmaperuma** — Helmholtzstraße 22, Room 203 · [oliver.padmaperuma@uni-ulm.de](mailto:oliver.padmaperuma@uni-ulm.de) · +49 731 50 31 036
+- **Moodle** — all announcements, file drops, problem-set release, and grade postings happen on the [course Moodle page](https://moodle.uni-ulm.de/).

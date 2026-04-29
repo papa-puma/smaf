@@ -1,0 +1,100 @@
+---
+title: "Syllabus — <Course Title>"
+subtitle: "<Term>"
+format:
+  html: default
+  pdf: default
+listing:
+  - id: timetable-listing
+    contents: lectures/*/slides.qmd
+    type: table
+    fields: [week, date, title, topics]
+    field-display-names:
+      week: "Week"
+      date: "Date"
+      title: "Lecture"
+      topics: "Topics"
+    sort: "date asc"
+    filter-ui: false
+    page-size: 30
+---
+
+## Course information
+
+| | |
+|---|---|
+| **Title** | <Course Title> |
+| **Term** | <Term> |
+| **Level** | <Bachelor / Master / PhD> |
+| **ECTS** | <NN> |
+| **Instructor** | Prof. Dr. Andre Guettler |
+| **Contact** | mawi.stuf@uni-ulm.de |
+| **Location** | <Room or "online via Zoom"> |
+| **Time** | <Day, HH:MM> |
+| **Language** | English |
+
+## Course objectives
+
+<2–4 sentences on what the course is about and why it matters.>
+
+## Learning outcomes
+
+By the end of this course, students will be able to:
+
+1. <Outcome 1>
+2. <Outcome 2>
+3. <Outcome 3>
+4. <Outcome 4>
+
+## Prerequisites
+
+- <Prerequisite course or skill>
+- <Prerequisite course or skill>
+
+## Required materials
+
+- <Textbook>
+- <Reading list>
+- <Datasets / software>
+
+## Timetable
+
+::: {#timetable-listing}
+:::
+
+> Adding a new lecture folder under `lectures/` automatically updates this table — no manual edits needed.
+
+## Assessment & grading
+
+| Component | Weight |
+|---|---|
+| Assignments (NN graded sets) | NN% |
+| Midterm exam | NN% |
+| Final exam | NN% |
+| Class participation | NN% |
+
+**Grading scale:** German scale 1.0 (excellent) – 5.0 (fail). 4.0 is passing.
+
+## Policies
+
+### Attendance
+
+<State expectation and any exception policy.>
+
+### Late submissions
+
+<State penalty / grace policy.>
+
+### Academic integrity
+
+All work must be the student's own (or the declared group's). Plagiarism and unauthorized AI use will be referred to the examination office. Citing AI-assisted work where permitted is required.
+
+### Accommodations
+
+Students requiring accommodations should contact the instructor in the first week of term.
+
+## Contact
+
+- **Office hours:** <Day HH:MM, location>.
+- **Email:** mawi.stuf@uni-ulm.de — please include the course code in the subject line.
+- **Moodle:** all announcements, file drops, and grade postings happen on the course Moodle page.

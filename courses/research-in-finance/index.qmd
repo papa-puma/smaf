@@ -1,0 +1,52 @@
+---
+title: "Research in Finance"
+subtitle: "Winter 2025/2026 · Institute of Strategic Management and Finance, Ulm University"
+listing:
+  - id: lectures
+    contents: lectures/*/slides.qmd
+    type: table
+    fields: [week, date, title]
+    field-display-names:
+      week: "Week"
+      date: "Date"
+      title: "Session"
+    sort: "date asc"
+    filter-ui: false
+    page-size: 30
+---
+
+## About this course
+
+*Research in Finance* equips students with the practical toolkit and conceptual grounding needed to conduct empirical finance research. Across four lectures and a final Brown Bag Seminar, students learn to:
+
+- handle financial data in **R** (data import, cleansing, merging, transformation, visualization);
+- run **statistical analyses** (correlations, parametric and non-parametric tests, linear regression with fixed effects, clustered standard errors);
+- write up empirical results in **LaTeX / Overleaf** with publication-ready tables (`stargazer`) and figures (`ggplot2`);
+- read and **referee** a finance research paper.
+
+The course is project-based: a group problem set replicates a complete empirical workflow on CFTC futures data; an individual referee report critiques a doctoral presentation at the Institute's Brown Bag Seminar.
+
+## Instructors
+
+- **Prof. Dr. Andre Guettler** — Director of the Institute · Helmholtzstraße 22, Room 205 · [andre.guettler@uni-ulm.de](mailto:andre.guettler@uni-ulm.de)
+- **Oliver Padmaperuma** — Doctoral Candidate · Helmholtzstraße 22, Room 203 · [oliver.padmaperuma@uni-ulm.de](mailto:oliver.padmaperuma@uni-ulm.de)
+
+## Quick links
+
+- [Syllabus](syllabus.qmd)
+- [Assignment I — Problem Set](assignments/assignment-1-problem-set.qmd) (50% · due 19 January 2026)
+- [Assignment II — Referee Report](assignments/assignment-2-referee-report.qmd) (50% · due 3 February 2026)
+- [Gradebook (staff only)](gradebook.qmd)
+
+## Schedule
+
+::: {#lectures}
+:::
+
+## Registration
+
+You **must register for "exam" 13337** in `campusonline` by **30 November 2025**. Without this registration you cannot submit the problem set or referee report. Registered students who fail to submit will receive a fail grade (5.0).
+
+## How students access materials
+
+All materials are linked from the course [Moodle page](https://moodle.uni-ulm.de/). The links above are for staff convenience.

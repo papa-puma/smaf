@@ -1,0 +1,20 @@
+course:
+  id: "research-in-finance"
+  title: "Research in Finance"
+  term: "Winter 2025/2026"
+  language: "English"
+  ects: "6"
+  level: "Master / PhD"
+  exam-number: "13337"
+  instructors:
+    - "Prof. Dr. Andre Guettler"
+    - "Oliver Padmaperuma"
+  contact: "oliver.padmaperuma@uni-ulm.de"
+
+author:
+  - name: "Prof. Dr. Andre Guettler"
+    affiliation: "Institute of Strategic Management and Finance, Ulm University"
+    email: "andre.guettler@uni-ulm.de"
+  - name: "Oliver Padmaperuma"
+    affiliation: "Institute of Strategic Management and Finance, Ulm University"
+    email: "oliver.padmaperuma@uni-ulm.de"

@@ -1,0 +1,83 @@
+---
+title: "Assignment NN — <Lecture Title>"
+subtitle: "Course: <Course Title>"
+date: YYYY-MM-DD
+due-date: YYYY-MM-DD
+week: NN
+authors:
+  - name: "Prof. Dr. Andre Guettler"
+    affiliation: "Institute of Strategic Management and Finance, Ulm University"
+format:
+  html:
+    toc: true
+  pdf:
+    documentclass: scrartcl
+solutions: false
+---
+
+## Overview
+
+> **Due:** YYYY-MM-DD, 23:59 (CET) via Moodle.
+> **Submission format:** PDF (one file per student or group).
+> **Group size:** 1–3 students (declare group composition in the cover page).
+
+## Learning goals
+
+::: {.callout-note title="This assignment will help you"}
+- Goal 1
+- Goal 2
+- Goal 3
+:::
+
+## Required materials
+
+- Lecture slides for Week NN.
+- Reading: Author (Year), *Title*, Section X.
+- Dataset: `data/<filename>.csv` (link or path).
+
+---
+
+## Question 1 — <Short title>  *(N points)*
+
+State the question clearly. Provide any necessary data, formulas, or assumptions.
+
+::: {.content-visible when-meta="solutions"}
+**Solution sketch.** …
+:::
+
+## Question 2 — <Short title>  *(N points)*
+
+(a) Sub-question.
+
+(b) Sub-question.
+
+::: {.content-visible when-meta="solutions"}
+**Solution sketch.**
+
+(a) …
+
+(b) …
+:::
+
+## Question 3 — <Short title>  *(N points)*
+
+State the question.
+
+::: {.content-visible when-meta="solutions"}
+**Solution sketch.** …
+:::
+
+---
+
+## Grading rubric
+
+| Criterion | Weight |
+|---|---|
+| Correctness of derivations | 40% |
+| Clarity of argumentation | 30% |
+| Quality of empirical / numerical work | 20% |
+| Presentation (formatting, references) | 10% |
+
+## Honor code
+
+By submitting this assignment, you confirm that the work is your own (or your group's), that all sources are cited, and that you have not used unauthorized aids.

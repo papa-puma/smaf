@@ -1,0 +1,7 @@
+format:
+  revealjs:
+    output-file: slides.html
+  pdf:
+    output-file: slides-handout.pdf
+  html:
+    output-file: notes.html

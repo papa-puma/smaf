@@ -1,0 +1,103 @@
+---
+title: "Lecture NN: <Lecture Title>"
+subtitle: "<Optional Subtitle>"
+date: YYYY-MM-DD
+week: NN
+topics:
+  - "<Topic 1>"
+  - "<Topic 2>"
+  - "<Topic 3>"
+authors:
+  - name: "Prof. Dr. Andre Guettler"
+    affiliation: "Institute of Strategic Management and Finance, Ulm University"
+format:
+  revealjs:
+    output-file: slides.html
+  pdf:
+    output-file: slides-handout.pdf
+  html:
+    output-file: notes.html
+---
+
+## Learning objectives {.unnumbered}
+
+::: {.callout-note title="By the end of this lecture you will be able to"}
+- Objective 1
+- Objective 2
+- Objective 3
+:::
+
+::: notes
+Speaker note: open with the framing question. Spend ~2 min on context before jumping into the first topic.
+:::
+
+# <Topic 1> {.section-divider}
+
+## <Topic 1 — first idea>
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+::: notes
+Talk through bullet 2 in detail; the other two are recap.
+:::
+
+## <Topic 1 — definition or formula>
+
+::: {.callout-tip title="Definition"}
+A **<term>** is …
+:::
+
+$$
+\text{Equation} = \frac{\partial f}{\partial x}
+$$
+
+# <Topic 2> {.section-divider}
+
+## <Topic 2 — example>
+
+| Column A | Column B | Column C |
+|---|---|---|
+| value | value | value |
+| value | value | value |
+
+## <Topic 2 — illustration>
+
+```{mermaid}
+flowchart LR
+  A[Idea] --> B{Decision}
+  B -->|yes| C[Outcome 1]
+  B -->|no|  D[Outcome 2]
+```
+
+# <Topic 3> {.section-divider}
+
+## <Topic 3 — discussion>
+
+::: {.callout-important title="Open question"}
+What is the empirical evidence for …?
+:::
+
+# Wrap-up {.section-divider}
+
+## Key takeaways
+
+::: {.callout-tip title="Remember"}
+1. Takeaway 1
+2. Takeaway 2
+3. Takeaway 3
+:::
+
+## References & further reading
+
+- Author (Year). *Title*. Journal, Vol(Issue), pp.
+- Author (Year). *Title*. Publisher.
+
+## Next lecture
+
+> **Lecture NN+1:** <Title> — <one-line preview>
+
+::: notes
+Reminder to flag any pending assignment deadlines.
+:::

@@ -1,0 +1,4 @@
+student_id,name,group,problem_set,referee_report,total,grade
+S001,Example Alpha,G1,85,82,83.5,2.0
+S002,Example Beta,G1,72,70,71.0,2.7
+S003,Example Gamma,G2,90,92,91.0,1.3

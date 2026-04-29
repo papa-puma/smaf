@@ -1,0 +1,490 @@
+---
+title: "Lecture 4: Academic Publishing & Refereeing"
+subtitle: "What makes a great empirical paper · publication process · how to write a referee report"
+date: 2025-11-19
+week: 4
+topics:
+  - What makes a good empirical paper (contribution, identification, write-up)
+  - The publication process step by step
+  - Top finance and economics journals
+  - Bad outcome vs revise & resubmit
+  - Referee Reports — summary, major issues, minor issues
+  - Referee checklist (question, identification, data, econometrics, results)
+  - Discussion of Assignment II (Referee Report)
+authors:
+  - name: "Prof. Dr. Andre Guettler"
+    affiliation: "Institute of Strategic Management and Finance, Ulm University"
+  - name: "Oliver Padmaperuma"
+    affiliation: "Institute of Strategic Management and Finance, Ulm University"
+---
+
+# 1.1 What makes a good empirical paper? {.section-divider}
+
+## Three factors
+
+::: incremental
+1. **Contribution**
+2. **Identification**
+3. **Write-up**
+:::
+
+::: {.callout-note}
+- Journal space is **very scarce** and many great papers compete for it.
+- Solid identification and write-up are **necessary** but **not sufficient** for a top publication.
+:::
+
+## 1. Contribution (I) — common rejection reasons
+
+Often, submissions get **rejected** because:
+
+- Low **incremental** contribution.
+- Overly narrow contribution.
+- Results are not very surprising.
+- Results have unclear importance.
+
+::: {.callout-tip title="Recommendation"}
+*Some Reflections on Contribution* (Rynes) — available on the course Moodle.
+:::
+
+## 1. Contribution (II) — sources of good ideas
+
+::: incremental
+- **Activity** — frequent interactions with industry experts and academic colleagues are related to the beginning of great research ideas.
+- **Intuition** — often a **feeling of excitement** rather than logical analysis leads to important research leads.
+- **Theory** — new pieces of theory or puzzles point towards something that is still poorly understood.
+- **Real world** — research problems often have an applied flavour, tackling current real-world issues.
+:::
+
+## 1. Contribution (III) — timing
+
+- Contribution of topics **varies over time**.
+- Example: banking topics were "hot" during the financial crisis with many insolvent banks and huge public rescue plans.
+- *But:* many researchers jump on these hot topics! By the time you finish, the wave has crested.
+
+## 1. Contribution (IV) — data
+
+- New data sets enable new research questions.
+- New data sets allow new identification strategies.
+- New (and usually larger) data sets allow better inference.
+
+## 2. Identification
+
+- Top publications require **very robust identification**.
+- **Don't confuse correlation with causality.**
+- Read state-of-the-art empirical papers.
+- Be as close to a **randomized experiment** as possible.
+
+::: {.callout-tip title="Recommendation"}
+*Mostly Harmless Econometrics: An Empiricist's Companion* — Angrist & Pischke.
+:::
+
+## 3. Write-up
+
+- Awesome: you put together a set of results!
+- The **write-up should be at least as important** as the econometrics.
+- Be prepared to rewrite the paper many times.
+- **Title / Abstract / Introduction** are the most important parts.
+
+::: {.callout-tip title="Recommendation"}
+*Writing Tips for Ph.D. Students* (Cochrane) — available on the course Moodle.
+:::
+
+# 1.2 The publication process {.section-divider}
+
+## Be patient — but learn now
+
+> "You have to learn to be patient." — "Learn? I want to be patient now!"
+
+::: notes
+Spend a minute on this — most students underestimate the publication timeline. R&Rs alone can take 12+ months at top journals.
+:::
+
+## Step 1 — find the question
+
+::: incremental
+- What are you really interested in?
+- You need to be **very (!)** interested in the topic — you'll invest a lot of time in it over the next years.
+- Read relevant and current literature.
+- **Nail down a specific contribution** to the existing literature.
+- Concentrate on **one central research question**.
+:::
+
+## Step 2 — write a research proposal
+
+- Compose a **one-page** write-up = research proposal.
+- Concentrate on the first two main factors that make a good paper:
+  1. Contribution
+  2. Identification
+- Is it **feasible** (do you have access to specific data, etc.)?
+
+## Step 3 — find coauthors
+
+::: incremental
+- Think about suitable **coauthors**.
+- The coauthor may be your **supervisor(s)**.
+- Look for other suitable coauthors, especially if your supervisor isn't close to your research topic:
+  - Attend conferences and connect to people in your area.
+  - Attend seminar series and ask intelligent questions.
+  - Visit good universities.
+- Send your proposal to suitable researchers via email for feedback.
+  - If you get a detailed and nice answer, ask whether they want to work with you.
+  - It is always better to know them personally.
+  - **Risk of being copied!**
+:::
+
+## Step 4 — discuss the proposal
+
+- Discuss your research proposal with supervisors and other suitable people (fellow students, industry experts).
+- Two outcomes:
+  - **Great response** — adjust proposal and move forward.
+  - **Not good enough** — either adjust thoroughly or **stop the project**.
+- This early you can still stop the project without too much time lost.
+- The higher your goals, the stricter you need to be on what projects you undertake.
+
+## Step 5 — collect data
+
+::: incremental
+- **Collect**.
+- **Structure**.
+- **Clean** — distributional graphs (outliers?), missing data.
+- **Descriptive analysis** (univariate statistics).
+:::
+
+## Step 6 — empirical analysis
+
+- Run **empirical analyses** according to identification strategy.
+- Conduct **robustness checks**.
+- Put together results according to your proposal's story line.
+- Discuss results with supervisor and others.
+- You need very original (even surprising) and robust results for a top publication (less important for a working-paper version for the dissertation).
+
+## Step 7 — first working paper
+
+- Write down **first working paper** version.
+- Get feedback from supervisor and others.
+- It's a tough world: you'll realise that few people, if any at all, read your paper.
+- **Offer to read others' papers** — and you'll know more people who read yours.
+
+## Step 8 — present and revise
+
+- Present the paper (at internal **brown bag seminar**).
+- Adjust paper.
+- Yes, you need to invest a lot of time revising!
+- Invest some money for **professional editing** — most of us aren't native English speakers.
+
+## Step 9 — submit to conferences
+
+- Submit paper to good finance conferences.
+- Good signal to have paper accepted at top finance conferences (**WFA, AFA, EFA, FIRS**) since people know it
+  - for **international job market** (ASSA);
+  - for later publication at top journals.
+- Time-consuming because conferences take place many months after the submission deadline.
+
+## Step 10 — choose the right journal
+
+- **Which journal** fits your paper?
+- Which journals do you **cite**? Most relevant publications signal a suitable journal.
+- Try to aim **higher** than expected at the beginning. Top-5 finance journals usually need ≤ 3 months for first-round decisions; econ journals often longer.
+- **Strategic citations**: who are likely referees? Don't miss citing papers from authors at target journals; check typos in author names.
+
+## Top finance journals
+
+::: {.columns}
+
+::: {.column width="33%"}
+### A
+- Journal of Finance
+- Review of Financial Studies
+- Journal of Financial Economics
+:::
+
+::: {.column width="33%"}
+### A−
+- Review of Finance
+- Journal of Financial and Quantitative Analysis
+- Management Science
+:::
+
+::: {.column width="34%"}
+### B
+- Journal of Banking and Finance
+- Journal of Financial Intermediation
+- Journal of Money, Credit and Banking
+- Journal of Empirical Finance
+- Journal of Financial Services Research
+:::
+
+:::
+
+::: {.callout-note title="Caveats"}
+- The B list is not comprehensive — those listed are most relevant for Banking, Financial Intermediation, and general Finance.
+- Country-specific differences in journal perception.
+- Steady increase of new journals — including very good ones (e.g., RFS sub-journals for corporate finance and asset pricing) but mostly journals that are not read.
+- Open-source journals can be a good alternative (faster, cheaper) but often not in rankings.
+:::
+
+## Top econ journals (Handelsblatt ranking)
+
+::: {.columns}
+
+::: {.column width="50%"}
+### A
+- American Economic Review
+- Econometrica
+- Journal of Political Economy
+- Quarterly Journal of Economics
+- Review of Economic Studies
+:::
+
+::: {.column width="50%"}
+### A−
+- Bell Journal of Economics
+- Econometric Theory
+- European Economic Review
+- Games and Economic Behavior
+- International Economic Review
+- Journal of Business and Economic Statistics
+- Journal of Econometrics
+- Journal of Economic Theory
+- Journal of Finance
+- Journal of International Economics
+- Journal of Labor Economics
+- Journal of Monetary Economics
+- Journal of Public Economics
+- Journal of the American Statistical Association
+- Journal of the European Economic Association
+- Rand Journal of Economics
+- Review of Economics and Statistics
+:::
+
+:::
+
+## Top 10 journals — Eigenfactor Scores
+
+| Journal | Eigenfactor |
+|---|---|
+| American Economic Review | 0.1014 |
+| Journal of Finance | 0.0614 |
+| Journal of Financial Economics | 0.0534 |
+| Quarterly Journal of Economics | 0.0476 |
+| Review of Financial Studies | 0.0475 |
+| Econometrica | 0.0461 |
+| Journal of Econometrics | 0.0377 |
+| Journal of Political Economy | 0.0364 |
+| Review of Economic Studies | 0.0328 |
+| Review of Economics and Statistics | 0.0289 |
+
+> *Source:* JCR, Year and Edition: 2010 Social Science.
+
+## Bad outcome — rejection
+
+::: incremental
+- Your paper is rejected.
+- **Don't be upset and don't take it personal!**
+- Rejection rates are **very high** at top journals.
+- The average top paper collects several rejections as well!
+- Try to identify suggestions that are feasible and justified, do additional analyses, rewrite, submit to the next suitable journal.
+- Nice editors might recommend a suitable journal.
+- Sometimes you get a crappy report that is not helpful at all — just submit to the next journal.
+:::
+
+## Good outcome (I) — Revise & Resubmit
+
+::: incremental
+- Your paper received a **revise & resubmit**.
+- Congratulations! You made it into the next round.
+- **Strategy:** address as many of the referees' suggestions as possible.
+- These guys are the **gatekeepers!**
+- Do the additional tests and **pray that your main results hold!**
+:::
+
+## Good outcome (II) — write the response
+
+- Rewrite your paper and put together a response to the referee(s).
+- Copy their comments into the response.
+- Add your response after each issue.
+- Link to new tables in the paper.
+- Most often you cannot put **all** the new results into the paper.
+- Put these tables into the report to the referee(s) — referees like you being explicit and transparent about new results!
+
+## Good outcome (III) — disagreements
+
+- A major R&R can be as time-consuming as writing the first version.
+- You may not always agree with some of the referee's suggestions.
+- You should still try to address them in a **polite** way.
+- It can be **risky** to argue with a referee.
+- If the editor highlights some issues: put extra effort into addressing them. **At the end, the editor decides which paper gets published!**
+
+## Acceptance
+
+- After acceptance, the journal requests the Word/TeX files and original files for graphs.
+- You'll get a **proof** that needs to be cross-checked.
+- Usually your paper appears online at the journal's website before the print publication (you can cite by journal name & **forthcoming**).
+- If you don't receive the proof or don't see your paper online soon after returning the proof — **write the journal and ask what is going on!**
+- Often you also need to provide your **code and data**.
+
+# 1.3 Referee reports {.section-divider}
+
+## How to assess whether a paper is good or bad
+
+The structure of a referee report:
+
+1. **Summary**
+2. **Major issues**
+3. **Minor issues**
+
+## Referee report — 1. Summary
+
+Write a short summary of the paper using **your own words**:
+
+- What is the question asked by the author?
+- What is the identification strategy?
+- What data is used?
+- How is the hypothesis formulated and tested?
+- What are the results?
+
+> The purpose of this section is to summarise the paper for the editor in a way that lets him understand the essence of the paper and its contribution, **without having to read it**.
+
+## Referee report — 2. Major issues (I)
+
+- Take 3 or 4 major **negative (or positive)** points that you have on the paper, one at a time.
+- To do this, check carefully: the question, the theory/model, the link to the empirical analysis, the presentation of the data, the econometric analysis, and the results.
+- Below is a checklist of the kinds of questions you should ask yourself.
+
+## Referee report — 2. Major issues (II)
+
+- For a **positive** point, argue why the question is particularly important, the approach novel, the techniques new, the identification strategy innovative, the data unusual, etc.
+- For a **negative** point, you are often looking for **lack of correspondence** between:
+  - the idea and the model,
+  - the model and the empiricism,
+  - the empirical strategy and the conclusion.
+
+## Referee report — 2. Major issues (III)
+
+- Another argument for rejecting a paper is when the paper has nothing wrong but is **boring and not new in any way**. If this is one of your points, refer to other works to show why this is all well known and already done.
+- **Your main job:**
+  - Find the most related papers and check whether the paper you assess is **better / worse** than the existing literature.
+  - Often, there are only a few very related papers.
+
+## Referee report — 3. Minor issues
+
+Usually, if you have major criticisms about a paper that lead you to recommend rejection, you don't even need to do a section on less important issues.
+
+However, hopefully the papers you'll be reading are not so bad — and you may have some less important though useful suggestions to improve the paper.
+
+## Referee checklist (I) — the question & identification
+
+::: {.columns}
+
+::: {.column width="50%"}
+### The question
+- Is the topic clearly explained? Could the question be made more **precise**?
+- Does the author do a good job of **motivating** the question in the introduction?
+- Is the answer to the question **obvious in advance**?
+- Is the question **original**? What is the contribution of the paper? Does the author pose a question of reasonable scope?
+:::
+
+::: {.column width="50%"}
+### Identification strategy
+- Is the identification strategy clearly explained, including the source of variation (e.g., fixed effects, instruments)?
+- Does the author address **endogeneity** concerns (reverse causality, omitted variables)?
+- Are assumptions about error terms justified (uncorrelated with regressors)?
+- Is the strategy **robust** to alternatives (different controls, specifications)?
+- Does it convincingly identify causal effects rather than mere correlations?
+:::
+
+:::
+
+## Referee checklist (II) — the data
+
+- Does the author present a **clear description** of the data?
+- Does the author's choice of dataset seem **well-suited** to answering the question?
+- If you had to **replicate** the author's study five years from now, is there sufficient information about the source of the data and the sample used?
+- Does the author discuss issues that may affect the estimation strategy: random sample? known sources of measurement error? cross-sectional dependence in panels?
+- Does the author present **summary statistics**, and make good use of them to motivate the question or specific aspects of the analysis?
+
+## Referee checklist (III) — econometric analysis
+
+- Are the econometric techniques **well-suited** to the problem at hand?
+- What are the properties of the estimators employed? Are issues regarding these properties adequately addressed?
+- Is the econometric analysis **carefully done and reported**?
+- Have **alternative specifications** been tried and compared, when necessary?
+- Is the issue of **robustness** of the results addressed?
+- What test statistics does the author employ? Do they answer the question?
+
+## Referee checklist (IV) — results & conclusion
+
+- Are the results **clearly stated and presented**?
+- Are they used in some interesting way (beyond quoting the value of the parameters and their standard errors)?
+- Are the results **related back to the question**?
+- Are appropriate **caveats** mentioned?
+- Do the conclusions concisely summarise the main points of the paper?
+- Are the conclusions **well-supported** by the evidence?
+- **Are you convinced?** What did you learn from this paper?
+
+# 1.4 Discussion of Assignment II {.section-divider}
+
+## Assignment II — Create a referee report
+
+::: {.columns}
+
+::: {.column width="50%"}
+### What
+- Attend the mandatory **Brown Bag Seminar on 20 January 2026 (13:30 to 16:00)** and select **one doctoral presentation** to critique, applying the writing, publishing, and refereeing tips from the course to practice thesis-level analysis.
+
+**You must submit ONLY one file:**
+
+- One **2.5–3 page report** in academic referee style, focusing on the presentation's contribution to the literature and your judgment of its empirical strategy.
+- Key tasks: summarise the presentation's main ideas; evaluate novelty vs existing literature; assess empirical methods (identification, robustness); discuss implications, strengths, weaknesses, limitations, and improvements.
+:::
+
+::: {.column width="50%"}
+### How
+- Work in **teams of up to 5** students.
+- You'll receive the PDF of the presentation and the working paper. Sometimes there is no working paper available; in that case base your report **solely on the presentation**.
+- **Grading:** this report accounts for **50%** of your grade — depth of analysis (contribution and empirical aspects), writing quality (concise, organised, skim-friendly), and originality of insights.
+- **Deadline:** Submit your review as a PDF via email to [oliver.padmaperuma@uni-ulm.de](mailto:oliver.padmaperuma@uni-ulm.de), with [andre.guettler@uni-ulm.de](mailto:andre.guettler@uni-ulm.de) in CC by **3 February 2026**, including your name and the title of the chosen presentation in the document.
+- **11 pt Times New Roman, 1.5 spaced.**
+:::
+
+:::
+
+# Conclusion of Lecture 4 {.section-divider}
+
+## Topics covered today
+
+::: {.columns}
+
+::: {.column width="50%"}
+- What makes a good empirical paper
+- The publication process (Steps 1–10)
+- Top finance and economics journals
+- Bad outcome: rejection
+- Good outcome: revise & resubmit
+- Acceptance procedure
+:::
+
+::: {.column width="50%"}
+- How to write a referee report
+- Summary, major issues, minor issues
+- Referee checklist
+  - The question
+  - Identification strategy
+  - Data
+  - Econometric analysis
+  - Results & conclusion
+- Assignment II briefing
+:::
+
+:::
+
+## See you at the Brown Bag Seminar
+
+::: {.callout-note title="Reminder"}
+- **Brown Bag Seminar — 20 January 2026, 13:30 to 16:00.**
+- Take careful notes on the presentations.
+- Pick **one** doctoral talk and apply the four-checklist sections from this lecture.
+- Submit your **2.5–3 page** report as a group of up to 5 by **3 February 2026**.
+:::
+
+> Good luck with the problem set — and we look forward to your critical feedback at the seminar!

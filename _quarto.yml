@@ -1,0 +1,82 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "index.qmd"
+    - "courses/**/*.qmd"
+  resources:
+    - "assets/**"
+
+website:
+  title: "SMF Teaching"
+  description: "Teaching materials of the Institute of Strategic Management and Finance, Ulm University"
+  site-url: https://papa-puma.github.io/smaf
+  repo-url: https://github.com/papa-puma/smaf
+  navbar:
+    background: light
+    logo: assets/logos/smf.svg
+    logo-alt: "SMF Institute"
+    title: false
+    left:
+      - href: index.qmd
+        text: Home
+      - href: courses/research-in-finance/index.qmd
+        text: "Research in Finance"
+  page-footer:
+    border: true
+    left: |
+      Institute of Strategic Management and Finance · Ulm University
+    center: |
+      Prof. Dr. Andre Guettler
+    right: |
+      Built with [Quarto](https://quarto.org)
+  search:
+    location: navbar
+    type: overlay
+  reader-mode: true
+
+format:
+  html:
+    theme:
+      light: [cosmo, assets/styles/html.scss]
+    toc: true
+    toc-depth: 3
+    toc-location: right
+    code-copy: true
+    code-overflow: wrap
+    smooth-scroll: true
+    link-external-newwindow: true
+    citations-hover: true
+    footnotes-hover: true
+  revealjs:
+    theme: [default, _extensions/ulm-academic/theme.scss]
+    logo: assets/logos/uulm.svg
+    footer: "SMF · Ulm University"
+    slide-number: c/t
+    progress: true
+    chalkboard:
+      buttons: false
+    code-line-numbers: true
+    highlight-style: github
+    transition: fade
+    background-transition: fade
+    width: 1280
+    height: 720
+    incremental: false
+    auto-stretch: true
+    menu:
+      side: left
+      width: normal
+    pdf-separate-fragments: false
+
+# Default solutions OFF — student-facing builds strip solutions.
+# Instructor renders with: quarto render <file> --metadata solutions:true
+solutions: false
+
+# Default author / affiliation cascade (overridable per course or lecture)
+author:
+  - name: "Institute of Strategic Management and Finance"
+    affiliation: "Ulm University"
+
+execute:
+  freeze: auto

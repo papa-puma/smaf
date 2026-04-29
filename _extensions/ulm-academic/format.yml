@@ -1,0 +1,18 @@
+format:
+  revealjs:
+    theme: [default, theme.scss]
+    slide-number: c/t
+    progress: true
+    chalkboard:
+      buttons: false
+    transition: fade
+    background-transition: fade
+    width: 1280
+    height: 720
+    auto-stretch: true
+    highlight-style: github
+    code-line-numbers: true
+    incremental: false
+    menu:
+      side: left
+      width: normal

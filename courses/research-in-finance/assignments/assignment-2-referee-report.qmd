@@ -1,0 +1,98 @@
+---
+title: "Assignment II — Referee Report"
+subtitle: "Research in Finance · Winter 2025/2026"
+date: 2025-11-19
+due-date: 2026-02-03
+week: 4
+authors:
+  - name: "Prof. Dr. Andre Guettler"
+    affiliation: "Institute of Strategic Management and Finance, Ulm University"
+  - name: "Oliver Padmaperuma"
+    affiliation: "Institute of Strategic Management and Finance, Ulm University"
+format:
+  html:
+    toc: true
+  pdf:
+    documentclass: scrartcl
+solutions: false
+---
+
+## Overview
+
+> **Due:** 3 February 2026 via email.
+> **Submission format:** one PDF, 2.5–3 pages, 11 pt Times New Roman, 1.5 spaced.
+> **Group size:** up to **5** students.
+> **Weight:** **50%** of the final grade.
+
+Attend the mandatory **Brown Bag Seminar on 20 January 2026 (13:30 to 16:00)** and select **one doctoral presentation** to critique, applying the writing, publishing, and refereeing tips from Lecture 4 to practice thesis-level analysis.
+
+## Submission rules
+
+You must submit **only one file**:
+
+- One **2.5–3 page report** in academic referee style, focusing on the presentation's contribution to the literature and your judgment of its empirical strategy.
+- Include your name(s) and the **title of the chosen presentation** in the document.
+
+**Email** the report as PDF to [oliver.padmaperuma@uni-ulm.de](mailto:oliver.padmaperuma@uni-ulm.de), with [andre.guettler@uni-ulm.de](mailto:andre.guettler@uni-ulm.de) in CC. Subject / file pattern: **`RiF2025_RefereeReport_surname1_surname2_...`**.
+
+You will receive the PDF of each presentation and the corresponding working paper (when available). Sometimes there is **no working paper**; in that case base your report **solely on the presentation**.
+
+---
+
+## Required content (the three-part referee structure)
+
+### 1. Summary
+
+A short summary of the paper / presentation in **your own words**, addressing:
+
+- What is the question asked by the author?
+- What is the identification strategy?
+- What data is used?
+- How is the hypothesis formulated and tested?
+- What are the results?
+
+> The purpose of this section is to summarise the work for the editor in a way that lets her understand the essence and contribution **without having to read the paper**.
+
+### 2. Major issues — 3 or 4 points
+
+For each major positive or negative point, dig into one of the following dimensions:
+
+- The **question** — clearly explained and motivated? Original? Reasonable scope?
+- The **identification strategy** — source of variation, endogeneity, robustness, causal interpretation.
+- The **data** — fit for purpose, replicable, measurement-error issues, summary statistics.
+- The **econometric analysis** — appropriate techniques, estimator properties, alternative specifications, robustness.
+- The **results & conclusion** — clearly stated, related back to the question, caveats, well-supported claims.
+
+For a **positive point**: argue why the question / approach / techniques / identification / data is particularly important, novel, innovative, or unusual.
+
+For a **negative point**: look for **lack of correspondence** between the idea and the model, the model and the empiricism, the empirical strategy and the conclusion. Another rejection-worthy argument: the paper has nothing wrong but is **boring and not new** — refer to other works to show why this is well known or already done.
+
+### 3. Minor issues — optional
+
+If you have major criticisms that lead you to recommend rejection, you don't need a section on minor issues. Otherwise, include a few useful suggestions to improve the paper (clarity, structure, additional robustness checks, presentation).
+
+---
+
+## Tasks summary
+
+::: incremental
+1. **Summarise** the presentation's main ideas.
+2. **Evaluate** novelty compared to existing literature.
+3. **Assess** the empirical methods (identification, robustness).
+4. **Discuss** implications, strengths, weaknesses, limitations, and suggestions for improvement.
+:::
+
+---
+
+## Grading rubric
+
+| Criterion | Weight |
+|---|---|
+| Depth of analysis (contribution and empirical aspects) | 40% |
+| Writing quality (concise, organised, skim-friendly) | 30% |
+| Originality of insights | 20% |
+| Adherence to format (2.5–3 pages, 11 pt TNR, 1.5 spaced, structure) | 10% |
+
+## Honor code
+
+By submitting this referee report, you confirm that the work is your group's own and that any AI assistance has been disclosed.

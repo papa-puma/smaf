@@ -1,0 +1,13 @@
+course:
+  id: "<course-id>"
+  title: "<Course Title>"
+  term: "<Term, e.g. Summer 2026>"
+  language: "English"
+  ects: "<NN>"
+  level: "<Bachelor / Master / PhD>"
+  instructor: "Prof. Dr. Andre Guettler"
+  contact: "mawi.stuf@uni-ulm.de"
+
+author:
+  - name: "Prof. Dr. Andre Guettler"
+    affiliation: "Institute of Strategic Management and Finance, Ulm University"

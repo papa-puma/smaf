@@ -1,0 +1,9 @@
+author:
+  - name: "Institute of Strategic Management and Finance"
+    affiliation: "Ulm University"
+    url: https://www.uni-ulm.de/mawi/strategische-unternehmensfuehrung-und-finanzierung/
+
+format:
+  html:
+    toc: true
+    toc-depth: 3

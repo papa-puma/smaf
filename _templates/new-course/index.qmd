@@ -1,0 +1,26 @@
+---
+title: "<Course Title>"
+subtitle: "<Term>"
+listing:
+  contents: lectures/*/slides.qmd
+  type: table
+  fields: [week, date, title]
+  field-display-names:
+    week: "Week"
+    date: "Date"
+    title: "Lecture"
+  sort: "date asc"
+  filter-ui: false
+  page-size: 30
+---
+
+## About this course
+
+<One-paragraph description of the course.>
+
+## Quick links
+
+- [Syllabus](syllabus.qmd)
+- [Gradebook](gradebook.qmd)
+
+## Lectures

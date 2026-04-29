@@ -1,0 +1,92 @@
+---
+title: "Brown Bag Seminar"
+subtitle: "Engage with doctoral research and prepare your referee report"
+date: 2026-01-20
+week: 13
+topics:
+  - Doctoral research presentations
+  - Apply empirical / writing tips for the referee report
+  - Group discussion and Q&A
+authors:
+  - name: "Prof. Dr. Andre Guettler"
+    affiliation: "Institute of Strategic Management and Finance, Ulm University"
+  - name: "Oliver Padmaperuma"
+    affiliation: "Institute of Strategic Management and Finance, Ulm University"
+---
+
+## Format
+
+::: {.callout-note title="Logistics"}
+- **Date:** 20 January 2026
+- **Time:** 13:30 – 16:00
+- **Attendance:** mandatory for all registered students
+- **Location:** Helmholtzstraße 22 (room confirmed via Moodle)
+:::
+
+The Brown Bag Seminar is a regular institute event where doctoral candidates present work in progress to faculty and peers. For this course it doubles as the input for **Assignment II**.
+
+## Activities
+
+::: incremental
+- Attend the **full session** (13:30 – 16:00).
+- Take careful **notes** on each presentation — question, identification strategy, data, results.
+- Apply the **referee checklist** from Lecture 4:
+  - the question · identification · data · econometric analysis · results & conclusion.
+- Discuss with peers afterwards — sharpen your judgments before writing.
+:::
+
+## What you'll receive
+
+- The **PDF of each presentation** ahead of the session.
+- The corresponding **working paper** when available. If a paper isn't available, base your report **solely on the presentation**.
+
+> Topics will be announced **at least one week before** the seminar via Moodle.
+
+## Your deliverable — Assignment II
+
+::: {.callout-tip title="Referee report"}
+- Choose **one** doctoral presentation.
+- Write a **2.5–3 page** report in academic referee style (11 pt Times New Roman, 1.5 spaced).
+- Submit as a group of up to **5** students.
+- **Deadline:** 3 February 2026, email to [oliver.padmaperuma@uni-ulm.de](mailto:oliver.padmaperuma@uni-ulm.de), CC [andre.guettler@uni-ulm.de](mailto:andre.guettler@uni-ulm.de).
+- Include your name(s) and the **title of the chosen presentation** in the document.
+:::
+
+## Quick refresher — the four-part checklist
+
+::: {.columns}
+
+::: {.column width="50%"}
+**The question**
+- Topic clearly explained? Question precise?
+- Author motivates well in the introduction?
+- Is the answer obvious in advance?
+- Question original? Reasonable scope?
+
+**Identification strategy**
+- Source of variation clearly explained?
+- Endogeneity concerns addressed (reverse causality, omitted variables)?
+- Error-term assumptions justified?
+- Robust to alternative specifications?
+:::
+
+::: {.column width="50%"}
+**Data**
+- Clear description? Well-suited to the question?
+- Could you replicate the study in five years?
+- Measurement error / cross-sectional dependence discussed?
+- Summary statistics used to motivate the analysis?
+
+**Econometric analysis & results**
+- Techniques well-suited? Properties of estimators discussed?
+- Alternative specifications and robustness?
+- Results clearly presented and used to answer the question?
+- Caveats acknowledged? Conclusions well-supported?
+- *Are you convinced?* What did you learn?
+:::
+
+:::
+
+## See you at the seminar
+
+> Bring focused attention, your laptop or notebook, and the four-part checklist. Good empirical referee reports start from clean, structured notes.

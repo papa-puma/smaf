@@ -1,0 +1,17 @@
+---
+title: "SMF Teaching"
+subtitle: "Institute of Strategic Management and Finance · Ulm University"
+toc: false
+---
+
+> **Internal staff index.** Students access course materials via [Moodle](https://moodle.uni-ulm.de/).
+
+## Courses
+
+- [Research in Finance — Winter 2025/2026](courses/research-in-finance/index.qmd)
+
+## How this site works
+
+This site is built from a single GitHub repository using [Quarto](https://quarto.org). Each course folder contains its own syllabus, lectures, assignments, and gradebook. The repository is the **source of truth**; rendered output is published to GitHub Pages and linked from Moodle.
+
+For conventions and AI-assistant workflows, see [`CLAUDE.md`](https://github.com/papa-puma/smaf/blob/main/CLAUDE.md) and [`README.md`](https://github.com/papa-puma/smaf/blob/main/README.md) in the repo.

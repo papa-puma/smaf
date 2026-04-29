@@ -1,0 +1,84 @@
+---
+title: "Exam — <Course Title>"
+subtitle: "<Term>"
+date: YYYY-MM-DD
+exam-duration: "120 minutes"
+total-points: 100
+authors:
+  - name: "Prof. Dr. Andre Guettler"
+    affiliation: "Institute of Strategic Management and Finance, Ulm University"
+format:
+  html:
+    toc: true
+  pdf:
+    documentclass: scrartcl
+    geometry: margin=2.5cm
+solutions: false
+---
+
+::: {.content-hidden when-meta="solutions"}
+> **Instructions.** Answer **all** questions. Show all work for full credit. You may use a non-programmable calculator. Total time: 120 minutes. Total points: 100.
+:::
+
+::: {.content-visible when-meta="solutions"}
+> **INSTRUCTOR COPY — solutions visible.** Do not distribute.
+:::
+
+---
+
+## Question 1  *(N points)* — <Topic>
+
+State the question.
+
+::: {.content-visible when-meta="solutions"}
+**Solution.** …
+
+**Marking scheme.**
+
+- (a) ½ point per correct step.
+- (b) Full credit only if final numerical answer matches within 0.01.
+:::
+
+## Question 2  *(N points)* — <Topic>
+
+(a) Sub-part.
+
+(b) Sub-part.
+
+(c) Sub-part.
+
+::: {.content-visible when-meta="solutions"}
+**Solution.**
+
+(a) …
+
+(b) …
+
+(c) …
+:::
+
+## Question 3  *(N points)* — <Topic>
+
+State the question.
+
+::: {.content-visible when-meta="solutions"}
+**Solution.** …
+:::
+
+## Question 4  *(N points)* — <Topic>
+
+State the question.
+
+::: {.content-visible when-meta="solutions"}
+**Solution.** …
+:::
+
+---
+
+::: {.content-hidden when-meta="solutions"}
+> *End of exam. Please verify that your name and matriculation number are on every page.*
+:::
+
+::: {.content-visible when-meta="solutions"}
+**Total points distribution:** verify that points sum to 100 before printing the student copy.
+:::

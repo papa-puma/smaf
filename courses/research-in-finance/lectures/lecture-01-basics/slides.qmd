@@ -1,0 +1,572 @@
+---
+title: "Lecture 1: Basics"
+subtitle: "Course objectives, schedule, assignments · Introduction to R · Live coding"
+date: 2025-10-29
+week: 1
+topics:
+  - Course objectives, schedule and assignments
+  - Introduction to R and RStudio
+  - "Live coding: variables, vectors, matrices, data frames, lists, functions, loops"
+  - Data import and export
+authors:
+  - name: "Prof. Dr. Andre Guettler"
+    affiliation: "Institute of Strategic Management and Finance, Ulm University"
+  - name: "Oliver Padmaperuma"
+    affiliation: "Institute of Strategic Management and Finance, Ulm University"
+---
+
+## Welcome to the course {.section-divider}
+
+::: {.callout-note title="Today's roadmap"}
+1. **Course logistics** — objectives, schedule, grading, registration.
+2. **Why R?** — and how RStudio fits in.
+3. **Live coding** — the building blocks of R.
+4. **Wrap-up** — what to prepare before Lecture 2.
+:::
+
+::: notes
+Open with the survey and a short round of intros: who has used R, who has used Python, who has never coded.
+:::
+
+# 1.1 Course objectives, schedule, and assignments {.section-divider}
+
+## Welcome
+
+::: {.columns}
+
+::: {.column width="40%"}
+**Prof. Dr. Andre Guettler** · Director of the Institute
+Helmholtzstraße 22, Room 205
+[andre.guettler@uni-ulm.de](mailto:andre.guettler@uni-ulm.de)
++49 731 50 31 030
+
+**Oliver Padmaperuma** · Doctoral Candidate
+Helmholtzstraße 22, Room 203
+[oliver.padmaperuma@uni-ulm.de](mailto:oliver.padmaperuma@uni-ulm.de)
++49 731 50 31 036
+:::
+
+::: {.column width="60%"}
+- **Registration:** register for "exam" **13337** in `campusonline` by **30 November**. Without registration you cannot submit problem sets or the review.
+- Registered students who don't submit receive a fail grade (5.0).
+- Questions are best asked **during or immediately after** class.
+- Administrative matters → [studiensekretariat@uni-ulm.de](mailto:studiensekretariat@uni-ulm.de).
+:::
+
+:::
+
+## Course objective
+
+| Objective | Approach | Assignments |
+|---|---|---|
+| Equip students with the practical toolkit and conceptual grounding for empirical finance research | Four lectures + Brown Bag Seminar; weekly live coding in R; LaTeX/Overleaf for write-up | 50% group problem set (R + LaTeX); 50% individual referee report |
+
+## Schedule
+
+| | Lecture 1 | Lecture 2 | Lecture 3 | Lecture 4 | Brown Bag Seminar |
+|---|---|---|---|---|---|
+| **Date** | 29.10.2025 | 05.11.2025 | 12.11.2025 | 19.11.2025 | 20.01.2026 |
+| **Theme** | Course intro & R fundamentals | R Data Handling & Visualization | Statistical Analysis using R | Academic Publishing process | Apply tips to a doctoral talk |
+
+## Assignment I — Problem Set (50%)
+
+- Solve the problem set posted on Moodle, building on Lectures 1–3.
+- Submit **two files** as a group of up to **5** students:
+  1. one well-commented `.R` script (efficient, meaningful variable names, no needless loops);
+  2. one PDF compiled from the Overleaf template (plots, captions, LaTeX tables, written text).
+- **Deadline:** 19 January 2026 (midnight). Email to [oliver.padmaperuma@uni-ulm.de](mailto:oliver.padmaperuma@uni-ulm.de), CC [andre.guettler@uni-ulm.de](mailto:andre.guettler@uni-ulm.de).
+- File / subject pattern: `RiF2025_ProblemSet_surname1_surname2_...`
+
+## Assignment II — Referee Report (50%)
+
+- **Attend the mandatory Brown Bag Seminar on 20 January 2026, 13:30–16:00.**
+- Pick one doctoral presentation, apply the writing/publishing/refereeing tips from the course.
+- Submit one 2.5–3 page PDF report (academic referee style) per group of up to **5**.
+- **Deadline:** 3 February 2026. Email to [oliver.padmaperuma@uni-ulm.de](mailto:oliver.padmaperuma@uni-ulm.de), CC [andre.guettler@uni-ulm.de](mailto:andre.guettler@uni-ulm.de).
+
+::: {.callout-tip title="Any questions before we begin?"}
+Now is the moment.
+:::
+
+# 1.2 Introduction to R {.section-divider}
+
+## Survey — let's get to know you
+
+::: notes
+Mentimeter survey: study program, prior coding proficiency. Use the results to calibrate pace.
+:::
+
+> Open the Mentimeter link shared in class.
+
+## Why learn R?
+
+- It's **free and open-source**.
+- A powerful tool for **data analysis and graphics**.
+- R code is great for **reproducibility and shareability** — submit your script and anyone can re-run your results.
+- A **large, active community** continuously extends R via **packages**.
+
+## What are R and RStudio?
+
+- **R is a programming language** for statistical computing, data analytics, and scientific research. It is one of the most widely used languages by statisticians and researchers to manage, manipulate, analyze, and visualize data.
+- **RStudio** is an integrated development environment (IDE) for R that makes interaction with R easier — code completion, debugging, project management, plot viewing.
+- In 2022 RStudio was rebranded **Posit** to signal its move toward language-agnostic tooling.
+- **You must install R first**, then RStudio.
+
+## Installing R and RStudio
+
+::: incremental
+1. Go to <https://cran.r-project.org/> and click **Download R for Windows / macOS**.
+2. Click **base** subdirectory.
+3. Click **Download R-x.x.x for Windows** and run the `.exe`. Accept defaults.
+4. Go to <https://posit.co/download/rstudio-desktop> and click **Download RStudio**.
+5. Run the RStudio installer.
+:::
+
+## RStudio interface
+
+Three main panes when you open RStudio:
+
+1. **Console** — where R code is executed.
+2. **Global Environment / History** — your in-memory objects.
+3. **Files / Plots / Packages / Help / Viewer** — the swiss-army-knife pane.
+
+<!-- TODO: figure from PDF p.16 — RStudio interface screenshot showing the three panes; recreate or import as image into images/ -->
+
+## Writing code in RStudio
+
+::: {.columns}
+
+::: {.column width="50%"}
+### Script Editor
+- Load and save `.R` scripts.
+- Keeps a record of your analysis — show others how it was run, repeat later.
+- Edit code without accidentally running it.
+:::
+
+::: {.column width="50%"}
+### Console
+- Where R code is **executed**.
+- You can also run code interactively here, but it is **NOT** saved on disk.
+- See output and errors directly.
+:::
+
+:::
+
+::: {.callout-tip title="Best practice"}
+Write and run code through the **Script Editor**. Use the Console only for quick exploration.
+:::
+
+## Setting the working directory
+
+The **working directory** (`wd`) is where R looks for and saves files.
+
+Two ways to set it:
+
+```r
+# Option 1: menu
+# Session → Set Working Directory → Choose Directory…
+
+# Option 2: code
+setwd("C:/Users/<you>/Documents/research-in-finance")
+
+# Verify
+getwd()
+```
+
+## Getting started — running code
+
+The blinking cursor in the Script Editor prompts you to write. The Console shows `>` when R is ready.
+
+Four ways to run code:
+
+1. **Ctrl/Cmd + Enter** — run current line / selection.
+2. Click **Run**.
+3. **Ctrl + Shift + Enter** — run all lines in the editor.
+4. Highlight lines and click **Run**.
+
+::: {.callout-tip title="Practice"}
+Type `1 + 2*8` and `log(10)`. Result appears in the Console with a leading `[1]` (the index of the first element on that line).
+:::
+
+## What are packages?
+
+- Packages **expand** what you can do beyond base R.
+- A collection of **functions, data sets, and other R objects** under one name.
+- Install from repositories: **CRAN**, GitHub, etc.
+- The **Packages** tab lists installed packages; click **Update** to upgrade; the small × uninstalls.
+
+## Installing and loading packages
+
+::: {.columns}
+
+::: {.column width="50%"}
+### Installing
+```r
+# From CRAN (default)
+install.packages("tidyverse")
+install.packages("tidyquant")
+install.packages("Quandl")
+```
+Or click **Install** in the Packages tab.
+:::
+
+::: {.column width="50%"}
+### Loading
+```r
+library(tidyverse)
+library(tidyquant)
+library(Quandl)
+```
+Or tick the package's checkbox in the Packages tab.
+:::
+
+:::
+
+::: {.callout-tip title="Short exercise"}
+Install and load the `tidyverse`, `tidyquant`, and `Quandl` packages.
+:::
+
+# 1.3 Live Coding Session 1 {.section-divider}
+
+## Creating objects / variables
+
+- Assign with `<-` (the assignment operator).
+
+::: incremental
+- ❌ avoid long object names · ✅ be descriptive
+- ❌ don't reuse names of existing R functions
+- ❌ no blank spaces — use `_` or `.`
+:::
+
+```r
+# Practice
+x <- 5
+x + x   # → [1] 10
+```
+
+## Four data types in R
+
+1. **Numeric** — numbers that may contain decimals.
+   - **Integer** — special case, no decimals (suffix `L`).
+2. **Character** — text (strings); wrap in `" "`.
+3. **Factor** — special character used for **categorical data** (e.g., male/female, months).
+4. **Logical** — Boolean (`TRUE` / `FALSE`).
+
+::: {.callout-tip title="Class lookup"}
+`class(objectname)` returns the higher-level label R uses to decide which functions and behaviors apply (`"data.frame"`, `"factor"`, `"matrix"`, `"numeric"`).
+:::
+
+## Variables and basic operations
+
+```r
+myNumber  <- 3                                   # numeric (default)
+myInteger <- 10L                                 # integer ('L' suffix)
+myText    <- "Some sentence..."                  # character
+myFactor  <- factor(c("red", "blue", "red", "green"))  # factor
+levels(myFactor)                                 # "blue" "green" "red"
+myLogical <- TRUE                                # logical
+```
+
+> **Why:** assign and compute financial metrics — returns, prices, ratios — quickly during empirical work.
+
+## Five basic data structures
+
+1. **Individual values** — single scalars.
+2. **Vectors** — ordered collections of elements (one type only).
+3. **Matrices** — 2D arrays; rows × columns; one type only.
+4. **Data frames** — like spreadsheets; columns can have **different types**.
+5. **Lists** — flexible containers that can hold vectors, matrices, data frames, even other lists.
+
+## Vectors
+
+```r
+# Create
+myVector <- c(3, 4, -1.1, pi)
+
+# Inspect / aggregate
+myVector[3]        # third element: -1.1
+length(myVector)   # 4
+sum(myVector)      # ~9.04
+mean(myVector)     # ~2.26
+var(myVector)      # ~5.21
+sort(myVector)     # ascending: -1.1, 3.0, 3.14, 4.0
+quantile(myVector, c(0.1, 0.25, 0.95))
+
+# Vectorized arithmetic — no loops needed
+myVector + 2
+myVector * myVector
+
+# Coercion: mixed types collapse to character
+mixed <- c(1, "two", TRUE)   # "1" "two" "TRUE"
+
+# Named vectors
+namedVec <- c(apple = 5, banana = 3)
+namedVec["banana"]   # 3
+```
+
+## Matrices
+
+```r
+myMatrix <- matrix(c(2, 1, 0, -9, 5, 0), nrow = 2, byrow = TRUE)
+dim(myMatrix)              # [1] 2 3
+myMatrix[1, 1] <- 2.1415   # modify cell
+myMatrix[, 2]              # second column
+
+# Linear algebra
+anotherMatrix <- matrix(c(5, -1, 7, 0, 2, -1), nrow = 2, byrow = TRUE)
+transposedMatrix <- t(anotherMatrix)
+matrixProduct    <- myMatrix %*% transposedMatrix     # 2x2 product
+matrixInverse    <- solve(matrixProduct)              # inverse
+
+# Aggregations
+rowSums(myMatrix)
+colMeans(myMatrix)
+
+# Bind: combine rows / cols
+cbind(myMatrix, c(6, 7))
+```
+
+> **Use case:** covariance matrices for portfolio optimization or regressions.
+
+## Data frames
+
+```r
+student_name <- c("Student A", "Student B", "Student C")
+grade        <- c(1.7, 2.3, 5.0)
+students     <- data.frame(student_name, grade)
+
+students$grade                    # column access
+colnames(students)[2] <- "exam2021"
+students[2:3, ]                   # rows 2-3
+
+# Add columns
+students$degree    <- c("Bachelor", "Master", "Bachelor")
+students$pass_fail <- c("Pass", "Pass", "Fail")
+table(students$degree, students$pass_fail)
+
+# Summary
+summary(students)
+
+# Subset by condition
+subset(students, exam2021 > 2)
+
+# Add row
+newStudent <- data.frame(student_name = "Student D", exam2021 = 3.5,
+                         degree = "PhD", pass_fail = "Pass")
+students <- rbind(students, newStudent)
+
+# Merge with another frame
+ages   <- data.frame(student_name = c("Student A", "Student B", "Student C"),
+                     age = c(20, 22, 21))
+merged <- merge(students, ages, by = "student_name")
+```
+
+> **Use case:** organizing prices/dates for thesis-level analysis and merging multiple sources.
+
+## Lists
+
+```r
+scoresList <- list(
+  scores = c(95, 85, 92),
+  names  = c("Alice", "Bob", "Carol"),
+  passed = c(TRUE, TRUE, FALSE)
+)
+
+str(scoresList)
+
+scoresList$scores[3] <- 90               # update Carol's score
+scoresList$comments  <- "All passed"     # add element
+
+# Nested list
+nestedList <- list(course = "Math 101", details = scoresList)
+nestedList$details$names[1]              # "Alice"
+
+# Convert to data frame (elements need equal length)
+scoresDF <- as.data.frame(scoresList)
+```
+
+## Functions
+
+```r
+# Define
+bmiCalc <- function(height, weight) {
+  bmi <- weight / (height ^ 2)
+  return(round(bmi, 1))
+}
+
+# Call
+myBmi <- bmiCalc(1.75, 70)   # 22.9
+
+# Default arguments
+bmiCalcDefault <- function(height, weight = 70) {
+  round(weight / (height ^ 2), 1)
+}
+bmiCalcDefault(1.75)         # 22.9
+
+# Multiple returns via list
+bmiAdvanced <- function(height, weight) {
+  bmi <- weight / (height ^ 2)
+  category <- ifelse(bmi < 18.5, "Underweight",
+                     ifelse(bmi < 25, "Normal", "Overweight"))
+  list(bmi = round(bmi, 1), category = category)
+}
+result <- bmiAdvanced(1.75, 70)
+result$bmi        # 22.9
+result$category   # "Normal"
+```
+
+> **Use case:** automate repetitive calculations (risk-adjusted returns, simulation models) for efficiency in large datasets.
+
+## Loops
+
+```r
+nums <- c(1, 2, 3, 4, 5)
+
+# For-loop: sum even numbers
+evenSum <- 0
+for (i in nums) {
+  if (i %% 2 == 0) evenSum <- evenSum + i
+}
+evenSum    # 6
+
+# While-loop
+j <- 1
+while (j <= 3) {
+  print(j)
+  j <- j + 1
+}
+
+# Nested for-loop
+for (a in 1:2) {
+  for (b in 3:4) {
+    print(a * b)   # 3, 4, 6, 8
+  }
+}
+```
+
+::: {.callout-tip title="Pro tip"}
+For data-frame operations, **vectorized** alternatives (e.g., `apply`, `dplyr::mutate`) are usually faster and clearer than for-loops.
+:::
+
+## Data import & export — file types
+
+You will rarely build matrices/data frames by hand. Common ways to **read** data:
+
+- **Text** — `.TXT` (`readLines()`)
+- **Tabular** — `.CSV`, `.TSV` (`read.table()`, `readr::read_csv()`)
+- **Excel** — `.XLSX` (`xlsx`, `readxl`)
+- **Google sheets** — `googlesheets4`
+- **Statistics programs** — SPSS, SAS (`haven`)
+- **Databases** — MySQL (`RMySQL`)
+
+## Data import & export — examples
+
+::: {.columns}
+
+::: {.column width="50%"}
+### Import
+```r
+# CSV
+objectname <- read.csv("your_file.csv", header = TRUE)
+
+# Tab-delimited
+objectname <- read.table("your_file.txt", sep = "\t", header = TRUE)
+
+# Excel
+library(readxl)
+objectname <- read_excel("your_file.xlsx")
+
+# RDS (R single-object binary)
+objectname <- readRDS("your_file.rds")
+```
+:::
+
+::: {.column width="50%"}
+### Export
+```r
+# CSV
+write.csv(objectname, file = "output_file.csv", row.names = FALSE)
+
+# Tab-delimited
+write.table(objectname, file = "output_file.txt",
+            sep = "\t", row.names = FALSE, col.names = TRUE)
+
+# Excel
+library(writexl)
+write_xlsx(objectname, "output_file.xlsx")
+
+# RDS
+saveRDS(objectname, file = "output_file.rds")
+```
+:::
+
+:::
+
+::: {.callout-tip title="Separators"}
+The argument `sep =` may not be necessary — R recognises `,` in `.csv` and whitespace in `.txt`. But sometimes R won't read correctly unless you specify it.
+:::
+
+## Saving your script
+
+1. Save every step in an `.R` script. Comment lines start with `#` and are ignored at run time.
+2. **File → Save**, or click the disk icon, or **Ctrl/Cmd + S**.
+3. Unsaved scripts (or unsaved edits) show **red text and an asterisk** in the tab name.
+
+## Closing an R session
+
+Three ways to close RStudio:
+
+1. **File → Quit Session**
+2. The red ✕ in the top-right corner.
+3. Run `q()` in the Console.
+
+::: {.callout-tip title="Don't save the workspace image (.RData)"}
+Unless (a) you ran something very expensive, or (b) you're nearly done with the project. Starting clean each session avoids hidden state from previous runs.
+:::
+
+# 1.4 Conclusion of Lecture 1 {.section-divider}
+
+## Topics covered today
+
+::: {.columns}
+
+::: {.column width="50%"}
+- Basic R Functionality
+- Variables & Basic Operations
+- Vectors
+- Matrices
+- Data Frames
+:::
+
+::: {.column width="50%"}
+- Lists
+- Functions
+- Loops
+- Data Import & Export
+:::
+
+:::
+
+## Further reading
+
+- James, G., Witten, D., Hastie, T., & Tibshirani, R. (2021). *An Introduction to Statistical Learning with applications in R* (2nd ed.). Springer. Free PDF: <https://www.statlearning.com/>
+- Scheuch, C., Voigt, S., & Weiss, P. (2023). *Tidy Finance with R*. Chapman & Hall/CRC. Free: <https://www.tidy-finance.org/r/>
+- Wickham, H., & Çetinkaya-Rundel, M. (2023). *R for Data Science* (2nd ed.). O'Reilly. Free: <https://r4ds.hadley.nz/>
+- Kaggle Discussions (2021). *List of free R books*. <https://www.kaggle.com/discussions/general/274029>
+
+## Prepare before next lecture
+
+1. **Document today's code** in a clean way and save as `.Rmd`.
+2. **Set up the Nasdaq Data Link API:**
+   1. Register a free account at <https://data.nasdaq.com/> (formerly Quandl).
+   2. Log in, go to your profile, **copy your personal API key**.
+   3. *Optional challenge:* load the `Quandl` library, set your key with `Quandl.api_key("your_key_here")`, and test loading data. We'll walk through this in Lecture 2.
+
+## See you next time
+
+::: {.callout-note title="Reminder"}
+- **Register** for "exam" 13337 in `campusonline` by **30 November 2025**.
+- Bring your laptop with R + RStudio installed and the `tidyverse`, `tidyquant`, `Quandl` packages already loaded.
+:::
+
+> **Lecture 2:** R Data Handling and Visualization — APIs, merging, cleansing, `dplyr`, `ggplot2`.

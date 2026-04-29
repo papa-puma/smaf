@@ -1,0 +1,41 @@
+# Quarto build output
+/_site/
+/.quarto/
+*.html.bak
+
+# Quarto-rendered artifacts in source tree (we don't commit rendered files)
+**/*_files/
+**/*.html
+**/*.pdf
+!_extensions/**/*.html
+!assets/**/*.pdf
+
+# Re-allow rendered files only when intentionally tracked
+# (keep this list short — by default rendered output should NOT be committed)
+
+# Inputs (drop PDFs to convert here; not tracked)
+/inputs/
+
+# Solutions builds (instructor-only renders with solutions: true)
+/_solutions-build/
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.vscode/*.local.json
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# TeX intermediate files
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
