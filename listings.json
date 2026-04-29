@@ -1,0 +1,22 @@
+[
+  {
+    "listing": "/courses/research-in-finance/index.html",
+    "items": [
+      "/courses/research-in-finance/lectures/lecture-01-basics/notes.html",
+      "/courses/research-in-finance/lectures/lecture-02-data-handling/notes.html",
+      "/courses/research-in-finance/lectures/lecture-03-statistical-analysis/notes.html",
+      "/courses/research-in-finance/lectures/lecture-04-academic-publishing/notes.html",
+      "/courses/research-in-finance/lectures/lecture-05-brown-bag-seminar/notes.html"
+    ]
+  },
+  {
+    "listing": "/courses/research-in-finance/syllabus.html",
+    "items": [
+      "/courses/research-in-finance/lectures/lecture-01-basics/notes.html",
+      "/courses/research-in-finance/lectures/lecture-02-data-handling/notes.html",
+      "/courses/research-in-finance/lectures/lecture-03-statistical-analysis/notes.html",
+      "/courses/research-in-finance/lectures/lecture-04-academic-publishing/notes.html",
+      "/courses/research-in-finance/lectures/lecture-05-brown-bag-seminar/notes.html"
+    ]
+  }
+]

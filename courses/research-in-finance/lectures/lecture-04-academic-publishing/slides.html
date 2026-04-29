@@ -1,0 +1,1443 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.5.57">
+
+  <meta name="author" content="Institute of Strategic Management and Finance">
+  <meta name="author" content="Institute of Strategic Management and Finance">
+  <meta name="author" content="Prof.&nbsp;Dr.&nbsp;Andre Guettler">
+  <meta name="author" content="Oliver Padmaperuma">
+  <meta name="dcterms.date" content="2025-11-19">
+  <title>SMF Teaching – Lecture 4: Academic Publishing &amp; Refereeing</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../../../../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../../../../site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../../../../site_libs/revealjs/dist/theme/quarto.css">
+  <link href="../../../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../../../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../../../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../../../../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="../../../../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="../../../../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+
+  .callout {
+    margin-top: 1em;
+    margin-bottom: 1em;  
+    border-radius: .25rem;
+  }
+
+  .callout.callout-style-simple { 
+    padding: 0em 0.5em;
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+    display: flex;
+  }
+
+  .callout.callout-style-default {
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+  }
+
+  .callout .callout-body-container {
+    flex-grow: 1;
+  }
+
+  .callout.callout-style-simple .callout-body {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-style-default .callout-body {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-titled.callout-style-simple .callout-body {
+    margin-top: 0.2em;
+  }
+
+  .callout:not(.callout-titled) .callout-body {
+      display: flex;
+  }
+
+  .callout:not(.no-icon).callout-titled.callout-style-simple .callout-content {
+    padding-left: 1.6em;
+  }
+
+  .callout.callout-titled .callout-header {
+    padding-top: 0.2em;
+    margin-bottom: -0.2em;
+  }
+
+  .callout.callout-titled .callout-title  p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+    
+  .callout.callout-titled.callout-style-simple .callout-content  p {
+    margin-top: 0;
+  }
+
+  .callout.callout-titled.callout-style-default .callout-content  p {
+    margin-top: 0.7em;
+  }
+
+  .callout.callout-style-simple div.callout-title {
+    border-bottom: none;
+    font-size: .9rem;
+    font-weight: 600;
+    opacity: 75%;
+  }
+
+  .callout.callout-style-default  div.callout-title {
+    border-bottom: none;
+    font-weight: 600;
+    opacity: 85%;
+    font-size: 0.9rem;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-default div.callout-content {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-simple .callout-icon::before {
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+  }
+
+  .callout.callout-style-default .callout-icon::before {
+    height: 0.9rem;
+    width: 0.9rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 0.9rem 0.9rem;
+  }
+
+  .callout-title {
+    display: flex
+  }
+    
+  .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  .callout.no-icon::before {
+    display: none !important;
+  }
+
+  .callout.callout-titled .callout-body > .callout-content > :last-child {
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
+  }
+
+  .callout.callout-titled .callout-icon::before {
+    margin-top: .5rem;
+    padding-right: .5rem;
+  }
+
+  .callout:not(.callout-titled) .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  /* Callout Types */
+
+  div.callout-note {
+    border-left-color: #4582ec !important;
+  }
+
+  div.callout-note .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEU0lEQVRYCcVXTWhcVRQ+586kSUMMxkyaElstCto2SIhitS5Ek8xUKV2poatCcVHtUlFQk8mbaaziwpWgglJwVaquitBOfhQXFlqlzSJpFSpIYyXNjBNiTCck7x2/8/LeNDOZxDuEkgOXe++553zfefee+/OYLOXFk3+1LLrRdiO81yNqZ6K9cG0P3MeFaMIQjXssE8Z1JzLO9ls20MBZX7oG8w9GxB0goaPrW5aNMp1yOZIa7Wv6o2ykpLtmAPs/vrG14Z+6d4jpbSKuhdcSyq9wGMPXjonwmESXrriLzFGOdDBLB8Y6MNYBu0dRokSygMA/mrun8MGFN3behm6VVAwg4WR3i6FvYK1T7MHo9BK7ydH+1uurECoouk5MPRyVSBrBHMYwVobG2aOXM07sWrn5qgB60rc6mcwIDJtQrnrEr44kmy+UO9r0u9O5/YbkS9juQckLed3DyW2XV/qWBBB3ptvI8EUY3I9p/67OW+g967TNr3Sotn3IuVlfMLVnsBwH4fsnebJvyGm5GeIUA3jljERmrv49SizPYuq+z7c2H/jlGC+Ghhupn/hcapqmcudB9jwJ/3jvnvu6vu5lVzF1fXyZuZZ7U8nRmVzytvT+H3kilYvH09mLWrQdwFSsFEsxFVs5fK7A0g8gMZjbif4ACpKbjv7gNGaD8bUrlk8x+KRflttr22JEMRUbTUwwDQScyzPgedQHZT0xnx7ujw2jfVfExwYHwOsDTjLdJ2ebmeQIlJ7neo41s/DrsL3kl+W2lWvAga0tR3zueGr6GL78M3ifH0rGXrBC2aAR8uYcIA5gwV8zIE8onoh8u0Fca/ciF7j1uOzEnqcIm59sEXoGc0+z6+H45V1CvAvHcD7THztu669cnp+L0okAeIc6zjbM/24LgGM1gZk7jnRu1aQWoU9sfUOuhrmtaPIO3YY1KLLWZaEO5TKUbMY5zx8W9UJ6elpLwKXbsaZ4EFl7B4bMtDv0iRipKoDQT2sNQI9b1utXFdYisi+wzZ/ri/1m7QfDgEuvgUUEIJPq3DhX/5DWNqIXDOweC2wvIR90Oq3lDpdMIgD2r0dXvGdsEW5H6x6HLRJYU7C69VefO1x8Gde1ZFSJLfWS1jbCnhtOPxmpfv2LXOA2Xk2tvnwKKPFuZ/oRmwBwqRQDcKNeVQkYcOjtWVBuM/JuYw5b6isojIkYxyYAFn5K7ZBF10fea52y8QltAg6jnMqNHFBmGkQ1j+U43HMi2xMar1Nv0zGsf1s8nUsmUtPOOrbFIR8bHFDMB5zL13Gmr/kGlCkUzedTzzmzsaJXhYawnA3UmARpiYj5ooJZiUoxFRtK3X6pgNPv+IZVPcnwbOl6f+aBaO1CNvPW9n9LmCp01nuSaTRF2YxHqZ8DYQT6WsXT+RD6eUztwYLZ8rM+rcPxamv1VQzFUkzFXvkiVrySGQgJNvXHJAxiU3/NwiC03rSf05VBaPtu/Z7/B8Yn/w7eguloAAAAAElFTkSuQmCC');
+  }
+
+  div.callout-note.callout-style-default .callout-title {
+    background-color: #dae6fb
+  }
+
+  div.callout-important {
+    border-left-color: #d9534f !important;
+  }
+
+  div.callout-important .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEKklEQVRYCcVXTWhcVRS+575MJym48A+hSRFr00ySRQhURRfd2HYjk2SSTokuBCkU2o0LoSKKraKIBTcuFCoidGFD08nkBzdREbpQ1EDNIv8qSGMFUboImMSZd4/f9zJv8ibJMC8xJQfO3HPPPef7zrvvvnvviIkpC9nsw0UttFunbUhpFzFtarSd6WJkStVMw5xyVqYTvkwfzuf/5FgtkVoB0729j1rjXwThS7Vio+Mo6DNnvLfahoZ+i/o32lULuJ3NNiz7q6+pyAUkJaFF6JwaM2lUJlV0MlnQn5aTRbEu0SEqHUa0A4AdiGuB1kFXRfVyg5d87+Dg4DL6m2TLAub60ilj7A1Ec4odSAc8X95sHh7+ZRPCFo6Fnp7HfU/fBng/hi10CjCnWnJjsxvDNxWw0NfV6Rv5GgP3I3jGWXumdTD/3cbEOP2ZbOZp69yniG3FQ9z1jD7bnBu9Fc2tKGC2q+uAJOQHBDRiZX1x36o7fWBs7J9ownbtO+n0/qWkvW7UPIfc37WgT6ZGR++EOJyeQDSb9UB+DZ1G6DdLDzyS+b/kBCYGsYgJbSQHuThGKRcw5xdeQf8YdNHsc6ePXrlSYMBuSIAFTGAtQo+VuALo4BX83N190NWZWbynBjhOHsmNfFWLeL6v+ynsA58zDvvAC8j5PkbOcXCMg2PZFk3q8MjI7WAG/Dp9AwP7jdGBOOQkAvlFUB+irtm16I1Zw9YBcpGTGXYmk3kQIC/Cds55l+iMI3jqhjAuaoe+am2Jw5GT3Nbz3CkE12NavmzN5+erJW7046n/CH1RO/RVa8lBLozXk9uqykkGAyRXLWlLv5jyp4RFsG5vGVzpDLnIjTWgnRy2Rr+tDKvRc7Y8AyZq10jj8DqXdnIRNtFZb+t/ZRtXcDiVnzpqx8mPcDWxgARUqx0W1QB9MeUZiNrV4qP+Ehc+BpNgATsTX8ozYKL2NtFYAHc84fG7ndxUPr+AR/iQSns7uSUufAymwDOb2+NjK27lEFocm/EE2WpyIy/Hi66MWuMKJn8RvxIcj87IM5Vh9663ziW36kR0HNenXuxmfaD8JC7tfKbrhFr7LiZCrMjrzTeGx+PmkosrkNzW94ObzwocJ7A1HokLolY+AvkTiD/q1H0cN48c5EL8Crkttsa/AXQVDmutfyku0E7jShx49XqV3MFK8IryDhYVbj7Sj2P2eBxwcXoe8T8idsKKPRcnZw1b+slFTubwUwhktrfnAt7J++jwQtLZcm3sr9LQrjRzz6cfMv9aLvgmnAGvpoaGLxM4mAEaLV7iAzQ3oU0IvD5x9ix3yF2RAAuYAOO2f7PEFWCXZ4C9Pb2UsgDeVnFSpbFK7/IWu7TPTvBqzbGdCHOJQSxiEjt6IyZmxQyEJHv6xyQsYk//moVFsN2zP6fRImjfq7/n/wFDguUQFNEwugAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-important.callout-style-default .callout-title {
+    background-color: #f7dddc
+  }
+
+  div.callout-warning {
+    border-left-color: #f0ad4e !important;
+  }
+
+  div.callout-warning .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAETklEQVRYCeVWW2gcVRg+58yaTUnizqbipZeX4uWhBEniBaoUX1Ioze52t7sRq6APio9V9MEaoWlVsFasRq0gltaAPuxms8lu0gcviE/FFOstVbSIxgcv6SU7EZqmdc7v9+9mJtNks51NTUH84ed889/PP+cmxP+d5FIbMJmNbpREu4WUkiTtCicKny0l1pIKmBzovF2S+hIJHX8iEu3hZJ5lNZGqyRrGSIQpq15AzF28jgpeY6yk6GVdrfFqdrD6Iw+QlB8g0YS2g7dyQmXM/IDhBhT0UCiRf59lfqmmDvzRt6kByV/m4JjtzuaujMUM2c5Z2d6JdKrRb3K2q6mA+oYVz8JnDdKPmmNthzkAk/lN63sYPgevrguc72aZX/L9C6x09GYyxBgCX4NlvyGUHOKELlm5rXeR1kchuChJt4SSwyddZRXgvwMGvYo4QSlk3/zkHD8UHxwVJA6zjZZqP8v8kK8OWLnIZtLyCAJagYC4rTGW/9Pqj92N/c+LUaAj27movwbi19tk/whRCIE7Q9vyI6yvRpftAKVTdUjOW40X3h5OXsKCdmFcx0xlLJoSuQngnrJe7Kcjm4OMq9FlC7CMmScQANuNvjfP3PjGXDBaUQmbp296S5L4DrpbrHN1T87ZVEZVCzg1FF0Ft+dKrlLukI+/c9ENo+TvlTDbYFvuKPtQ9+l052rXrgKoWkDAFnvh0wTOmYn8R5f4k/jN/fZiCM1tQx9jQQ4ANhqG4hiL0qIFTGViG9DKB7GYzgubnpofgYRwO+DFjh0Zin2m4b/97EDkXkc+f6xYAPX0KK2I/7fUQuwzuwo/L3AkcjugPNixC8cHf0FyPjWlItmLxWw4Ou9YsQCr5fijMGoD/zpdRy95HRysyXA74MWOnscpO4j2y3HAVisw85hX5+AFBRSHt4ShfLFkIMXTqyKFc46xdzQM6XbAi702a7sy04J0+feReMFKp5q9esYLCqAZYw/k14E/xcLLsFElaornTuJB0svMuJINy8xkIYuL+xPAlWRceH6+HX7THJ0djLUom46zREu7tTkxwmf/FdOZ/sh6Q8qvEAiHpm4PJ4a/doJe0gH1t+aHRgCzOvBvJedEK5OFE5jpm4AGP2a8Dxe3gGJ/pAutug9Gp6he92CsSsWBaEcxGx0FHytmIpuqGkOpldqNYQK8cSoXvd+xLxXADw0kf6UkJNFtdo5MOgaLjiQOQHcn+A6h5NuL2s0qsC2LOM75PcF3yr5STuBSAcGG+meA14K/CI21HcS4LBT6tv0QAh8Dr5l93AhZzG5ZJ4VxAqdZUEl9z7WJ4aN+svMvwHHL21UKTd1mqvChH7/Za5xzXBBKrUcB0TQ+Ulgkfbi/H/YT5EptrGzsEK7tR1B7ln9BBwckYfMiuSqklSznIuoIIOM42MQO+QnduCoFCI0bpkzjCjddHPN/F+2Yu+sd9bKNpVwHhbS3LluK/0zgfwD0xYI5dXuzlQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-warning.callout-style-default .callout-title {
+    background-color: #fcefdc
+  }
+
+  div.callout-tip {
+    border-left-color: #02b875 !important;
+  }
+
+  div.callout-tip .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAADr0lEQVRYCe1XTWgTQRj9ZjZV8a9SPIkKgj8I1bMHsUWrqYLVg4Ue6v9BwZOxSYsIerFao7UiUryIqJcqgtpimhbBXoSCVxUFe9CTiogUrUp2Pt+3aUI2u5vdNh4dmMzOzHvvezuz8xNFM0mjnbXaNu1MvFWRXkXEyE6aYOYJpdW4IXuA4r0fo8qqSMDBU0v1HJUgVieAXxzCsdE/YJTdFcVIZQNMyhruOMJKXYFoLfIfIvVIMWdsrd+Rpd86ZmyzzjJmLStqRn0v8lzkb4rVIXvnpScOJuAn2ACC65FkPzEdEy4TPWRLJ2h7z4cArXzzaOdKlbOvKKX25Wl00jSnrwVxAg3o4dRxhO13RBSdNvH0xSARv3adTXbBdTf64IWO2vH0LT+cv4GR1DJt+DUItaQogeBX/chhbTBxEiZ6gftlDNXTrvT7co4ub5A6gp9HIcHvzTa46OS5fBeP87Qm0fQkr4FsYgVQ7Qg+ZayaDg9jhg1GkWj8RG6lkeSacrrHgDaxdoBiZPg+NXV/KifMuB6//JmYH4CntVEHy/keA6x4h4CU5oFy8GzrBS18cLJMXcljAKB6INjWsRcuZBWVaS3GDrqB7rdapVIeA+isQ57Eev9eCqzqOa81CY05VLd6SamW2wA2H3SiTbnbSxmzfp7WtKZkqy4mdyAlGx7ennghYf8voqp9cLSgKdqNfa6RdRsAAkPwRuJZNbpByn+RrJi1RXTwdi8RQF6ymDwGMAtZ6TVE+4uoKh+MYkcLsT0Hk8eAienbiGdjJHZTpmNjlbFJNKDVAp2fJlYju6IreQxQ08UJDNYdoLSl6AadO+fFuCQqVMB1NJwPm69T04Wv5WhfcWyfXQB+wXRs1pt+nCknRa0LVzSA/2B+a9+zQJadb7IyyV24YAxKp2Jqs3emZTuNnKxsah+uabKbMk7CbTgJx/zIgQYErIeTKRQ9yD9wxVof5YolPHqaWo7TD6tJlh7jQnK5z2n3+fGdggIOx2kaa2YI9QWarc5Ce1ipNWMKeSG4DysFF52KBmTNMmn5HqCFkwy34rDg05gDwgH3bBi+sgFhN/e8QvRn8kbamCOhgrZ9GJhFDgfcMHzFb6BAtjKpFhzTjwv1KCVuxHvCbsSiEz4CANnj84cwHdFXAbAOJ4LTSAawGWFn5tDhLMYz6nWeU2wJfIhmIJBefcd/A5FWQWGgrWzyORZ3Q6HuV+Jf0Bj+BTX69fm1zWgK7By1YTXchFDORywnfQ7GpzOo6S+qECrsx2ifVQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-tip.callout-style-default .callout-title {
+    background-color: #ccf1e3
+  }
+
+  div.callout-caution {
+    border-left-color: #fd7e14 !important;
+  }
+
+  div.callout-caution .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAACV0lEQVRYCdVWzWoUQRCuqp2ICBLJXgITZL1EfQDBW/bkzUMUD7klD+ATSHBEfAIfQO+iXsWDxJsHL96EHAwhgzlkg8nBg25XWb0zIb0zs9muYYWkoKeru+vn664fBqElyZNuyh167NXJ8Ut8McjbmEraKHkd7uAnAFku+VWdb3reSmRV8PKSLfZ0Gjn3a6Xlcq9YGb6tADjn+lUfTXtVmaZ1KwBIvFI11rRXlWlatwIAAv2asaa9mlB9wwygiDX26qaw1yYPzFXg2N1GgG0FMF8Oj+VIx7E/03lHx8UhvYyNZLN7BwSPgekXXLribw7w5/c8EF+DBK5idvDVYtEEwMeYefjjLAdEyQ3M9nfOkgnPTEkYU+sxMq0BxNR6jExrAI31H1rzvLEfRIdgcv1XEdj6QTQAS2wtstEALLG1yEZ3QhH6oDX7ExBSFEkFINXH98NTrme5IOaaA7kIfiu2L8A3qhH9zRbukdCqdsA98TdElyeMe5BI8Rs2xHRIsoTSSVFfCFCWGPn9XHb4cdobRIWABNf0add9jakDjQJpJ1bTXOJXnnRXHRf+dNL1ZV1MBRCXhMbaHqGI1JkKIL7+i8uffuP6wVQAzO7+qVEbF6NbS0LJureYcWXUUhH66nLR5rYmva+2tjRFtojkM2aD76HEGAD3tPtKM309FJg5j/K682ywcWJ3PASCcycH/22u+Bh7Aa0ehM2Fu4z0SAE81HF9RkB21c5bEn4Dzw+/qNOyXr3DCTQDMBOdhi4nAgiFDGCinIa2owCEChUwD8qzd03PG+qdW/4fDzjUMcE1ZpIAAAAASUVORK5CYII=');
+  }
+
+  div.callout-caution.callout-style-default .callout-title {
+    background-color: #ffe5d0
+  }
+
+  </style>
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Lecture 4: Academic Publishing &amp; Refereeing</h1>
+  <p class="subtitle">What makes a great empirical paper · publication process · how to write a referee report</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Prof.&nbsp;Dr.&nbsp;Andre Guettler 
+</div>
+        <p class="quarto-title-affiliation">
+            Institute of Strategic Management and Finance, Ulm University
+          </p>
+    </div>
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Oliver Padmaperuma 
+</div>
+        <p class="quarto-title-affiliation">
+            Institute of Strategic Management and Finance, Ulm University
+          </p>
+    </div>
+</div>
+
+  <p class="date">2025-11-19</p>
+</section>
+<section>
+<section id="what-makes-a-good-empirical-paper" class="title-slide slide level1 section-divider center">
+<h1>1.1 What makes a good empirical paper?</h1>
+
+</section>
+<section id="three-factors" class="slide level2">
+<h2>Three factors</h2>
+<div>
+<ol type="1">
+<li class="fragment"><strong>Contribution</strong></li>
+<li class="fragment"><strong>Identification</strong></li>
+<li class="fragment"><strong>Write-up</strong></li>
+</ol>
+</div>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Journal space is <strong>very scarce</strong> and many great papers compete for it.</li>
+<li>Solid identification and write-up are <strong>necessary</strong> but <strong>not sufficient</strong> for a top publication.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="contribution-i-common-rejection-reasons" class="slide level2">
+<h2>1. Contribution (I) — common rejection reasons</h2>
+<p>Often, submissions get <strong>rejected</strong> because:</p>
+<ul>
+<li>Low <strong>incremental</strong> contribution.</li>
+<li>Overly narrow contribution.</li>
+<li>Results are not very surprising.</li>
+<li>Results have unclear importance.</li>
+</ul>
+<div title="Recommendation">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Recommendation</strong></p>
+</div>
+<div class="callout-content">
+<p><em>Some Reflections on Contribution</em> (Rynes) — available on the course Moodle.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="contribution-ii-sources-of-good-ideas" class="slide level2">
+<h2>1. Contribution (II) — sources of good ideas</h2>
+<div>
+<ul>
+<li class="fragment"><strong>Activity</strong> — frequent interactions with industry experts and academic colleagues are related to the beginning of great research ideas.</li>
+<li class="fragment"><strong>Intuition</strong> — often a <strong>feeling of excitement</strong> rather than logical analysis leads to important research leads.</li>
+<li class="fragment"><strong>Theory</strong> — new pieces of theory or puzzles point towards something that is still poorly understood.</li>
+<li class="fragment"><strong>Real world</strong> — research problems often have an applied flavour, tackling current real-world issues.</li>
+</ul>
+</div>
+</section>
+<section id="contribution-iii-timing" class="slide level2">
+<h2>1. Contribution (III) — timing</h2>
+<ul>
+<li>Contribution of topics <strong>varies over time</strong>.</li>
+<li>Example: banking topics were “hot” during the financial crisis with many insolvent banks and huge public rescue plans.</li>
+<li><em>But:</em> many researchers jump on these hot topics! By the time you finish, the wave has crested.</li>
+</ul>
+</section>
+<section id="contribution-iv-data" class="slide level2">
+<h2>1. Contribution (IV) — data</h2>
+<ul>
+<li>New data sets enable new research questions.</li>
+<li>New data sets allow new identification strategies.</li>
+<li>New (and usually larger) data sets allow better inference.</li>
+</ul>
+</section>
+<section id="identification" class="slide level2">
+<h2>2. Identification</h2>
+<ul>
+<li>Top publications require <strong>very robust identification</strong>.</li>
+<li><strong>Don’t confuse correlation with causality.</strong></li>
+<li>Read state-of-the-art empirical papers.</li>
+<li>Be as close to a <strong>randomized experiment</strong> as possible.</li>
+</ul>
+<div title="Recommendation">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Recommendation</strong></p>
+</div>
+<div class="callout-content">
+<p><em>Mostly Harmless Econometrics: An Empiricist’s Companion</em> — Angrist &amp; Pischke.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="write-up" class="slide level2">
+<h2>3. Write-up</h2>
+<ul>
+<li>Awesome: you put together a set of results!</li>
+<li>The <strong>write-up should be at least as important</strong> as the econometrics.</li>
+<li>Be prepared to rewrite the paper many times.</li>
+<li><strong>Title / Abstract / Introduction</strong> are the most important parts.</li>
+</ul>
+<div title="Recommendation">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Recommendation</strong></p>
+</div>
+<div class="callout-content">
+<p><em>Writing Tips for Ph.D.&nbsp;Students</em> (Cochrane) — available on the course Moodle.</p>
+</div>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="the-publication-process" class="title-slide slide level1 section-divider center">
+<h1>1.2 The publication process</h1>
+
+</section>
+<section id="be-patient-but-learn-now" class="slide level2">
+<h2>Be patient — but learn now</h2>
+<blockquote>
+<p>“You have to learn to be patient.” — “Learn? I want to be patient now!”</p>
+</blockquote>
+<aside class="notes">
+<p>Spend a minute on this — most students underestimate the publication timeline. R&amp;Rs alone can take 12+ months at top journals.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="step-1-find-the-question" class="slide level2">
+<h2>Step 1 — find the question</h2>
+<div>
+<ul>
+<li class="fragment">What are you really interested in?</li>
+<li class="fragment">You need to be <strong>very (!)</strong> interested in the topic — you’ll invest a lot of time in it over the next years.</li>
+<li class="fragment">Read relevant and current literature.</li>
+<li class="fragment"><strong>Nail down a specific contribution</strong> to the existing literature.</li>
+<li class="fragment">Concentrate on <strong>one central research question</strong>.</li>
+</ul>
+</div>
+</section>
+<section id="step-2-write-a-research-proposal" class="slide level2">
+<h2>Step 2 — write a research proposal</h2>
+<ul>
+<li>Compose a <strong>one-page</strong> write-up = research proposal.</li>
+<li>Concentrate on the first two main factors that make a good paper:
+<ol type="1">
+<li>Contribution</li>
+<li>Identification</li>
+</ol></li>
+<li>Is it <strong>feasible</strong> (do you have access to specific data, etc.)?</li>
+</ul>
+</section>
+<section id="step-3-find-coauthors" class="slide level2">
+<h2>Step 3 — find coauthors</h2>
+<div>
+<ul>
+<li class="fragment">Think about suitable <strong>coauthors</strong>.</li>
+<li class="fragment">The coauthor may be your <strong>supervisor(s)</strong>.</li>
+<li class="fragment">Look for other suitable coauthors, especially if your supervisor isn’t close to your research topic:
+<ul>
+<li class="fragment">Attend conferences and connect to people in your area.</li>
+<li class="fragment">Attend seminar series and ask intelligent questions.</li>
+<li class="fragment">Visit good universities.</li>
+</ul></li>
+<li class="fragment">Send your proposal to suitable researchers via email for feedback.
+<ul>
+<li class="fragment">If you get a detailed and nice answer, ask whether they want to work with you.</li>
+<li class="fragment">It is always better to know them personally.</li>
+<li class="fragment"><strong>Risk of being copied!</strong></li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="step-4-discuss-the-proposal" class="slide level2">
+<h2>Step 4 — discuss the proposal</h2>
+<ul>
+<li>Discuss your research proposal with supervisors and other suitable people (fellow students, industry experts).</li>
+<li>Two outcomes:
+<ul>
+<li><strong>Great response</strong> — adjust proposal and move forward.</li>
+<li><strong>Not good enough</strong> — either adjust thoroughly or <strong>stop the project</strong>.</li>
+</ul></li>
+<li>This early you can still stop the project without too much time lost.</li>
+<li>The higher your goals, the stricter you need to be on what projects you undertake.</li>
+</ul>
+</section>
+<section id="step-5-collect-data" class="slide level2">
+<h2>Step 5 — collect data</h2>
+<div>
+<ul>
+<li class="fragment"><strong>Collect</strong>.</li>
+<li class="fragment"><strong>Structure</strong>.</li>
+<li class="fragment"><strong>Clean</strong> — distributional graphs (outliers?), missing data.</li>
+<li class="fragment"><strong>Descriptive analysis</strong> (univariate statistics).</li>
+</ul>
+</div>
+</section>
+<section id="step-6-empirical-analysis" class="slide level2">
+<h2>Step 6 — empirical analysis</h2>
+<ul>
+<li>Run <strong>empirical analyses</strong> according to identification strategy.</li>
+<li>Conduct <strong>robustness checks</strong>.</li>
+<li>Put together results according to your proposal’s story line.</li>
+<li>Discuss results with supervisor and others.</li>
+<li>You need very original (even surprising) and robust results for a top publication (less important for a working-paper version for the dissertation).</li>
+</ul>
+</section>
+<section id="step-7-first-working-paper" class="slide level2">
+<h2>Step 7 — first working paper</h2>
+<ul>
+<li>Write down <strong>first working paper</strong> version.</li>
+<li>Get feedback from supervisor and others.</li>
+<li>It’s a tough world: you’ll realise that few people, if any at all, read your paper.</li>
+<li><strong>Offer to read others’ papers</strong> — and you’ll know more people who read yours.</li>
+</ul>
+</section>
+<section id="step-8-present-and-revise" class="slide level2">
+<h2>Step 8 — present and revise</h2>
+<ul>
+<li>Present the paper (at internal <strong>brown bag seminar</strong>).</li>
+<li>Adjust paper.</li>
+<li>Yes, you need to invest a lot of time revising!</li>
+<li>Invest some money for <strong>professional editing</strong> — most of us aren’t native English speakers.</li>
+</ul>
+</section>
+<section id="step-9-submit-to-conferences" class="slide level2">
+<h2>Step 9 — submit to conferences</h2>
+<ul>
+<li>Submit paper to good finance conferences.</li>
+<li>Good signal to have paper accepted at top finance conferences (<strong>WFA, AFA, EFA, FIRS</strong>) since people know it
+<ul>
+<li>for <strong>international job market</strong> (ASSA);</li>
+<li>for later publication at top journals.</li>
+</ul></li>
+<li>Time-consuming because conferences take place many months after the submission deadline.</li>
+</ul>
+</section>
+<section id="step-10-choose-the-right-journal" class="slide level2">
+<h2>Step 10 — choose the right journal</h2>
+<ul>
+<li><strong>Which journal</strong> fits your paper?</li>
+<li>Which journals do you <strong>cite</strong>? Most relevant publications signal a suitable journal.</li>
+<li>Try to aim <strong>higher</strong> than expected at the beginning. Top-5 finance journals usually need ≤ 3 months for first-round decisions; econ journals often longer.</li>
+<li><strong>Strategic citations</strong>: who are likely referees? Don’t miss citing papers from authors at target journals; check typos in author names.</li>
+</ul>
+</section>
+<section id="top-finance-journals" class="slide level2">
+<h2>Top finance journals</h2>
+<div class="columns">
+<div class="column" style="width:33%;">
+<h3 id="a">A</h3>
+<ul>
+<li>Journal of Finance</li>
+<li>Review of Financial Studies</li>
+<li>Journal of Financial Economics</li>
+</ul>
+</div><div class="column" style="width:33%;">
+<h3 id="a-1">A−</h3>
+<ul>
+<li>Review of Finance</li>
+<li>Journal of Financial and Quantitative Analysis</li>
+<li>Management Science</li>
+</ul>
+</div><div class="column" style="width:34%;">
+<h3 id="b">B</h3>
+<ul>
+<li>Journal of Banking and Finance</li>
+<li>Journal of Financial Intermediation</li>
+<li>Journal of Money, Credit and Banking</li>
+<li>Journal of Empirical Finance</li>
+<li>Journal of Financial Services Research</li>
+</ul>
+</div></div>
+<div title="Caveats">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Caveats</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>The B list is not comprehensive — those listed are most relevant for Banking, Financial Intermediation, and general Finance.</li>
+<li>Country-specific differences in journal perception.</li>
+<li>Steady increase of new journals — including very good ones (e.g., RFS sub-journals for corporate finance and asset pricing) but mostly journals that are not read.</li>
+<li>Open-source journals can be a good alternative (faster, cheaper) but often not in rankings.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="top-econ-journals-handelsblatt-ranking" class="slide level2">
+<h2>Top econ journals (Handelsblatt ranking)</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="a-2">A</h3>
+<ul>
+<li>American Economic Review</li>
+<li>Econometrica</li>
+<li>Journal of Political Economy</li>
+<li>Quarterly Journal of Economics</li>
+<li>Review of Economic Studies</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<h3 id="a-3">A−</h3>
+<ul>
+<li>Bell Journal of Economics</li>
+<li>Econometric Theory</li>
+<li>European Economic Review</li>
+<li>Games and Economic Behavior</li>
+<li>International Economic Review</li>
+<li>Journal of Business and Economic Statistics</li>
+<li>Journal of Econometrics</li>
+<li>Journal of Economic Theory</li>
+<li>Journal of Finance</li>
+<li>Journal of International Economics</li>
+<li>Journal of Labor Economics</li>
+<li>Journal of Monetary Economics</li>
+<li>Journal of Public Economics</li>
+<li>Journal of the American Statistical Association</li>
+<li>Journal of the European Economic Association</li>
+<li>Rand Journal of Economics</li>
+<li>Review of Economics and Statistics</li>
+</ul>
+</div></div>
+</section>
+<section id="top-10-journals-eigenfactor-scores" class="slide level2">
+<h2>Top 10 journals — Eigenfactor Scores</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Journal</th>
+<th>Eigenfactor</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>American Economic Review</td>
+<td>0.1014</td>
+</tr>
+<tr class="even">
+<td>Journal of Finance</td>
+<td>0.0614</td>
+</tr>
+<tr class="odd">
+<td>Journal of Financial Economics</td>
+<td>0.0534</td>
+</tr>
+<tr class="even">
+<td>Quarterly Journal of Economics</td>
+<td>0.0476</td>
+</tr>
+<tr class="odd">
+<td>Review of Financial Studies</td>
+<td>0.0475</td>
+</tr>
+<tr class="even">
+<td>Econometrica</td>
+<td>0.0461</td>
+</tr>
+<tr class="odd">
+<td>Journal of Econometrics</td>
+<td>0.0377</td>
+</tr>
+<tr class="even">
+<td>Journal of Political Economy</td>
+<td>0.0364</td>
+</tr>
+<tr class="odd">
+<td>Review of Economic Studies</td>
+<td>0.0328</td>
+</tr>
+<tr class="even">
+<td>Review of Economics and Statistics</td>
+<td>0.0289</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><em>Source:</em> JCR, Year and Edition: 2010 Social Science.</p>
+</blockquote>
+</section>
+<section id="bad-outcome-rejection" class="slide level2">
+<h2>Bad outcome — rejection</h2>
+<div>
+<ul>
+<li class="fragment">Your paper is rejected.</li>
+<li class="fragment"><strong>Don’t be upset and don’t take it personal!</strong></li>
+<li class="fragment">Rejection rates are <strong>very high</strong> at top journals.</li>
+<li class="fragment">The average top paper collects several rejections as well!</li>
+<li class="fragment">Try to identify suggestions that are feasible and justified, do additional analyses, rewrite, submit to the next suitable journal.</li>
+<li class="fragment">Nice editors might recommend a suitable journal.</li>
+<li class="fragment">Sometimes you get a crappy report that is not helpful at all — just submit to the next journal.</li>
+</ul>
+</div>
+</section>
+<section id="good-outcome-i-revise-resubmit" class="slide level2">
+<h2>Good outcome (I) — Revise &amp; Resubmit</h2>
+<div>
+<ul>
+<li class="fragment">Your paper received a <strong>revise &amp; resubmit</strong>.</li>
+<li class="fragment">Congratulations! You made it into the next round.</li>
+<li class="fragment"><strong>Strategy:</strong> address as many of the referees’ suggestions as possible.</li>
+<li class="fragment">These guys are the <strong>gatekeepers!</strong></li>
+<li class="fragment">Do the additional tests and <strong>pray that your main results hold!</strong></li>
+</ul>
+</div>
+</section>
+<section id="good-outcome-ii-write-the-response" class="slide level2">
+<h2>Good outcome (II) — write the response</h2>
+<ul>
+<li>Rewrite your paper and put together a response to the referee(s).</li>
+<li>Copy their comments into the response.</li>
+<li>Add your response after each issue.</li>
+<li>Link to new tables in the paper.</li>
+<li>Most often you cannot put <strong>all</strong> the new results into the paper.</li>
+<li>Put these tables into the report to the referee(s) — referees like you being explicit and transparent about new results!</li>
+</ul>
+</section>
+<section id="good-outcome-iii-disagreements" class="slide level2">
+<h2>Good outcome (III) — disagreements</h2>
+<ul>
+<li>A major R&amp;R can be as time-consuming as writing the first version.</li>
+<li>You may not always agree with some of the referee’s suggestions.</li>
+<li>You should still try to address them in a <strong>polite</strong> way.</li>
+<li>It can be <strong>risky</strong> to argue with a referee.</li>
+<li>If the editor highlights some issues: put extra effort into addressing them. <strong>At the end, the editor decides which paper gets published!</strong></li>
+</ul>
+</section>
+<section id="acceptance" class="slide level2">
+<h2>Acceptance</h2>
+<ul>
+<li>After acceptance, the journal requests the Word/TeX files and original files for graphs.</li>
+<li>You’ll get a <strong>proof</strong> that needs to be cross-checked.</li>
+<li>Usually your paper appears online at the journal’s website before the print publication (you can cite by journal name &amp; <strong>forthcoming</strong>).</li>
+<li>If you don’t receive the proof or don’t see your paper online soon after returning the proof — <strong>write the journal and ask what is going on!</strong></li>
+<li>Often you also need to provide your <strong>code and data</strong>.</li>
+</ul>
+</section></section>
+<section>
+<section id="referee-reports" class="title-slide slide level1 section-divider center">
+<h1>1.3 Referee reports</h1>
+
+</section>
+<section id="how-to-assess-whether-a-paper-is-good-or-bad" class="slide level2">
+<h2>How to assess whether a paper is good or bad</h2>
+<p>The structure of a referee report:</p>
+<ol type="1">
+<li><strong>Summary</strong></li>
+<li><strong>Major issues</strong></li>
+<li><strong>Minor issues</strong></li>
+</ol>
+</section>
+<section id="referee-report-1.-summary" class="slide level2">
+<h2>Referee report — 1. Summary</h2>
+<p>Write a short summary of the paper using <strong>your own words</strong>:</p>
+<ul>
+<li>What is the question asked by the author?</li>
+<li>What is the identification strategy?</li>
+<li>What data is used?</li>
+<li>How is the hypothesis formulated and tested?</li>
+<li>What are the results?</li>
+</ul>
+<blockquote>
+<p>The purpose of this section is to summarise the paper for the editor in a way that lets him understand the essence of the paper and its contribution, <strong>without having to read it</strong>.</p>
+</blockquote>
+</section>
+<section id="referee-report-2.-major-issues-i" class="slide level2">
+<h2>Referee report — 2. Major issues (I)</h2>
+<ul>
+<li>Take 3 or 4 major <strong>negative (or positive)</strong> points that you have on the paper, one at a time.</li>
+<li>To do this, check carefully: the question, the theory/model, the link to the empirical analysis, the presentation of the data, the econometric analysis, and the results.</li>
+<li>Below is a checklist of the kinds of questions you should ask yourself.</li>
+</ul>
+</section>
+<section id="referee-report-2.-major-issues-ii" class="slide level2">
+<h2>Referee report — 2. Major issues (II)</h2>
+<ul>
+<li>For a <strong>positive</strong> point, argue why the question is particularly important, the approach novel, the techniques new, the identification strategy innovative, the data unusual, etc.</li>
+<li>For a <strong>negative</strong> point, you are often looking for <strong>lack of correspondence</strong> between:
+<ul>
+<li>the idea and the model,</li>
+<li>the model and the empiricism,</li>
+<li>the empirical strategy and the conclusion.</li>
+</ul></li>
+</ul>
+</section>
+<section id="referee-report-2.-major-issues-iii" class="slide level2">
+<h2>Referee report — 2. Major issues (III)</h2>
+<ul>
+<li>Another argument for rejecting a paper is when the paper has nothing wrong but is <strong>boring and not new in any way</strong>. If this is one of your points, refer to other works to show why this is all well known and already done.</li>
+<li><strong>Your main job:</strong>
+<ul>
+<li>Find the most related papers and check whether the paper you assess is <strong>better / worse</strong> than the existing literature.</li>
+<li>Often, there are only a few very related papers.</li>
+</ul></li>
+</ul>
+</section>
+<section id="referee-report-3.-minor-issues" class="slide level2">
+<h2>Referee report — 3. Minor issues</h2>
+<p>Usually, if you have major criticisms about a paper that lead you to recommend rejection, you don’t even need to do a section on less important issues.</p>
+<p>However, hopefully the papers you’ll be reading are not so bad — and you may have some less important though useful suggestions to improve the paper.</p>
+</section>
+<section id="referee-checklist-i-the-question-identification" class="slide level2">
+<h2>Referee checklist (I) — the question &amp; identification</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="the-question">The question</h3>
+<ul>
+<li>Is the topic clearly explained? Could the question be made more <strong>precise</strong>?</li>
+<li>Does the author do a good job of <strong>motivating</strong> the question in the introduction?</li>
+<li>Is the answer to the question <strong>obvious in advance</strong>?</li>
+<li>Is the question <strong>original</strong>? What is the contribution of the paper? Does the author pose a question of reasonable scope?</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<h3 id="identification-strategy">Identification strategy</h3>
+<ul>
+<li>Is the identification strategy clearly explained, including the source of variation (e.g., fixed effects, instruments)?</li>
+<li>Does the author address <strong>endogeneity</strong> concerns (reverse causality, omitted variables)?</li>
+<li>Are assumptions about error terms justified (uncorrelated with regressors)?</li>
+<li>Is the strategy <strong>robust</strong> to alternatives (different controls, specifications)?</li>
+<li>Does it convincingly identify causal effects rather than mere correlations?</li>
+</ul>
+</div></div>
+</section>
+<section id="referee-checklist-ii-the-data" class="slide level2">
+<h2>Referee checklist (II) — the data</h2>
+<ul>
+<li>Does the author present a <strong>clear description</strong> of the data?</li>
+<li>Does the author’s choice of dataset seem <strong>well-suited</strong> to answering the question?</li>
+<li>If you had to <strong>replicate</strong> the author’s study five years from now, is there sufficient information about the source of the data and the sample used?</li>
+<li>Does the author discuss issues that may affect the estimation strategy: random sample? known sources of measurement error? cross-sectional dependence in panels?</li>
+<li>Does the author present <strong>summary statistics</strong>, and make good use of them to motivate the question or specific aspects of the analysis?</li>
+</ul>
+</section>
+<section id="referee-checklist-iii-econometric-analysis" class="slide level2">
+<h2>Referee checklist (III) — econometric analysis</h2>
+<ul>
+<li>Are the econometric techniques <strong>well-suited</strong> to the problem at hand?</li>
+<li>What are the properties of the estimators employed? Are issues regarding these properties adequately addressed?</li>
+<li>Is the econometric analysis <strong>carefully done and reported</strong>?</li>
+<li>Have <strong>alternative specifications</strong> been tried and compared, when necessary?</li>
+<li>Is the issue of <strong>robustness</strong> of the results addressed?</li>
+<li>What test statistics does the author employ? Do they answer the question?</li>
+</ul>
+</section>
+<section id="referee-checklist-iv-results-conclusion" class="slide level2">
+<h2>Referee checklist (IV) — results &amp; conclusion</h2>
+<ul>
+<li>Are the results <strong>clearly stated and presented</strong>?</li>
+<li>Are they used in some interesting way (beyond quoting the value of the parameters and their standard errors)?</li>
+<li>Are the results <strong>related back to the question</strong>?</li>
+<li>Are appropriate <strong>caveats</strong> mentioned?</li>
+<li>Do the conclusions concisely summarise the main points of the paper?</li>
+<li>Are the conclusions <strong>well-supported</strong> by the evidence?</li>
+<li><strong>Are you convinced?</strong> What did you learn from this paper?</li>
+</ul>
+</section></section>
+<section>
+<section id="discussion-of-assignment-ii" class="title-slide slide level1 section-divider center">
+<h1>1.4 Discussion of Assignment II</h1>
+
+</section>
+<section id="assignment-ii-create-a-referee-report" class="slide level2">
+<h2>Assignment II — Create a referee report</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="what">What</h3>
+<ul>
+<li>Attend the mandatory <strong>Brown Bag Seminar on 20 January 2026 (13:30 to 16:00)</strong> and select <strong>one doctoral presentation</strong> to critique, applying the writing, publishing, and refereeing tips from the course to practice thesis-level analysis.</li>
+</ul>
+<p><strong>You must submit ONLY one file:</strong></p>
+<ul>
+<li>One <strong>2.5–3 page report</strong> in academic referee style, focusing on the presentation’s contribution to the literature and your judgment of its empirical strategy.</li>
+<li>Key tasks: summarise the presentation’s main ideas; evaluate novelty vs existing literature; assess empirical methods (identification, robustness); discuss implications, strengths, weaknesses, limitations, and improvements.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<h3 id="how">How</h3>
+<ul>
+<li>Work in <strong>teams of up to 5</strong> students.</li>
+<li>You’ll receive the PDF of the presentation and the working paper. Sometimes there is no working paper available; in that case base your report <strong>solely on the presentation</strong>.</li>
+<li><strong>Grading:</strong> this report accounts for <strong>50%</strong> of your grade — depth of analysis (contribution and empirical aspects), writing quality (concise, organised, skim-friendly), and originality of insights.</li>
+<li><strong>Deadline:</strong> Submit your review as a PDF via email to <a href="mailto:oliver.padmaperuma@uni-ulm.de">oliver.padmaperuma@uni-ulm.de</a>, with <a href="mailto:andre.guettler@uni-ulm.de">andre.guettler@uni-ulm.de</a> in CC by <strong>3 February 2026</strong>, including your name and the title of the chosen presentation in the document.</li>
+<li><strong>11 pt Times New Roman, 1.5 spaced.</strong></li>
+</ul>
+</div></div>
+</section></section>
+<section>
+<section id="conclusion-of-lecture-4" class="title-slide slide level1 section-divider center">
+<h1>Conclusion of Lecture 4</h1>
+
+</section>
+<section id="topics-covered-today" class="slide level2">
+<h2>Topics covered today</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>What makes a good empirical paper</li>
+<li>The publication process (Steps 1–10)</li>
+<li>Top finance and economics journals</li>
+<li>Bad outcome: rejection</li>
+<li>Good outcome: revise &amp; resubmit</li>
+<li>Acceptance procedure</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>How to write a referee report</li>
+<li>Summary, major issues, minor issues</li>
+<li>Referee checklist
+<ul>
+<li>The question</li>
+<li>Identification strategy</li>
+<li>Data</li>
+<li>Econometric analysis</li>
+<li>Results &amp; conclusion</li>
+</ul></li>
+<li>Assignment II briefing</li>
+</ul>
+</div></div>
+</section>
+<section id="see-you-at-the-brown-bag-seminar" class="slide level2">
+<h2>See you at the Brown Bag Seminar</h2>
+<div title="Reminder">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Reminder</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li><strong>Brown Bag Seminar — 20 January 2026, 13:30 to 16:00.</strong></li>
+<li>Take careful notes on the presentations.</li>
+<li>Pick <strong>one</strong> doctoral talk and apply the four-checklist sections from this lecture.</li>
+<li>Submit your <strong>2.5–3 page</strong> report as a group of up to 5 by <strong>3 February 2026</strong>.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<blockquote>
+<p>Good luck with the problem set — and we look forward to your critical feedback at the seminar!</p>
+</blockquote>
+
+<div class="quarto-auto-generated-content">
+<p><img src="../../../../assets/logos/uulm.svg" class="slide-logo"></p>
+<div class="footer footer-default">
+<p>SMF · Ulm University</p>
+</div>
+</div>
+</section></section>
+    </div>
+  </div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../../../../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../../../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../../../../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../../../../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../../../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../../../../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="../../../../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../../../../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../../../../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../../../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../../../../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true,"width":"normal"},
+'chalkboard': {"buttons":false},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'fade',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1280,
+
+        height: 720,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      const toggleBodyColorMode = (bsSheetEl) => {
+        const mode = bsSheetEl.getAttribute("data-mode");
+        const bodyEl = window.document.querySelector("body");
+        if (mode === "dark") {
+          bodyEl.classList.add("quarto-dark");
+          bodyEl.classList.remove("quarto-light");
+        } else {
+          bodyEl.classList.add("quarto-light");
+          bodyEl.classList.remove("quarto-dark");
+        }
+      }
+      const toggleBodyColorPrimary = () => {
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
+        }
+      }
+      toggleBodyColorPrimary();  
+      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+      tabsets.forEach(function(tabset) {
+        const tabby = new Tabby('#' + tabset.id);
+      });
+      const isCodeAnnotation = (el) => {
+        for (const clz of el.classList) {
+          if (clz.startsWith('code-annotation-')) {                     
+            return true;
+          }
+        }
+        return false;
+      }
+      const onCopySuccess = function(e) {
+        // button target
+        const button = e.trigger;
+        // don't keep focus
+        button.blur();
+        // flash "checked"
+        button.classList.add('code-copy-button-checked');
+        var currentTitle = button.getAttribute("title");
+        button.setAttribute("title", "Copied!");
+        let tooltip;
+        if (window.bootstrap) {
+          button.setAttribute("data-bs-toggle", "tooltip");
+          button.setAttribute("data-bs-placement", "left");
+          button.setAttribute("data-bs-title", "Copied!");
+          tooltip = new bootstrap.Tooltip(button, 
+            { trigger: "manual", 
+              customClass: "code-copy-button-tooltip",
+              offset: [0, -8]});
+          tooltip.show();    
+        }
+        setTimeout(function() {
+          if (tooltip) {
+            tooltip.hide();
+            button.removeAttribute("data-bs-title");
+            button.removeAttribute("data-bs-toggle");
+            button.removeAttribute("data-bs-placement");
+          }
+          button.setAttribute("title", currentTitle);
+          button.classList.remove('code-copy-button-checked');
+        }, 1000);
+        // clear code selection
+        e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
+      });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp("https:\/\/papa-puma\.github\.io\/smaf");
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+        const config = {
+          allowHTML: true,
+          maxWidth: 500,
+          delay: 100,
+          arrow: false,
+          appendTo: function(el) {
+              return el.closest('section.slide') || el.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start',
+        };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
+          config['offset'] = [0,0];
+          config['maxWidth'] = 700;
+        window.tippy(el, config); 
+      }
+      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+      for (var i=0; i<noterefs.length; i++) {
+        const ref = noterefs[i];
+        tippyHover(ref, function() {
+          // use id or data attribute instead here
+          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+          try { href = new URL(href).hash; } catch {}
+          const id = href.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
+        });
+      }
+      const findCites = (el) => {
+        const parentEl = el.parentElement;
+        if (parentEl) {
+          const cites = parentEl.dataset.cites;
+          if (cites) {
+            return {
+              el,
+              cites: cites.split(' ')
+            };
+          } else {
+            return findCites(el.parentElement)
+          }
+        } else {
+          return undefined;
+        }
+      };
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const citeInfo = findCites(ref);
+        if (citeInfo) {
+          tippyHover(citeInfo.el, function() {
+            var popup = window.document.createElement('div');
+            citeInfo.cites.forEach(function(cite) {
+              var citeDiv = window.document.createElement('div');
+              citeDiv.classList.add('hanging-indent');
+              citeDiv.classList.add('csl-entry');
+              var biblioDiv = window.document.getElementById('ref-' + cite);
+              if (biblioDiv) {
+                citeDiv.innerHTML = biblioDiv.innerHTML;
+              }
+              popup.appendChild(citeDiv);
+            });
+            return popup.innerHTML;
+          });
+        }
+      }
+    });
+    </script>
+    
+
+</body></html>

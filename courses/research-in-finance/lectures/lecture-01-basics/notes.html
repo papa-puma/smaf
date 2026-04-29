@@ -1,0 +1,1417 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Institute of Strategic Management and Finance">
+<meta name="author" content="Institute of Strategic Management and Finance">
+<meta name="author" content="Prof.&nbsp;Dr.&nbsp;Andre Guettler">
+<meta name="author" content="Oliver Padmaperuma">
+<meta name="dcterms.date" content="2025-10-29">
+
+<title>Lecture 1: Basics – SMF Teaching</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../../assets/logos/smf.svg" alt="SMF Institute" class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../courses/research-in-finance/index.html"> 
+<span class="menu-text">Research in Finance</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#welcome-to-the-course" id="toc-welcome-to-the-course" class="nav-link active" data-scroll-target="#welcome-to-the-course">Welcome to the course</a></li>
+  <li><a href="#course-objectives-schedule-and-assignments" id="toc-course-objectives-schedule-and-assignments" class="nav-link" data-scroll-target="#course-objectives-schedule-and-assignments">1.1 Course objectives, schedule, and assignments</a>
+  <ul class="collapse">
+  <li><a href="#welcome" id="toc-welcome" class="nav-link" data-scroll-target="#welcome">Welcome</a></li>
+  <li><a href="#course-objective" id="toc-course-objective" class="nav-link" data-scroll-target="#course-objective">Course objective</a></li>
+  <li><a href="#schedule" id="toc-schedule" class="nav-link" data-scroll-target="#schedule">Schedule</a></li>
+  <li><a href="#assignment-i-problem-set-50" id="toc-assignment-i-problem-set-50" class="nav-link" data-scroll-target="#assignment-i-problem-set-50">Assignment I — Problem Set (50%)</a></li>
+  <li><a href="#assignment-ii-referee-report-50" id="toc-assignment-ii-referee-report-50" class="nav-link" data-scroll-target="#assignment-ii-referee-report-50">Assignment II — Referee Report (50%)</a></li>
+  </ul></li>
+  <li><a href="#introduction-to-r" id="toc-introduction-to-r" class="nav-link" data-scroll-target="#introduction-to-r">1.2 Introduction to R</a>
+  <ul class="collapse">
+  <li><a href="#survey-lets-get-to-know-you" id="toc-survey-lets-get-to-know-you" class="nav-link" data-scroll-target="#survey-lets-get-to-know-you">Survey — let’s get to know you</a></li>
+  <li><a href="#why-learn-r" id="toc-why-learn-r" class="nav-link" data-scroll-target="#why-learn-r">Why learn R?</a></li>
+  <li><a href="#what-are-r-and-rstudio" id="toc-what-are-r-and-rstudio" class="nav-link" data-scroll-target="#what-are-r-and-rstudio">What are R and RStudio?</a></li>
+  <li><a href="#installing-r-and-rstudio" id="toc-installing-r-and-rstudio" class="nav-link" data-scroll-target="#installing-r-and-rstudio">Installing R and RStudio</a></li>
+  <li><a href="#rstudio-interface" id="toc-rstudio-interface" class="nav-link" data-scroll-target="#rstudio-interface">RStudio interface</a></li>
+  <li><a href="#writing-code-in-rstudio" id="toc-writing-code-in-rstudio" class="nav-link" data-scroll-target="#writing-code-in-rstudio">Writing code in RStudio</a></li>
+  <li><a href="#setting-the-working-directory" id="toc-setting-the-working-directory" class="nav-link" data-scroll-target="#setting-the-working-directory">Setting the working directory</a></li>
+  <li><a href="#getting-started-running-code" id="toc-getting-started-running-code" class="nav-link" data-scroll-target="#getting-started-running-code">Getting started — running code</a></li>
+  <li><a href="#what-are-packages" id="toc-what-are-packages" class="nav-link" data-scroll-target="#what-are-packages">What are packages?</a></li>
+  <li><a href="#installing-and-loading-packages" id="toc-installing-and-loading-packages" class="nav-link" data-scroll-target="#installing-and-loading-packages">Installing and loading packages</a></li>
+  </ul></li>
+  <li><a href="#live-coding-session-1" id="toc-live-coding-session-1" class="nav-link" data-scroll-target="#live-coding-session-1">1.3 Live Coding Session 1</a>
+  <ul class="collapse">
+  <li><a href="#creating-objects-variables" id="toc-creating-objects-variables" class="nav-link" data-scroll-target="#creating-objects-variables">Creating objects / variables</a></li>
+  <li><a href="#four-data-types-in-r" id="toc-four-data-types-in-r" class="nav-link" data-scroll-target="#four-data-types-in-r">Four data types in R</a></li>
+  <li><a href="#variables-and-basic-operations" id="toc-variables-and-basic-operations" class="nav-link" data-scroll-target="#variables-and-basic-operations">Variables and basic operations</a></li>
+  <li><a href="#five-basic-data-structures" id="toc-five-basic-data-structures" class="nav-link" data-scroll-target="#five-basic-data-structures">Five basic data structures</a></li>
+  <li><a href="#vectors" id="toc-vectors" class="nav-link" data-scroll-target="#vectors">Vectors</a></li>
+  <li><a href="#matrices" id="toc-matrices" class="nav-link" data-scroll-target="#matrices">Matrices</a></li>
+  <li><a href="#data-frames" id="toc-data-frames" class="nav-link" data-scroll-target="#data-frames">Data frames</a></li>
+  <li><a href="#lists" id="toc-lists" class="nav-link" data-scroll-target="#lists">Lists</a></li>
+  <li><a href="#functions" id="toc-functions" class="nav-link" data-scroll-target="#functions">Functions</a></li>
+  <li><a href="#loops" id="toc-loops" class="nav-link" data-scroll-target="#loops">Loops</a></li>
+  <li><a href="#data-import-export-file-types" id="toc-data-import-export-file-types" class="nav-link" data-scroll-target="#data-import-export-file-types">Data import &amp; export — file types</a></li>
+  <li><a href="#data-import-export-examples" id="toc-data-import-export-examples" class="nav-link" data-scroll-target="#data-import-export-examples">Data import &amp; export — examples</a></li>
+  <li><a href="#saving-your-script" id="toc-saving-your-script" class="nav-link" data-scroll-target="#saving-your-script">Saving your script</a></li>
+  <li><a href="#closing-an-r-session" id="toc-closing-an-r-session" class="nav-link" data-scroll-target="#closing-an-r-session">Closing an R session</a></li>
+  </ul></li>
+  <li><a href="#conclusion-of-lecture-1" id="toc-conclusion-of-lecture-1" class="nav-link" data-scroll-target="#conclusion-of-lecture-1">1.4 Conclusion of Lecture 1</a>
+  <ul class="collapse">
+  <li><a href="#topics-covered-today" id="toc-topics-covered-today" class="nav-link" data-scroll-target="#topics-covered-today">Topics covered today</a></li>
+  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading">Further reading</a></li>
+  <li><a href="#prepare-before-next-lecture" id="toc-prepare-before-next-lecture" class="nav-link" data-scroll-target="#prepare-before-next-lecture">Prepare before next lecture</a></li>
+  <li><a href="#see-you-next-time" id="toc-see-you-next-time" class="nav-link" data-scroll-target="#see-you-next-time">See you next time</a></li>
+  </ul></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="slides.html"><i class="bi bi-file-slides"></i>RevealJS</a></li><li><a href="slides-handout.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Lecture 1: Basics</h1>
+<p class="subtitle lead">Course objectives, schedule, assignments · Introduction to R · Live coding</p>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Prof.&nbsp;Dr.&nbsp;Andre Guettler </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Institute of Strategic Management and Finance, Ulm University
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Oliver Padmaperuma </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Institute of Strategic Management and Finance, Ulm University
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 29, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="welcome-to-the-course" class="level2 section-divider">
+<h2 class="section-divider anchored" data-anchor-id="welcome-to-the-course">Welcome to the course</h2>
+<div class="callout callout-style-default callout-note callout-titled" title="Today's roadmap">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Today’s roadmap
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><strong>Course logistics</strong> — objectives, schedule, grading, registration.</li>
+<li><strong>Why R?</strong> — and how RStudio fits in.</li>
+<li><strong>Live coding</strong> — the building blocks of R.</li>
+<li><strong>Wrap-up</strong> — what to prepare before Lecture 2.</li>
+</ol>
+</div>
+</div>
+<div class="notes">
+<p>Open with the survey and a short round of intros: who has used R, who has used Python, who has never coded.</p>
+</div>
+</section>
+<section id="course-objectives-schedule-and-assignments" class="level1 section-divider">
+<h1 class="section-divider">1.1 Course objectives, schedule, and assignments</h1>
+<section id="welcome" class="level2">
+<h2 class="anchored" data-anchor-id="welcome">Welcome</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><strong>Prof.&nbsp;Dr.&nbsp;Andre Guettler</strong> · Director of the Institute Helmholtzstraße 22, Room 205 <a href="mailto:andre.guettler@uni-ulm.de">andre.guettler@uni-ulm.de</a> +49 731 50 31 030</p>
+<p><strong>Oliver Padmaperuma</strong> · Doctoral Candidate Helmholtzstraße 22, Room 203 <a href="mailto:oliver.padmaperuma@uni-ulm.de">oliver.padmaperuma@uni-ulm.de</a> +49 731 50 31 036</p>
+</div><div class="column" style="width:60%;">
+<ul>
+<li><strong>Registration:</strong> register for “exam” <strong>13337</strong> in <code>campusonline</code> by <strong>30 November</strong>. Without registration you cannot submit problem sets or the review.</li>
+<li>Registered students who don’t submit receive a fail grade (5.0).</li>
+<li>Questions are best asked <strong>during or immediately after</strong> class.</li>
+<li>Administrative matters → <a href="mailto:studiensekretariat@uni-ulm.de">studiensekretariat@uni-ulm.de</a>.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="course-objective" class="level2">
+<h2 class="anchored" data-anchor-id="course-objective">Course objective</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Objective</th>
+<th>Approach</th>
+<th>Assignments</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Equip students with the practical toolkit and conceptual grounding for empirical finance research</td>
+<td>Four lectures + Brown Bag Seminar; weekly live coding in R; LaTeX/Overleaf for write-up</td>
+<td>50% group problem set (R + LaTeX); 50% individual referee report</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="schedule" class="level2">
+<h2 class="anchored" data-anchor-id="schedule">Schedule</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Lecture 1</th>
+<th>Lecture 2</th>
+<th>Lecture 3</th>
+<th>Lecture 4</th>
+<th>Brown Bag Seminar</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Date</strong></td>
+<td>29.10.2025</td>
+<td>05.11.2025</td>
+<td>12.11.2025</td>
+<td>19.11.2025</td>
+<td>20.01.2026</td>
+</tr>
+<tr class="even">
+<td><strong>Theme</strong></td>
+<td>Course intro &amp; R fundamentals</td>
+<td>R Data Handling &amp; Visualization</td>
+<td>Statistical Analysis using R</td>
+<td>Academic Publishing process</td>
+<td>Apply tips to a doctoral talk</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="assignment-i-problem-set-50" class="level2">
+<h2 class="anchored" data-anchor-id="assignment-i-problem-set-50">Assignment I — Problem Set (50%)</h2>
+<ul>
+<li>Solve the problem set posted on Moodle, building on Lectures 1–3.</li>
+<li>Submit <strong>two files</strong> as a group of up to <strong>5</strong> students:
+<ol type="1">
+<li>one well-commented <code>.R</code> script (efficient, meaningful variable names, no needless loops);</li>
+<li>one PDF compiled from the Overleaf template (plots, captions, LaTeX tables, written text).</li>
+</ol></li>
+<li><strong>Deadline:</strong> 19 January 2026 (midnight). Email to <a href="mailto:oliver.padmaperuma@uni-ulm.de">oliver.padmaperuma@uni-ulm.de</a>, CC <a href="mailto:andre.guettler@uni-ulm.de">andre.guettler@uni-ulm.de</a>.</li>
+<li>File / subject pattern: <code>RiF2025_ProblemSet_surname1_surname2_...</code></li>
+</ul>
+</section>
+<section id="assignment-ii-referee-report-50" class="level2">
+<h2 class="anchored" data-anchor-id="assignment-ii-referee-report-50">Assignment II — Referee Report (50%)</h2>
+<ul>
+<li><strong>Attend the mandatory Brown Bag Seminar on 20 January 2026, 13:30–16:00.</strong></li>
+<li>Pick one doctoral presentation, apply the writing/publishing/refereeing tips from the course.</li>
+<li>Submit one 2.5–3 page PDF report (academic referee style) per group of up to <strong>5</strong>.</li>
+<li><strong>Deadline:</strong> 3 February 2026. Email to <a href="mailto:oliver.padmaperuma@uni-ulm.de">oliver.padmaperuma@uni-ulm.de</a>, CC <a href="mailto:andre.guettler@uni-ulm.de">andre.guettler@uni-ulm.de</a>.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Any questions before we begin?">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Any questions before we begin?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Now is the moment.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="introduction-to-r" class="level1 section-divider">
+<h1 class="section-divider">1.2 Introduction to R</h1>
+<section id="survey-lets-get-to-know-you" class="level2">
+<h2 class="anchored" data-anchor-id="survey-lets-get-to-know-you">Survey — let’s get to know you</h2>
+<div class="notes">
+<p>Mentimeter survey: study program, prior coding proficiency. Use the results to calibrate pace.</p>
+</div>
+<blockquote class="blockquote">
+<p>Open the Mentimeter link shared in class.</p>
+</blockquote>
+</section>
+<section id="why-learn-r" class="level2">
+<h2 class="anchored" data-anchor-id="why-learn-r">Why learn R?</h2>
+<ul>
+<li>It’s <strong>free and open-source</strong>.</li>
+<li>A powerful tool for <strong>data analysis and graphics</strong>.</li>
+<li>R code is great for <strong>reproducibility and shareability</strong> — submit your script and anyone can re-run your results.</li>
+<li>A <strong>large, active community</strong> continuously extends R via <strong>packages</strong>.</li>
+</ul>
+</section>
+<section id="what-are-r-and-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="what-are-r-and-rstudio">What are R and RStudio?</h2>
+<ul>
+<li><strong>R is a programming language</strong> for statistical computing, data analytics, and scientific research. It is one of the most widely used languages by statisticians and researchers to manage, manipulate, analyze, and visualize data.</li>
+<li><strong>RStudio</strong> is an integrated development environment (IDE) for R that makes interaction with R easier — code completion, debugging, project management, plot viewing.</li>
+<li>In 2022 RStudio was rebranded <strong>Posit</strong> to signal its move toward language-agnostic tooling.</li>
+<li><strong>You must install R first</strong>, then RStudio.</li>
+</ul>
+</section>
+<section id="installing-r-and-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="installing-r-and-rstudio">Installing R and RStudio</h2>
+<div class="incremental">
+<ol class="incremental" type="1">
+<li>Go to <a href="https://cran.r-project.org/" class="uri">https://cran.r-project.org/</a> and click <strong>Download R for Windows / macOS</strong>.</li>
+<li>Click <strong>base</strong> subdirectory.</li>
+<li>Click <strong>Download R-x.x.x for Windows</strong> and run the <code>.exe</code>. Accept defaults.</li>
+<li>Go to <a href="https://posit.co/download/rstudio-desktop" class="uri">https://posit.co/download/rstudio-desktop</a> and click <strong>Download RStudio</strong>.</li>
+<li>Run the RStudio installer.</li>
+</ol>
+</div>
+</section>
+<section id="rstudio-interface" class="level2">
+<h2 class="anchored" data-anchor-id="rstudio-interface">RStudio interface</h2>
+<p>Three main panes when you open RStudio:</p>
+<ol type="1">
+<li><strong>Console</strong> — where R code is executed.</li>
+<li><strong>Global Environment / History</strong> — your in-memory objects.</li>
+<li><strong>Files / Plots / Packages / Help / Viewer</strong> — the swiss-army-knife pane.</li>
+</ol>
+<!-- TODO: figure from PDF p.16 — RStudio interface screenshot showing the three panes; recreate or import as image into images/ -->
+</section>
+<section id="writing-code-in-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="writing-code-in-rstudio">Writing code in RStudio</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<section id="script-editor" class="level3">
+<h3 class="anchored" data-anchor-id="script-editor">Script Editor</h3>
+<ul>
+<li>Load and save <code>.R</code> scripts.</li>
+<li>Keeps a record of your analysis — show others how it was run, repeat later.</li>
+<li>Edit code without accidentally running it.</li>
+</ul>
+</section>
+</div><div class="column" style="width:50%;">
+<section id="console" class="level3">
+<h3 class="anchored" data-anchor-id="console">Console</h3>
+<ul>
+<li>Where R code is <strong>executed</strong>.</li>
+<li>You can also run code interactively here, but it is <strong>NOT</strong> saved on disk.</li>
+<li>See output and errors directly.</li>
+</ul>
+</section>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Best practice">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Best practice
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Write and run code through the <strong>Script Editor</strong>. Use the Console only for quick exploration.</p>
+</div>
+</div>
+</section>
+<section id="setting-the-working-directory" class="level2">
+<h2 class="anchored" data-anchor-id="setting-the-working-directory">Setting the working directory</h2>
+<p>The <strong>working directory</strong> (<code>wd</code>) is where R looks for and saves files.</p>
+<p>Two ways to set it:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Option 1: menu</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Session → Set Working Directory → Choose Directory…</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Option 2: code</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="st">"C:/Users/&lt;you&gt;/Documents/research-in-finance"</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Verify</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">getwd</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="getting-started-running-code" class="level2">
+<h2 class="anchored" data-anchor-id="getting-started-running-code">Getting started — running code</h2>
+<p>The blinking cursor in the Script Editor prompts you to write. The Console shows <code>&gt;</code> when R is ready.</p>
+<p>Four ways to run code:</p>
+<ol type="1">
+<li><strong>Ctrl/Cmd + Enter</strong> — run current line / selection.</li>
+<li>Click <strong>Run</strong>.</li>
+<li><strong>Ctrl + Shift + Enter</strong> — run all lines in the editor.</li>
+<li>Highlight lines and click <strong>Run</strong>.</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled" title="Practice">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Practice
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Type <code>1 + 2*8</code> and <code>log(10)</code>. Result appears in the Console with a leading <code>[1]</code> (the index of the first element on that line).</p>
+</div>
+</div>
+</section>
+<section id="what-are-packages" class="level2">
+<h2 class="anchored" data-anchor-id="what-are-packages">What are packages?</h2>
+<ul>
+<li>Packages <strong>expand</strong> what you can do beyond base R.</li>
+<li>A collection of <strong>functions, data sets, and other R objects</strong> under one name.</li>
+<li>Install from repositories: <strong>CRAN</strong>, GitHub, etc.</li>
+<li>The <strong>Packages</strong> tab lists installed packages; click <strong>Update</strong> to upgrade; the small × uninstalls.</li>
+</ul>
+</section>
+<section id="installing-and-loading-packages" class="level2">
+<h2 class="anchored" data-anchor-id="installing-and-loading-packages">Installing and loading packages</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<section id="installing" class="level3">
+<h3 class="anchored" data-anchor-id="installing">Installing</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># From CRAN (default)</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyquant"</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"Quandl"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Or click <strong>Install</strong> in the Packages tab.</p>
+</section>
+</div><div class="column" style="width:50%;">
+<section id="loading" class="level3">
+<h3 class="anchored" data-anchor-id="loading">Loading</h3>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyquant)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(Quandl)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Or tick the package’s checkbox in the Packages tab.</p>
+</section>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Short exercise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Short exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Install and load the <code>tidyverse</code>, <code>tidyquant</code>, and <code>Quandl</code> packages.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="live-coding-session-1" class="level1 section-divider">
+<h1 class="section-divider">1.3 Live Coding Session 1</h1>
+<section id="creating-objects-variables" class="level2">
+<h2 class="anchored" data-anchor-id="creating-objects-variables">Creating objects / variables</h2>
+<ul>
+<li>Assign with <code>&lt;-</code> (the assignment operator).</li>
+</ul>
+<div class="incremental">
+<ul class="incremental">
+<li>❌ avoid long object names · ✅ be descriptive</li>
+<li>❌ don’t reuse names of existing R functions</li>
+<li>❌ no blank spaces — use <code>_</code> or <code>.</code></li>
+</ul>
+</div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Practice</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">5</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>x <span class="sc">+</span> x   <span class="co"># → [1] 10</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="four-data-types-in-r" class="level2">
+<h2 class="anchored" data-anchor-id="four-data-types-in-r">Four data types in R</h2>
+<ol type="1">
+<li><strong>Numeric</strong> — numbers that may contain decimals.
+<ul>
+<li><strong>Integer</strong> — special case, no decimals (suffix <code>L</code>).</li>
+</ul></li>
+<li><strong>Character</strong> — text (strings); wrap in <code>" "</code>.</li>
+<li><strong>Factor</strong> — special character used for <strong>categorical data</strong> (e.g., male/female, months).</li>
+<li><strong>Logical</strong> — Boolean (<code>TRUE</code> / <code>FALSE</code>).</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled" title="Class lookup">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Class lookup
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><code>class(objectname)</code> returns the higher-level label R uses to decide which functions and behaviors apply (<code>"data.frame"</code>, <code>"factor"</code>, <code>"matrix"</code>, <code>"numeric"</code>).</p>
+</div>
+</div>
+</section>
+<section id="variables-and-basic-operations" class="level2">
+<h2 class="anchored" data-anchor-id="variables-and-basic-operations">Variables and basic operations</h2>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>myNumber  <span class="ot">&lt;-</span> <span class="dv">3</span>                                   <span class="co"># numeric (default)</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>myInteger <span class="ot">&lt;-</span> <span class="dv">10</span>L                                 <span class="co"># integer ('L' suffix)</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>myText    <span class="ot">&lt;-</span> <span class="st">"Some sentence..."</span>                  <span class="co"># character</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>myFactor  <span class="ot">&lt;-</span> <span class="fu">factor</span>(<span class="fu">c</span>(<span class="st">"red"</span>, <span class="st">"blue"</span>, <span class="st">"red"</span>, <span class="st">"green"</span>))  <span class="co"># factor</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(myFactor)                                 <span class="co"># "blue" "green" "red"</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>myLogical <span class="ot">&lt;-</span> <span class="cn">TRUE</span>                                <span class="co"># logical</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<blockquote class="blockquote">
+<p><strong>Why:</strong> assign and compute financial metrics — returns, prices, ratios — quickly during empirical work.</p>
+</blockquote>
+</section>
+<section id="five-basic-data-structures" class="level2">
+<h2 class="anchored" data-anchor-id="five-basic-data-structures">Five basic data structures</h2>
+<ol type="1">
+<li><strong>Individual values</strong> — single scalars.</li>
+<li><strong>Vectors</strong> — ordered collections of elements (one type only).</li>
+<li><strong>Matrices</strong> — 2D arrays; rows × columns; one type only.</li>
+<li><strong>Data frames</strong> — like spreadsheets; columns can have <strong>different types</strong>.</li>
+<li><strong>Lists</strong> — flexible containers that can hold vectors, matrices, data frames, even other lists.</li>
+</ol>
+</section>
+<section id="vectors" class="level2">
+<h2 class="anchored" data-anchor-id="vectors">Vectors</h2>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>myVector <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">3</span>, <span class="dv">4</span>, <span class="sc">-</span><span class="fl">1.1</span>, pi)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Inspect / aggregate</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>myVector[<span class="dv">3</span>]        <span class="co"># third element: -1.1</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(myVector)   <span class="co"># 4</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(myVector)      <span class="co"># ~9.04</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(myVector)     <span class="co"># ~2.26</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="fu">var</span>(myVector)      <span class="co"># ~5.21</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="fu">sort</span>(myVector)     <span class="co"># ascending: -1.1, 3.0, 3.14, 4.0</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="fu">quantile</span>(myVector, <span class="fu">c</span>(<span class="fl">0.1</span>, <span class="fl">0.25</span>, <span class="fl">0.95</span>))</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Vectorized arithmetic — no loops needed</span></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>myVector <span class="sc">+</span> <span class="dv">2</span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>myVector <span class="sc">*</span> myVector</span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Coercion: mixed types collapse to character</span></span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>mixed <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="st">"two"</span>, <span class="cn">TRUE</span>)   <span class="co"># "1" "two" "TRUE"</span></span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Named vectors</span></span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>namedVec <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="at">apple =</span> <span class="dv">5</span>, <span class="at">banana =</span> <span class="dv">3</span>)</span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>namedVec[<span class="st">"banana"</span>]   <span class="co"># 3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="matrices" class="level2">
+<h2 class="anchored" data-anchor-id="matrices">Matrices</h2>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>myMatrix <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="sc">-</span><span class="dv">9</span>, <span class="dv">5</span>, <span class="dv">0</span>), <span class="at">nrow =</span> <span class="dv">2</span>, <span class="at">byrow =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(myMatrix)              <span class="co"># [1] 2 3</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>myMatrix[<span class="dv">1</span>, <span class="dv">1</span>] <span class="ot">&lt;-</span> <span class="fl">2.1415</span>   <span class="co"># modify cell</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>myMatrix[, <span class="dv">2</span>]              <span class="co"># second column</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Linear algebra</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>anotherMatrix <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="fu">c</span>(<span class="dv">5</span>, <span class="sc">-</span><span class="dv">1</span>, <span class="dv">7</span>, <span class="dv">0</span>, <span class="dv">2</span>, <span class="sc">-</span><span class="dv">1</span>), <span class="at">nrow =</span> <span class="dv">2</span>, <span class="at">byrow =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>transposedMatrix <span class="ot">&lt;-</span> <span class="fu">t</span>(anotherMatrix)</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>matrixProduct    <span class="ot">&lt;-</span> myMatrix <span class="sc">%*%</span> transposedMatrix     <span class="co"># 2x2 product</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>matrixInverse    <span class="ot">&lt;-</span> <span class="fu">solve</span>(matrixProduct)              <span class="co"># inverse</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Aggregations</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a><span class="fu">rowSums</span>(myMatrix)</span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a><span class="fu">colMeans</span>(myMatrix)</span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Bind: combine rows / cols</span></span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a><span class="fu">cbind</span>(myMatrix, <span class="fu">c</span>(<span class="dv">6</span>, <span class="dv">7</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<blockquote class="blockquote">
+<p><strong>Use case:</strong> covariance matrices for portfolio optimization or regressions.</p>
+</blockquote>
+</section>
+<section id="data-frames" class="level2">
+<h2 class="anchored" data-anchor-id="data-frames">Data frames</h2>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>student_name <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Student A"</span>, <span class="st">"Student B"</span>, <span class="st">"Student C"</span>)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>grade        <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">1.7</span>, <span class="fl">2.3</span>, <span class="fl">5.0</span>)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>students     <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(student_name, grade)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>students<span class="sc">$</span>grade                    <span class="co"># column access</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(students)[<span class="dv">2</span>] <span class="ot">&lt;-</span> <span class="st">"exam2021"</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>students[<span class="dv">2</span><span class="sc">:</span><span class="dv">3</span>, ]                   <span class="co"># rows 2-3</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Add columns</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>students<span class="sc">$</span>degree    <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Bachelor"</span>, <span class="st">"Master"</span>, <span class="st">"Bachelor"</span>)</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>students<span class="sc">$</span>pass_fail <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Pass"</span>, <span class="st">"Pass"</span>, <span class="st">"Fail"</span>)</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(students<span class="sc">$</span>degree, students<span class="sc">$</span>pass_fail)</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Summary</span></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(students)</span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Subset by condition</span></span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a><span class="fu">subset</span>(students, exam2021 <span class="sc">&gt;</span> <span class="dv">2</span>)</span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Add row</span></span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>newStudent <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">student_name =</span> <span class="st">"Student D"</span>, <span class="at">exam2021 =</span> <span class="fl">3.5</span>,</span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>                         <span class="at">degree =</span> <span class="st">"PhD"</span>, <span class="at">pass_fail =</span> <span class="st">"Pass"</span>)</span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>students <span class="ot">&lt;-</span> <span class="fu">rbind</span>(students, newStudent)</span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a><span class="co"># Merge with another frame</span></span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>ages   <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">student_name =</span> <span class="fu">c</span>(<span class="st">"Student A"</span>, <span class="st">"Student B"</span>, <span class="st">"Student C"</span>),</span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>                     <span class="at">age =</span> <span class="fu">c</span>(<span class="dv">20</span>, <span class="dv">22</span>, <span class="dv">21</span>))</span>
+<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a>merged <span class="ot">&lt;-</span> <span class="fu">merge</span>(students, ages, <span class="at">by =</span> <span class="st">"student_name"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<blockquote class="blockquote">
+<p><strong>Use case:</strong> organizing prices/dates for thesis-level analysis and merging multiple sources.</p>
+</blockquote>
+</section>
+<section id="lists" class="level2">
+<h2 class="anchored" data-anchor-id="lists">Lists</h2>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>scoresList <span class="ot">&lt;-</span> <span class="fu">list</span>(</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">scores =</span> <span class="fu">c</span>(<span class="dv">95</span>, <span class="dv">85</span>, <span class="dv">92</span>),</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">names  =</span> <span class="fu">c</span>(<span class="st">"Alice"</span>, <span class="st">"Bob"</span>, <span class="st">"Carol"</span>),</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">passed =</span> <span class="fu">c</span>(<span class="cn">TRUE</span>, <span class="cn">TRUE</span>, <span class="cn">FALSE</span>)</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(scoresList)</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>scoresList<span class="sc">$</span>scores[<span class="dv">3</span>] <span class="ot">&lt;-</span> <span class="dv">90</span>               <span class="co"># update Carol's score</span></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>scoresList<span class="sc">$</span>comments  <span class="ot">&lt;-</span> <span class="st">"All passed"</span>     <span class="co"># add element</span></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Nested list</span></span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>nestedList <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="at">course =</span> <span class="st">"Math 101"</span>, <span class="at">details =</span> scoresList)</span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>nestedList<span class="sc">$</span>details<span class="sc">$</span>names[<span class="dv">1</span>]              <span class="co"># "Alice"</span></span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert to data frame (elements need equal length)</span></span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>scoresDF <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(scoresList)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="functions" class="level2">
+<h2 class="anchored" data-anchor-id="functions">Functions</h2>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Define</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>bmiCalc <span class="ot">&lt;-</span> <span class="cf">function</span>(height, weight) {</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  bmi <span class="ot">&lt;-</span> weight <span class="sc">/</span> (height <span class="sc">^</span> <span class="dv">2</span>)</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">round</span>(bmi, <span class="dv">1</span>))</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Call</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>myBmi <span class="ot">&lt;-</span> <span class="fu">bmiCalc</span>(<span class="fl">1.75</span>, <span class="dv">70</span>)   <span class="co"># 22.9</span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Default arguments</span></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>bmiCalcDefault <span class="ot">&lt;-</span> <span class="cf">function</span>(height, <span class="at">weight =</span> <span class="dv">70</span>) {</span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">round</span>(weight <span class="sc">/</span> (height <span class="sc">^</span> <span class="dv">2</span>), <span class="dv">1</span>)</span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a><span class="fu">bmiCalcDefault</span>(<span class="fl">1.75</span>)         <span class="co"># 22.9</span></span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Multiple returns via list</span></span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>bmiAdvanced <span class="ot">&lt;-</span> <span class="cf">function</span>(height, weight) {</span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>  bmi <span class="ot">&lt;-</span> weight <span class="sc">/</span> (height <span class="sc">^</span> <span class="dv">2</span>)</span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a>  category <span class="ot">&lt;-</span> <span class="fu">ifelse</span>(bmi <span class="sc">&lt;</span> <span class="fl">18.5</span>, <span class="st">"Underweight"</span>,</span>
+<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a>                     <span class="fu">ifelse</span>(bmi <span class="sc">&lt;</span> <span class="dv">25</span>, <span class="st">"Normal"</span>, <span class="st">"Overweight"</span>))</span>
+<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">list</span>(<span class="at">bmi =</span> <span class="fu">round</span>(bmi, <span class="dv">1</span>), <span class="at">category =</span> category)</span>
+<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb10-23"><a href="#cb10-23" aria-hidden="true" tabindex="-1"></a>result <span class="ot">&lt;-</span> <span class="fu">bmiAdvanced</span>(<span class="fl">1.75</span>, <span class="dv">70</span>)</span>
+<span id="cb10-24"><a href="#cb10-24" aria-hidden="true" tabindex="-1"></a>result<span class="sc">$</span>bmi        <span class="co"># 22.9</span></span>
+<span id="cb10-25"><a href="#cb10-25" aria-hidden="true" tabindex="-1"></a>result<span class="sc">$</span>category   <span class="co"># "Normal"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<blockquote class="blockquote">
+<p><strong>Use case:</strong> automate repetitive calculations (risk-adjusted returns, simulation models) for efficiency in large datasets.</p>
+</blockquote>
+</section>
+<section id="loops" class="level2">
+<h2 class="anchored" data-anchor-id="loops">Loops</h2>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>nums <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>)</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="co"># For-loop: sum even numbers</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>evenSum <span class="ot">&lt;-</span> <span class="dv">0</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> nums) {</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (i <span class="sc">%%</span> <span class="dv">2</span> <span class="sc">==</span> <span class="dv">0</span>) evenSum <span class="ot">&lt;-</span> evenSum <span class="sc">+</span> i</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>evenSum    <span class="co"># 6</span></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a><span class="co"># While-loop</span></span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>j <span class="ot">&lt;-</span> <span class="dv">1</span></span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> (j <span class="sc">&lt;=</span> <span class="dv">3</span>) {</span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(j)</span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>  j <span class="ot">&lt;-</span> j <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Nested for-loop</span></span>
+<span id="cb11-18"><a href="#cb11-18" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (a <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>) {</span>
+<span id="cb11-19"><a href="#cb11-19" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (b <span class="cf">in</span> <span class="dv">3</span><span class="sc">:</span><span class="dv">4</span>) {</span>
+<span id="cb11-20"><a href="#cb11-20" aria-hidden="true" tabindex="-1"></a>    <span class="fu">print</span>(a <span class="sc">*</span> b)   <span class="co"># 3, 4, 6, 8</span></span>
+<span id="cb11-21"><a href="#cb11-21" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb11-22"><a href="#cb11-22" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Pro tip">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Pro tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>For data-frame operations, <strong>vectorized</strong> alternatives (e.g., <code>apply</code>, <code>dplyr::mutate</code>) are usually faster and clearer than for-loops.</p>
+</div>
+</div>
+</section>
+<section id="data-import-export-file-types" class="level2">
+<h2 class="anchored" data-anchor-id="data-import-export-file-types">Data import &amp; export — file types</h2>
+<p>You will rarely build matrices/data frames by hand. Common ways to <strong>read</strong> data:</p>
+<ul>
+<li><strong>Text</strong> — <code>.TXT</code> (<code>readLines()</code>)</li>
+<li><strong>Tabular</strong> — <code>.CSV</code>, <code>.TSV</code> (<code>read.table()</code>, <code>readr::read_csv()</code>)</li>
+<li><strong>Excel</strong> — <code>.XLSX</code> (<code>xlsx</code>, <code>readxl</code>)</li>
+<li><strong>Google sheets</strong> — <code>googlesheets4</code></li>
+<li><strong>Statistics programs</strong> — SPSS, SAS (<code>haven</code>)</li>
+<li><strong>Databases</strong> — MySQL (<code>RMySQL</code>)</li>
+</ul>
+</section>
+<section id="data-import-export-examples" class="level2">
+<h2 class="anchored" data-anchor-id="data-import-export-examples">Data import &amp; export — examples</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<section id="import" class="level3">
+<h3 class="anchored" data-anchor-id="import">Import</h3>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># CSV</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>objectname <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"your_file.csv"</span>, <span class="at">header =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Tab-delimited</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>objectname <span class="ot">&lt;-</span> <span class="fu">read.table</span>(<span class="st">"your_file.txt"</span>, <span class="at">sep =</span> <span class="st">"</span><span class="sc">\t</span><span class="st">"</span>, <span class="at">header =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Excel</span></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>objectname <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"your_file.xlsx"</span>)</span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a><span class="co"># RDS (R single-object binary)</span></span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>objectname <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="st">"your_file.rds"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</div><div class="column" style="width:50%;">
+<section id="export" class="level3">
+<h3 class="anchored" data-anchor-id="export">Export</h3>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># CSV</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(objectname, <span class="at">file =</span> <span class="st">"output_file.csv"</span>, <span class="at">row.names =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Tab-delimited</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="fu">write.table</span>(objectname, <span class="at">file =</span> <span class="st">"output_file.txt"</span>,</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">sep =</span> <span class="st">"</span><span class="sc">\t</span><span class="st">"</span>, <span class="at">row.names =</span> <span class="cn">FALSE</span>, <span class="at">col.names =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Excel</span></span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(writexl)</span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a><span class="fu">write_xlsx</span>(objectname, <span class="st">"output_file.xlsx"</span>)</span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a><span class="co"># RDS</span></span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a><span class="fu">saveRDS</span>(objectname, <span class="at">file =</span> <span class="st">"output_file.rds"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Separators">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Separators
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The argument <code>sep =</code> may not be necessary — R recognises <code>,</code> in <code>.csv</code> and whitespace in <code>.txt</code>. But sometimes R won’t read correctly unless you specify it.</p>
+</div>
+</div>
+</section>
+<section id="saving-your-script" class="level2">
+<h2 class="anchored" data-anchor-id="saving-your-script">Saving your script</h2>
+<ol type="1">
+<li>Save every step in an <code>.R</code> script. Comment lines start with <code>#</code> and are ignored at run time.</li>
+<li><strong>File → Save</strong>, or click the disk icon, or <strong>Ctrl/Cmd + S</strong>.</li>
+<li>Unsaved scripts (or unsaved edits) show <strong>red text and an asterisk</strong> in the tab name.</li>
+</ol>
+</section>
+<section id="closing-an-r-session" class="level2">
+<h2 class="anchored" data-anchor-id="closing-an-r-session">Closing an R session</h2>
+<p>Three ways to close RStudio:</p>
+<ol type="1">
+<li><strong>File → Quit Session</strong></li>
+<li>The red ✕ in the top-right corner.</li>
+<li>Run <code>q()</code> in the Console.</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled" title="Don't save the workspace image (.RData)">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Don’t save the workspace image (.RData)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Unless (a) you ran something very expensive, or (b) you’re nearly done with the project. Starting clean each session avoids hidden state from previous runs.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="conclusion-of-lecture-1" class="level1 section-divider">
+<h1 class="section-divider">1.4 Conclusion of Lecture 1</h1>
+<section id="topics-covered-today" class="level2">
+<h2 class="anchored" data-anchor-id="topics-covered-today">Topics covered today</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Basic R Functionality</li>
+<li>Variables &amp; Basic Operations</li>
+<li>Vectors</li>
+<li>Matrices</li>
+<li>Data Frames</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>Lists</li>
+<li>Functions</li>
+<li>Loops</li>
+<li>Data Import &amp; Export</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="further-reading" class="level2">
+<h2 class="anchored" data-anchor-id="further-reading">Further reading</h2>
+<ul>
+<li>James, G., Witten, D., Hastie, T., &amp; Tibshirani, R. (2021). <em>An Introduction to Statistical Learning with applications in R</em> (2nd ed.). Springer. Free PDF: <a href="https://www.statlearning.com/" class="uri">https://www.statlearning.com/</a></li>
+<li>Scheuch, C., Voigt, S., &amp; Weiss, P. (2023). <em>Tidy Finance with R</em>. Chapman &amp; Hall/CRC. Free: <a href="https://www.tidy-finance.org/r/" class="uri">https://www.tidy-finance.org/r/</a></li>
+<li>Wickham, H., &amp; Çetinkaya-Rundel, M. (2023). <em>R for Data Science</em> (2nd ed.). O’Reilly. Free: <a href="https://r4ds.hadley.nz/" class="uri">https://r4ds.hadley.nz/</a></li>
+<li>Kaggle Discussions (2021). <em>List of free R books</em>. <a href="https://www.kaggle.com/discussions/general/274029" class="uri">https://www.kaggle.com/discussions/general/274029</a></li>
+</ul>
+</section>
+<section id="prepare-before-next-lecture" class="level2">
+<h2 class="anchored" data-anchor-id="prepare-before-next-lecture">Prepare before next lecture</h2>
+<ol type="1">
+<li><strong>Document today’s code</strong> in a clean way and save as <code>.Rmd</code>.</li>
+<li><strong>Set up the Nasdaq Data Link API:</strong>
+<ol type="1">
+<li>Register a free account at <a href="https://data.nasdaq.com/" class="uri">https://data.nasdaq.com/</a> (formerly Quandl).</li>
+<li>Log in, go to your profile, <strong>copy your personal API key</strong>.</li>
+<li><em>Optional challenge:</em> load the <code>Quandl</code> library, set your key with <code>Quandl.api_key("your_key_here")</code>, and test loading data. We’ll walk through this in Lecture 2.</li>
+</ol></li>
+</ol>
+</section>
+<section id="see-you-next-time" class="level2">
+<h2 class="anchored" data-anchor-id="see-you-next-time">See you next time</h2>
+<div class="callout callout-style-default callout-note callout-titled" title="Reminder">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Reminder
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Register</strong> for “exam” 13337 in <code>campusonline</code> by <strong>30 November 2025</strong>.</li>
+<li>Bring your laptop with R + RStudio installed and the <code>tidyverse</code>, <code>tidyquant</code>, <code>Quandl</code> packages already loaded.</li>
+</ul>
+</div>
+</div>
+<blockquote class="blockquote">
+<p><strong>Lecture 2:</strong> R Data Handling and Visualization — APIs, merging, cleansing, <code>dplyr</code>, <code>ggplot2</code>.</p>
+</blockquote>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/papa-puma\.github\.io\/smaf");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Institute of Strategic Management and Finance · Ulm University</p>
+</div>   
+    <div class="nav-footer-center">
+<p>Prof.&nbsp;Dr.&nbsp;Andre Guettler</p>
+</div>
+    <div class="nav-footer-right">
+<p>Built with <a href="https://quarto.org">Quarto</a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+<script src="../../../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

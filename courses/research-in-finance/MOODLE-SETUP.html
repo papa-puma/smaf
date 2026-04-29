@@ -7,8 +7,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Institute of Strategic Management and Finance">
+<meta name="author" content="Institute of Strategic Management and Finance">
+<meta name="author" content="Prof.&nbsp;Dr.&nbsp;Andre Guettler">
+<meta name="author" content="Oliver Padmaperuma">
 
-<title>SMF Teaching</title>
+<title>moodle-setup – SMF Teaching</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,22 +27,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,15 +74,15 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./assets/logos/smf.svg" alt="SMF Institute" class="navbar-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../assets/logos/smf.svg" alt="SMF Institute" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -89,11 +92,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./courses/research-in-finance/index.html"> 
+    <a class="nav-link" href="../../courses/research-in-finance/index.html"> 
 <span class="menu-text">Research in Finance</span></a>
   </li>  
 </ul>
@@ -112,20 +115,35 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#moodle-setup-research-in-finance-winter-20252026" id="toc-moodle-setup-research-in-finance-winter-20252026" class="nav-link active" data-scroll-target="#moodle-setup-research-in-finance-winter-20252026">Moodle setup — Research in Finance — Winter 2025/2026</a>
+  <ul class="collapse">
+  <li><a href="#topic-course-information" id="toc-topic-course-information" class="nav-link" data-scroll-target="#topic-course-information">Topic: Course information</a></li>
+  <li><a href="#topic-assignments" id="toc-topic-assignments" class="nav-link" data-scroll-target="#topic-assignments">Topic: Assignments</a></li>
+  <li><a href="#topic-week-1-lecture-1-basics" id="toc-topic-week-1-lecture-1-basics" class="nav-link" data-scroll-target="#topic-week-1-lecture-1-basics">Topic: Week 1 — Lecture 1: Basics</a></li>
+  <li><a href="#topic-week-2-lecture-2-data-handling-visualization" id="toc-topic-week-2-lecture-2-data-handling-visualization" class="nav-link" data-scroll-target="#topic-week-2-lecture-2-data-handling-visualization">Topic: Week 2 — Lecture 2: Data Handling &amp; Visualization</a></li>
+  <li><a href="#topic-week-3-lecture-3-statistical-analysis" id="toc-topic-week-3-lecture-3-statistical-analysis" class="nav-link" data-scroll-target="#topic-week-3-lecture-3-statistical-analysis">Topic: Week 3 — Lecture 3: Statistical Analysis</a></li>
+  <li><a href="#topic-week-4-lecture-4-academic-publishing-refereeing" id="toc-topic-week-4-lecture-4-academic-publishing-refereeing" class="nav-link" data-scroll-target="#topic-week-4-lecture-4-academic-publishing-refereeing">Topic: Week 4 — Lecture 4: Academic Publishing &amp; Refereeing</a></li>
+  <li><a href="#topic-week-13-brown-bag-seminar" id="toc-topic-week-13-brown-bag-seminar" class="nav-link" data-scroll-target="#topic-week-13-brown-bag-seminar">Topic: Week 13 — Brown Bag Seminar</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">SMF Teaching</h1>
-<p class="subtitle lead">Institute of Strategic Management and Finance · Ulm University</p>
 </div>
 
 
 <div class="quarto-title-meta-author">
-  <div class="quarto-title-meta-heading">Author</div>
-  <div class="quarto-title-meta-heading">Affiliation</div>
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliations</div>
   
     <div class="quarto-title-meta-contents">
     <p class="author">Institute of Strategic Management and Finance </p>
@@ -133,6 +151,30 @@ ul.task-list li input[type="checkbox"] {
   <div class="quarto-title-meta-contents">
         <p class="affiliation">
             Ulm University
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author"><a href="https://www.uni-ulm.de/mawi/strategische-unternehmensfuehrung-und-finanzierung/">Institute of Strategic Management and Finance</a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Ulm University
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Prof.&nbsp;Dr.&nbsp;Andre Guettler <a href="mailto:andre.guettler@uni-ulm.de" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Institute of Strategic Management and Finance, Ulm University
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Oliver Padmaperuma <a href="mailto:oliver.padmaperuma@uni-ulm.de" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Institute of Strategic Management and Finance, Ulm University
           </p>
       </div>
   </div>
@@ -149,21 +191,79 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<blockquote class="blockquote">
-<p><strong>Internal staff index.</strong> Students access course materials via <a href="https://moodle.uni-ulm.de/">Moodle</a>.</p>
-</blockquote>
-<section id="courses" class="level2">
-<h2 class="anchored" data-anchor-id="courses">Courses</h2>
+<section id="moodle-setup-research-in-finance-winter-20252026" class="level1">
+<h1>Moodle setup — Research in Finance — Winter 2025/2026</h1>
+<p>Create the matching topics in Moodle in the order shown below and paste the URLs as resource links. Re-running the generator after content edits <strong>does not</strong> require updating Moodle — the URLs are stable.</p>
+<hr>
+<section id="topic-course-information" class="level2">
+<h2 class="anchored" data-anchor-id="topic-course-information">Topic: Course information</h2>
 <ul>
-<li><a href="./courses/research-in-finance/index.html">Research in Finance — Winter 2025/2026</a></li>
+<li>Syllabus: https://papa-puma.github.io/smaf/courses/research-in-finance/syllabus.html</li>
+<li>Course homepage: https://papa-puma.github.io/smaf/courses/research-in-finance/index.html</li>
+<li>Gradebook (staff only): https://papa-puma.github.io/smaf/courses/research-in-finance/gradebook.html</li>
 </ul>
 </section>
-<section id="how-this-site-works" class="level2">
-<h2 class="anchored" data-anchor-id="how-this-site-works">How this site works</h2>
-<p>This site is built from a single GitHub repository using <a href="https://quarto.org">Quarto</a>. Each course folder contains its own syllabus, lectures, assignments, and gradebook. The repository is the <strong>source of truth</strong>; rendered output is published to GitHub Pages and linked from Moodle.</p>
-<p>For conventions and AI-assistant workflows, see <a href="https://github.com/papa-puma/smaf/blob/main/CLAUDE.md"><code>CLAUDE.md</code></a> and <a href="https://github.com/papa-puma/smaf/blob/main/README.md"><code>README.md</code></a> in the repo.</p>
+<section id="topic-assignments" class="level2">
+<h2 class="anchored" data-anchor-id="topic-assignments">Topic: Assignments</h2>
+<ul>
+<li><strong>Assignment I — Problem Set</strong> (due 2026-01-19): https://papa-puma.github.io/smaf/courses/research-in-finance/assignments/assignment-1-problem-set.html</li>
+<li><strong>Assignment II — Referee Report</strong> (due 2026-02-03): https://papa-puma.github.io/smaf/courses/research-in-finance/assignments/assignment-2-referee-report.html</li>
+</ul>
+</section>
+<section id="topic-week-1-lecture-1-basics" class="level2">
+<h2 class="anchored" data-anchor-id="topic-week-1-lecture-1-basics">Topic: Week 1 — Lecture 1: Basics</h2>
+<p><em>Date: 2025-10-29</em></p>
+<ul>
+<li>Slides: https://papa-puma.github.io/smaf/courses/research-in-finance/lectures/lecture-01-basics/slides.html</li>
+<li>Notes: https://papa-puma.github.io/smaf/courses/research-in-finance/lectures/lecture-01-basics/notes.html</li>
+<li>Handout (PDF): https://papa-puma.github.io/smaf/courses/research-in-finance/lectures/lecture-01-basics/slides-handout.pdf</li>
+</ul>
+<p><strong>Topics covered:</strong> - Course objectives, schedule and assignments - Introduction to R and RStudio - Live coding: variables, vectors, matrices, data frames, lists, functions, loops - Data import and export</p>
+</section>
+<section id="topic-week-2-lecture-2-data-handling-visualization" class="level2">
+<h2 class="anchored" data-anchor-id="topic-week-2-lecture-2-data-handling-visualization">Topic: Week 2 — Lecture 2: Data Handling &amp; Visualization</h2>
+<p><em>Date: 2025-11-05</em></p>
+<ul>
+<li>Slides: https://papa-puma.github.io/smaf/courses/research-in-finance/lectures/lecture-02-data-handling/slides.html</li>
+<li>Notes: https://papa-puma.github.io/smaf/courses/research-in-finance/lectures/lecture-02-data-handling/notes.html</li>
+<li>Handout (PDF): https://papa-puma.github.io/smaf/courses/research-in-finance/lectures/lecture-02-data-handling/slides-handout.pdf</li>
+</ul>
+<p><strong>Topics covered:</strong> - API access (Nasdaq Data Link / Quandl, FRED, Yahoo, Coingecko, Polygon) - Import and cleanse: read_csv, mutate, types - Merge and append data (merge, bind_rows) - Filter and mutate (dplyr): subset rows, derive variables - Group by and summarise - Pivot wide / long - Data visualization with ggplot2 (six-step pipeline) - Introduction to LaTeX and Overleaf</p>
+</section>
+<section id="topic-week-3-lecture-3-statistical-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="topic-week-3-lecture-3-statistical-analysis">Topic: Week 3 — Lecture 3: Statistical Analysis</h2>
+<p><em>Date: 2025-11-12</em></p>
+<ul>
+<li>Slides: https://papa-puma.github.io/smaf/courses/research-in-finance/lectures/lecture-03-statistical-analysis/slides.html</li>
+<li>Notes: https://papa-puma.github.io/smaf/courses/research-in-finance/lectures/lecture-03-statistical-analysis/notes.html</li>
+<li>Handout (PDF): https://papa-puma.github.io/smaf/courses/research-in-finance/lectures/lecture-03-statistical-analysis/slides-handout.pdf</li>
+</ul>
+<p><strong>Topics covered:</strong> - Descriptive statistics in R - Correlation matrix and Pearson correlation test - t-Test and Wilcoxon test - Shapiro-Wilk and Kolmogorov-Smirnov tests - Linear regression with fixed effects - Clustered standard errors - Exporting regression tables with stargazer - Discussion of Assignment I (Problem Set)</p>
+</section>
+<section id="topic-week-4-lecture-4-academic-publishing-refereeing" class="level2">
+<h2 class="anchored" data-anchor-id="topic-week-4-lecture-4-academic-publishing-refereeing">Topic: Week 4 — Lecture 4: Academic Publishing &amp; Refereeing</h2>
+<p><em>Date: 2025-11-19</em></p>
+<ul>
+<li>Slides: https://papa-puma.github.io/smaf/courses/research-in-finance/lectures/lecture-04-academic-publishing/slides.html</li>
+<li>Notes: https://papa-puma.github.io/smaf/courses/research-in-finance/lectures/lecture-04-academic-publishing/notes.html</li>
+<li>Handout (PDF): https://papa-puma.github.io/smaf/courses/research-in-finance/lectures/lecture-04-academic-publishing/slides-handout.pdf</li>
+</ul>
+<p><strong>Topics covered:</strong> - What makes a good empirical paper (contribution, identification, write-up) - The publication process step by step - Top finance and economics journals - Bad outcome vs revise &amp; resubmit - Referee Reports — summary, major issues, minor issues - Referee checklist (question, identification, data, econometrics, results) - Discussion of Assignment II (Referee Report)</p>
+</section>
+<section id="topic-week-13-brown-bag-seminar" class="level2">
+<h2 class="anchored" data-anchor-id="topic-week-13-brown-bag-seminar">Topic: Week 13 — Brown Bag Seminar</h2>
+<p><em>Date: 2026-01-20</em></p>
+<ul>
+<li>Slides: https://papa-puma.github.io/smaf/courses/research-in-finance/lectures/lecture-05-brown-bag-seminar/slides.html</li>
+<li>Notes: https://papa-puma.github.io/smaf/courses/research-in-finance/lectures/lecture-05-brown-bag-seminar/notes.html</li>
+<li>Handout (PDF): https://papa-puma.github.io/smaf/courses/research-in-finance/lectures/lecture-05-brown-bag-seminar/slides-handout.pdf</li>
+</ul>
+<p><strong>Topics covered:</strong> - Doctoral research presentations - Apply empirical / writing tips for the referee report - Group discussion and Q&amp;A</p>
+<hr>
+<p><em>Generated by <code>scripts/generate-moodle-setup.py</code>. Do not hand-edit.</em></p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -610,5 +710,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
