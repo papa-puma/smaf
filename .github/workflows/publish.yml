@@ -37,11 +37,15 @@ jobs:
       - name: Set up TinyTeX (for PDF output)
         run: quarto install tinytex --no-prompt
 
-      - name: Render and publish (solutions OFF)
-        uses: quarto-dev/quarto-actions/publish@v2
+      - name: Render site (solutions OFF by default)
+        run: quarto render
+
+      - name: Deploy to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          target: gh-pages
-          render: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          QUARTO_DENO_V8_OPTIONS: --max-old-space-size=8192
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          publish_branch: gh-pages
+          user_name: "github-actions[bot]"
+          user_email: "github-actions[bot]@users.noreply.github.com"
+          commit_message: "Deploy site from ${{ github.sha }}"
