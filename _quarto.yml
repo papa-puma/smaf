@@ -1,9 +1,5 @@
 project:
   type: website
-  output-dir: _site
-  render:
-    - "index.qmd"
-    - "courses/**/*.qmd"
   resources:
     - "assets/**"
 
