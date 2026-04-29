@@ -1,7 +1,28 @@
 format:
   revealjs:
     output-file: slides.html
+    theme: [default, ../../../../_extensions/ulm-academic/theme.scss]
+    logo: ../../../../assets/logos/uulm.svg
+    footer: "SMF · Ulm University"
+    slide-number: c/t
+    progress: true
+    chalkboard:
+      buttons: false
+    code-line-numbers: true
+    highlight-style: github
+    transition: fade
+    background-transition: fade
+    width: 1280
+    height: 720
+    incremental: false
+    auto-stretch: true
+    menu:
+      side: left
+      width: normal
   pdf:
     output-file: slides-handout.pdf
+    documentclass: scrartcl
+    geometry: margin=1in
+    fontsize: 11pt
   html:
     output-file: notes.html
