@@ -96,7 +96,27 @@
     code span.va { color: #e36209; } /* Variable */
     code span.vs { color: #032f62; } /* VerbatimString */
     code span.wa { color: #ff5555; } /* Warning */
-  </style>
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="../../../../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../../../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -1055,12 +1075,12 @@ Oliver Padmaperuma
 <section id="further-reading" class="slide level2">
 <h2>Further reading</h2>
 <ul>
-<li>Posit (2022). <em>ggplot2 cheat sheet</em>. <a href="https://posit.co/wp-content/uploads/2022/10/data-visualization-1.pdf" class="uri">https://posit.co/wp-content/uploads/2022/10/data-visualization-1.pdf</a></li>
-<li>Wickham, H., Navarro, D., Pedersen, T. L. (2024 draft). <em>ggplot2: Elegant Graphics for Data Analysis</em> (3rd ed.). Online draft: <a href="https://ggplot2-book.org/" class="uri">https://ggplot2-book.org/</a></li>
+<li><span class="citation" data-cites="posit2022ggplot2cheat">Posit (<a href="#/references" role="doc-biblioref" onclick="">2022</a>)</span> — quick-reference for the ggplot2 grammar.</li>
+<li><span class="citation" data-cites="wickham2024ggplot2">Wickham, Navarro, and Pedersen (<a href="#/references" role="doc-biblioref" onclick="">2024</a>)</span> — comprehensive ggplot2 reference, free draft at <a href="https://ggplot2-book.org/" class="uri">https://ggplot2-book.org/</a>.</li>
 <li>All Lecture 1 R recommendations.</li>
-<li>Lamport, L. (1994). <em>LaTeX: A Document Preparation System</em> (2nd ed.). Addison-Wesley. Updated examples: <a href="https://www.latex-project.org/help/documentation/" class="uri">https://www.latex-project.org/help/documentation/</a></li>
-<li>Flynn, P. (2019). <em>Formatting Information: Introduction to LaTeX</em> (5th ed.). TUG. <a href="https://www.ctan.org/tex-archive/info/lshort/english/lshort.pdf" class="uri">https://www.ctan.org/tex-archive/info/lshort/english/lshort.pdf</a></li>
-<li>Overleaf Team (2023). <em>Overleaf tutorial: Basic guide to LaTeX</em>. <a href="https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes" class="uri">https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes</a></li>
+<li><span class="citation" data-cites="lamport1994latex">Lamport (<a href="#/references" role="doc-biblioref" onclick="">1994</a>)</span> — Leslie Lamport’s classic LaTeX manual.</li>
+<li><span class="citation" data-cites="flynn2019latex">Flynn (<a href="#/references" role="doc-biblioref" onclick="">2019</a>)</span> — <em>lshort</em>, a beginner-friendly free LaTeX intro.</li>
+<li><span class="citation" data-cites="overleaf2023tutorial">Overleaf (<a href="#/references" role="doc-biblioref" onclick="">2023</a>)</span> — Overleaf’s hands-on 30-minute LaTeX tutorial.</li>
 </ul>
 </section>
 <section id="prepare-before-next-lecture" class="slide level2">
@@ -1072,6 +1092,26 @@ Oliver Padmaperuma
 <blockquote>
 <p><strong>Lecture 3:</strong> Statistical analysis in R — correlations, t-tests, Wilcoxon, Shapiro-Wilk, KS, linear regression, fixed effects.</p>
 </blockquote>
+</section>
+<section id="references" class="slide level2 smaller scrollable">
+<h2>References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-flynn2019latex" class="csl-entry" role="listitem">
+Flynn, Peter. 2019. <span>“Formatting Information: Introduction to <span>LaTeX</span>.”</span> <span>TeX</span> Users Group (TUG). <a href="https://www.ctan.org/tex-archive/info/lshort/english/lshort.pdf">https://www.ctan.org/tex-archive/info/lshort/english/lshort.pdf</a>.
+</div>
+<div id="ref-lamport1994latex" class="csl-entry" role="listitem">
+Lamport, Leslie. 1994. <em><span>LaTeX</span>: A Document Preparation System</em>. 2nd ed. Reading, MA: Addison-Wesley. <a href="https://www.latex-project.org/help/documentation/">https://www.latex-project.org/help/documentation/</a>.
+</div>
+<div id="ref-overleaf2023tutorial" class="csl-entry" role="listitem">
+Overleaf. 2023. <span>“Overleaf Tutorial: Basic Guide to <span>LaTeX</span>.”</span> <a href="https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes">https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes</a>.
+</div>
+<div id="ref-posit2022ggplot2cheat" class="csl-entry" role="listitem">
+Posit. 2022. <span>“Ggplot2 Cheat Sheet.”</span> <a href="https://posit.co/wp-content/uploads/2022/10/data-visualization-1.pdf">https://posit.co/wp-content/uploads/2022/10/data-visualization-1.pdf</a>.
+</div>
+<div id="ref-wickham2024ggplot2" class="csl-entry" role="listitem">
+Wickham, Hadley, Danielle Navarro, and Thomas Lin Pedersen. 2024. <em>Ggplot2: Elegant Graphics for Data Analysis</em>. 3rd ed. <a href="https://ggplot2-book.org/">https://ggplot2-book.org/</a>.
+</div>
+</div>
 
 <div class="quarto-auto-generated-content">
 <p><img src="../../../../assets/logos/uulm.svg" class="slide-logo"></p>

@@ -57,7 +57,27 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -203,6 +223,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading">Further reading</a></li>
   <li><a href="#prepare-before-next-lecture" id="toc-prepare-before-next-lecture" class="nav-link" data-scroll-target="#prepare-before-next-lecture">Prepare before next lecture</a></li>
   <li><a href="#see-you-next-time" id="toc-see-you-next-time" class="nav-link" data-scroll-target="#see-you-next-time">See you next time</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="slides.html"><i class="bi bi-file-slides"></i>RevealJS</a></li><li><a href="slides-handout.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li><li><a href="slides.pptx"><i class="bi bi-file-slides"></i>Powerpoint</a></li></ul></div></nav>
@@ -928,10 +949,10 @@ Don’t save the workspace image (.RData)
 <section id="further-reading" class="level2">
 <h2 class="anchored" data-anchor-id="further-reading">Further reading</h2>
 <ul>
-<li>James, G., Witten, D., Hastie, T., &amp; Tibshirani, R. (2021). <em>An Introduction to Statistical Learning with applications in R</em> (2nd ed.). Springer. Free PDF: <a href="https://www.statlearning.com/" class="uri">https://www.statlearning.com/</a></li>
-<li>Scheuch, C., Voigt, S., &amp; Weiss, P. (2023). <em>Tidy Finance with R</em>. Chapman &amp; Hall/CRC. Free: <a href="https://www.tidy-finance.org/r/" class="uri">https://www.tidy-finance.org/r/</a></li>
-<li>Wickham, H., &amp; Çetinkaya-Rundel, M. (2023). <em>R for Data Science</em> (2nd ed.). O’Reilly. Free: <a href="https://r4ds.hadley.nz/" class="uri">https://r4ds.hadley.nz/</a></li>
-<li>Kaggle Discussions (2021). <em>List of free R books</em>. <a href="https://www.kaggle.com/discussions/general/274029" class="uri">https://www.kaggle.com/discussions/general/274029</a></li>
+<li><span class="citation" data-cites="james2021introduction">James et al. (<a href="#ref-james2021introduction" role="doc-biblioref">2021</a>)</span> — free PDF and exercises at <a href="https://www.statlearning.com/" class="uri">https://www.statlearning.com/</a>.</li>
+<li><span class="citation" data-cites="scheuch2023tidy">Scheuch, Voigt, and Weiss (<a href="#ref-scheuch2023tidy" role="doc-biblioref">2023</a>)</span> — finance-specific tidyverse cookbook, free at <a href="https://www.tidy-finance.org/r/" class="uri">https://www.tidy-finance.org/r/</a>.</li>
+<li><span class="citation" data-cites="wickham2023r4ds">Wickham and Çetinkaya-Rundel (<a href="#ref-wickham2023r4ds" role="doc-biblioref">2023</a>)</span> — second edition, free at <a href="https://r4ds.hadley.nz/" class="uri">https://r4ds.hadley.nz/</a>.</li>
+<li><span class="citation" data-cites="kaggle2021rbooks">Kaggle Discussions (<a href="#ref-kaggle2021rbooks" role="doc-biblioref">2021</a>)</span> — community-curated list of additional free R books.</li>
 </ul>
 </section>
 <section id="prepare-before-next-lecture" class="level2">
@@ -967,6 +988,23 @@ Reminder
 <blockquote class="blockquote">
 <p><strong>Lecture 2:</strong> R Data Handling and Visualization — APIs, merging, cleansing, <code>dplyr</code>, <code>ggplot2</code>.</p>
 </blockquote>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-james2021introduction" class="csl-entry" role="listitem">
+James, Gareth, Daniela Witten, Trevor Hastie, and Robert Tibshirani. 2021. <em>An Introduction to Statistical Learning with Applications in <span>R</span></em>. 2nd ed. New York, NY: Springer. <a href="https://www.statlearning.com/">https://www.statlearning.com/</a>.
+</div>
+<div id="ref-kaggle2021rbooks" class="csl-entry" role="listitem">
+Kaggle Discussions. 2021. <span>“List of Free <span>R</span> Books.”</span> <a href="https://www.kaggle.com/discussions/general/274029">https://www.kaggle.com/discussions/general/274029</a>.
+</div>
+<div id="ref-scheuch2023tidy" class="csl-entry" role="listitem">
+Scheuch, Christoph, Stefan Voigt, and Patrick Weiss. 2023. <em>Tidy Finance with <span>R</span></em>. Chapman &amp; Hall/CRC. <a href="https://www.tidy-finance.org/r/">https://www.tidy-finance.org/r/</a>.
+</div>
+<div id="ref-wickham2023r4ds" class="csl-entry" role="listitem">
+Wickham, Hadley, and Mine Çetinkaya-Rundel. 2023. <em><span>R</span> for Data Science</em>. 2nd ed. O’Reilly. <a href="https://r4ds.hadley.nz/">https://r4ds.hadley.nz/</a>.
+</div>
+</div>
 
 
 </section>

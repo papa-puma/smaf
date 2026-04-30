@@ -312,7 +312,7 @@
     "href": "courses/research-in-finance/lectures/lecture-03-statistical-analysis/notes.html#further-reading",
     "title": "Lecture 3: Statistical Analysis",
     "section": "Further reading",
-    "text": "Further reading\n\nAngrist, J. D., & Pischke, J.-S. (2009). Mostly Harmless Econometrics: An Empiricist’s Companion. Princeton University Press. https://press.princeton.edu/books/paperback/9780691120355/mostly-harmless-econometrics\nThulin, M. (2024). Modern Statistics with R. Free: https://www.modernstatisticswithr.com/\nNavarro, D. J. (2015). Learning Statistics with R. Free: https://learningstatisticswithr.com/\nGentle, J. E. (2020). Statistical Analysis of Financial Data: With Examples in R. CRC Press.\nJames, G. et al. (2021). An Introduction to Statistical Learning with applications in R (2nd ed.). Springer. Free PDF: https://www.statlearning.com/"
+    "text": "Further reading\n\nAngrist and Pischke (2009) — the standard graduate text on identification and causal inference in empirical economics.\nThulin (2024) — modern statistical methods worked through in R, free at https://www.modernstatisticswithr.com/.\nNavarro (2015) — accessible introduction to statistics with R, free at https://learningstatisticswithr.com/.\nGentle (2020) — applied statistical analysis on financial data, with R examples.\nJames et al. (2021) — covers regression, model selection, resampling, and tree-based methods."
   },
   {
     "objectID": "courses/research-in-finance/lectures/lecture-03-statistical-analysis/notes.html#prepare-before-next-lecture",
@@ -320,6 +320,13 @@
     "title": "Lecture 3: Statistical Analysis",
     "section": "Prepare before next lecture",
     "text": "Prepare before next lecture\n\nDocument today’s code in a clean way and save as an .Rmd file.\n\n\nLecture 4: Academic publishing and refereeing — what makes a great empirical paper, the publication process, how to write a referee report."
+  },
+  {
+    "objectID": "courses/research-in-finance/lectures/lecture-03-statistical-analysis/notes.html#references",
+    "href": "courses/research-in-finance/lectures/lecture-03-statistical-analysis/notes.html#references",
+    "title": "Lecture 3: Statistical Analysis",
+    "section": "References",
+    "text": "References\n\n\nAngrist, Joshua D., and Jörn-Steffen Pischke. 2009. Mostly Harmless Econometrics: An Empiricist’s Companion. Princeton, NJ: Princeton University Press. https://press.princeton.edu/books/paperback/9780691120355/mostly-harmless-econometrics.\n\n\nGentle, James E. 2020. Statistical Analysis of Financial Data: With Examples in R. Boca Raton, FL: CRC Press.\n\n\nJames, Gareth, Daniela Witten, Trevor Hastie, and Robert Tibshirani. 2021. An Introduction to Statistical Learning with Applications in R. 2nd ed. New York, NY: Springer. https://www.statlearning.com/.\n\n\nNavarro, Daniel J. 2015. Learning Statistics with R. https://learningstatisticswithr.com/.\n\n\nThulin, Måns. 2024. Modern Statistics with R. https://www.modernstatisticswithr.com/."
   },
   {
     "objectID": "courses/research-in-finance/lectures/lecture-03-statistical-analysis/slides.html#what-we-covered",
@@ -459,14 +466,21 @@
     "href": "courses/research-in-finance/lectures/lecture-03-statistical-analysis/slides.html#further-reading",
     "title": "Lecture 3: Statistical Analysis",
     "section": "Further reading",
-    "text": "Further reading\n\nAngrist, J. D., & Pischke, J.-S. (2009). Mostly Harmless Econometrics: An Empiricist’s Companion. Princeton University Press. https://press.princeton.edu/books/paperback/9780691120355/mostly-harmless-econometrics\nThulin, M. (2024). Modern Statistics with R. Free: https://www.modernstatisticswithr.com/\nNavarro, D. J. (2015). Learning Statistics with R. Free: https://learningstatisticswithr.com/\nGentle, J. E. (2020). Statistical Analysis of Financial Data: With Examples in R. CRC Press.\nJames, G. et al. (2021). An Introduction to Statistical Learning with applications in R (2nd ed.). Springer. Free PDF: https://www.statlearning.com/"
+    "text": "Further reading\n\nAngrist and Pischke (2009) — the standard graduate text on identification and causal inference in empirical economics.\nThulin (2024) — modern statistical methods worked through in R, free at https://www.modernstatisticswithr.com/.\nNavarro (2015) — accessible introduction to statistics with R, free at https://learningstatisticswithr.com/.\nGentle (2020) — applied statistical analysis on financial data, with R examples.\nJames et al. (2021) — covers regression, model selection, resampling, and tree-based methods."
   },
   {
     "objectID": "courses/research-in-finance/lectures/lecture-03-statistical-analysis/slides.html#prepare-before-next-lecture",
     "href": "courses/research-in-finance/lectures/lecture-03-statistical-analysis/slides.html#prepare-before-next-lecture",
     "title": "Lecture 3: Statistical Analysis",
     "section": "Prepare before next lecture",
-    "text": "Prepare before next lecture\n\nDocument today’s code in a clean way and save as an .Rmd file.\n\n\nLecture 4: Academic publishing and refereeing — what makes a great empirical paper, the publication process, how to write a referee report.\n\n\n\n\n\nSMF · Ulm University"
+    "text": "Prepare before next lecture\n\nDocument today’s code in a clean way and save as an .Rmd file.\n\n\nLecture 4: Academic publishing and refereeing — what makes a great empirical paper, the publication process, how to write a referee report."
+  },
+  {
+    "objectID": "courses/research-in-finance/lectures/lecture-03-statistical-analysis/slides.html#references",
+    "href": "courses/research-in-finance/lectures/lecture-03-statistical-analysis/slides.html#references",
+    "title": "Lecture 3: Statistical Analysis",
+    "section": "References",
+    "text": "References\n\n\nAngrist, Joshua D., and Jörn-Steffen Pischke. 2009. Mostly Harmless Econometrics: An Empiricist’s Companion. Princeton, NJ: Princeton University Press. https://press.princeton.edu/books/paperback/9780691120355/mostly-harmless-econometrics.\n\n\nGentle, James E. 2020. Statistical Analysis of Financial Data: With Examples in R. Boca Raton, FL: CRC Press.\n\n\nJames, Gareth, Daniela Witten, Trevor Hastie, and Robert Tibshirani. 2021. An Introduction to Statistical Learning with Applications in R. 2nd ed. New York, NY: Springer. https://www.statlearning.com/.\n\n\nNavarro, Daniel J. 2015. Learning Statistics with R. https://learningstatisticswithr.com/.\n\n\nThulin, Måns. 2024. Modern Statistics with R. https://www.modernstatisticswithr.com/.\n\n\n\n\n\n\nSMF · Ulm University"
   },
   {
     "objectID": "courses/research-in-finance/lectures/lecture-05-brown-bag-seminar/notes.html",
@@ -788,7 +802,7 @@
     "href": "courses/research-in-finance/lectures/lecture-01-basics/notes.html#further-reading",
     "title": "Lecture 1: Basics",
     "section": "Further reading",
-    "text": "Further reading\n\nJames, G., Witten, D., Hastie, T., & Tibshirani, R. (2021). An Introduction to Statistical Learning with applications in R (2nd ed.). Springer. Free PDF: https://www.statlearning.com/\nScheuch, C., Voigt, S., & Weiss, P. (2023). Tidy Finance with R. Chapman & Hall/CRC. Free: https://www.tidy-finance.org/r/\nWickham, H., & Çetinkaya-Rundel, M. (2023). R for Data Science (2nd ed.). O’Reilly. Free: https://r4ds.hadley.nz/\nKaggle Discussions (2021). List of free R books. https://www.kaggle.com/discussions/general/274029"
+    "text": "Further reading\n\nJames et al. (2021) — free PDF and exercises at https://www.statlearning.com/.\nScheuch, Voigt, and Weiss (2023) — finance-specific tidyverse cookbook, free at https://www.tidy-finance.org/r/.\nWickham and Çetinkaya-Rundel (2023) — second edition, free at https://r4ds.hadley.nz/.\nKaggle Discussions (2021) — community-curated list of additional free R books."
   },
   {
     "objectID": "courses/research-in-finance/lectures/lecture-01-basics/notes.html#prepare-before-next-lecture",
@@ -803,6 +817,13 @@
     "title": "Lecture 1: Basics",
     "section": "See you next time",
     "text": "See you next time\n\n\n\n\n\n\nReminder\n\n\n\n\nRegister for “exam” 13337 in campusonline by 30 November 2025.\nBring your laptop with R + RStudio installed and the tidyverse, tidyquant, Quandl packages already loaded.\n\n\n\n\nLecture 2: R Data Handling and Visualization — APIs, merging, cleansing, dplyr, ggplot2."
+  },
+  {
+    "objectID": "courses/research-in-finance/lectures/lecture-01-basics/notes.html#references",
+    "href": "courses/research-in-finance/lectures/lecture-01-basics/notes.html#references",
+    "title": "Lecture 1: Basics",
+    "section": "References",
+    "text": "References\n\n\nJames, Gareth, Daniela Witten, Trevor Hastie, and Robert Tibshirani. 2021. An Introduction to Statistical Learning with Applications in R. 2nd ed. New York, NY: Springer. https://www.statlearning.com/.\n\n\nKaggle Discussions. 2021. “List of Free R Books.” https://www.kaggle.com/discussions/general/274029.\n\n\nScheuch, Christoph, Stefan Voigt, and Patrick Weiss. 2023. Tidy Finance with R. Chapman & Hall/CRC. https://www.tidy-finance.org/r/.\n\n\nWickham, Hadley, and Mine Çetinkaya-Rundel. 2023. R for Data Science. 2nd ed. O’Reilly. https://r4ds.hadley.nz/."
   },
   {
     "objectID": "courses/research-in-finance/lectures/lecture-01-basics/slides.html#welcome-to-the-course",
@@ -1026,7 +1047,7 @@
     "href": "courses/research-in-finance/lectures/lecture-01-basics/slides.html#further-reading",
     "title": "Lecture 1: Basics",
     "section": "Further reading",
-    "text": "Further reading\n\nJames, G., Witten, D., Hastie, T., & Tibshirani, R. (2021). An Introduction to Statistical Learning with applications in R (2nd ed.). Springer. Free PDF: https://www.statlearning.com/\nScheuch, C., Voigt, S., & Weiss, P. (2023). Tidy Finance with R. Chapman & Hall/CRC. Free: https://www.tidy-finance.org/r/\nWickham, H., & Çetinkaya-Rundel, M. (2023). R for Data Science (2nd ed.). O’Reilly. Free: https://r4ds.hadley.nz/\nKaggle Discussions (2021). List of free R books. https://www.kaggle.com/discussions/general/274029"
+    "text": "Further reading\n\nJames et al. (2021) — free PDF and exercises at https://www.statlearning.com/.\nScheuch, Voigt, and Weiss (2023) — finance-specific tidyverse cookbook, free at https://www.tidy-finance.org/r/.\nWickham and Çetinkaya-Rundel (2023) — second edition, free at https://r4ds.hadley.nz/.\nKaggle Discussions (2021) — community-curated list of additional free R books."
   },
   {
     "objectID": "courses/research-in-finance/lectures/lecture-01-basics/slides.html#prepare-before-next-lecture",
@@ -1040,7 +1061,14 @@
     "href": "courses/research-in-finance/lectures/lecture-01-basics/slides.html#see-you-next-time",
     "title": "Lecture 1: Basics",
     "section": "See you next time",
-    "text": "See you next time\n\n\n\n\n\n\n\nReminder\n\n\n\nRegister for “exam” 13337 in campusonline by 30 November 2025.\nBring your laptop with R + RStudio installed and the tidyverse, tidyquant, Quandl packages already loaded.\n\n\n\n\n\n\nLecture 2: R Data Handling and Visualization — APIs, merging, cleansing, dplyr, ggplot2.\n\n\n\n\n\nSMF · Ulm University"
+    "text": "See you next time\n\n\n\n\n\n\n\nReminder\n\n\n\nRegister for “exam” 13337 in campusonline by 30 November 2025.\nBring your laptop with R + RStudio installed and the tidyverse, tidyquant, Quandl packages already loaded.\n\n\n\n\n\n\nLecture 2: R Data Handling and Visualization — APIs, merging, cleansing, dplyr, ggplot2."
+  },
+  {
+    "objectID": "courses/research-in-finance/lectures/lecture-01-basics/slides.html#references",
+    "href": "courses/research-in-finance/lectures/lecture-01-basics/slides.html#references",
+    "title": "Lecture 1: Basics",
+    "section": "References",
+    "text": "References\n\n\nJames, Gareth, Daniela Witten, Trevor Hastie, and Robert Tibshirani. 2021. An Introduction to Statistical Learning with Applications in R. 2nd ed. New York, NY: Springer. https://www.statlearning.com/.\n\n\nKaggle Discussions. 2021. “List of Free R Books.” https://www.kaggle.com/discussions/general/274029.\n\n\nScheuch, Christoph, Stefan Voigt, and Patrick Weiss. 2023. Tidy Finance with R. Chapman & Hall/CRC. https://www.tidy-finance.org/r/.\n\n\nWickham, Hadley, and Mine Çetinkaya-Rundel. 2023. R for Data Science. 2nd ed. O’Reilly. https://r4ds.hadley.nz/.\n\n\n\n\n\n\nSMF · Ulm University"
   },
   {
     "objectID": "courses/research-in-finance/lectures/lecture-02-data-handling/slides.html#what-we-covered",
@@ -1201,14 +1229,21 @@
     "href": "courses/research-in-finance/lectures/lecture-02-data-handling/slides.html#further-reading",
     "title": "Lecture 2: Data Handling & Visualization",
     "section": "Further reading",
-    "text": "Further reading\n\nPosit (2022). ggplot2 cheat sheet. https://posit.co/wp-content/uploads/2022/10/data-visualization-1.pdf\nWickham, H., Navarro, D., Pedersen, T. L. (2024 draft). ggplot2: Elegant Graphics for Data Analysis (3rd ed.). Online draft: https://ggplot2-book.org/\nAll Lecture 1 R recommendations.\nLamport, L. (1994). LaTeX: A Document Preparation System (2nd ed.). Addison-Wesley. Updated examples: https://www.latex-project.org/help/documentation/\nFlynn, P. (2019). Formatting Information: Introduction to LaTeX (5th ed.). TUG. https://www.ctan.org/tex-archive/info/lshort/english/lshort.pdf\nOverleaf Team (2023). Overleaf tutorial: Basic guide to LaTeX. https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes"
+    "text": "Further reading\n\nPosit (2022) — quick-reference for the ggplot2 grammar.\nWickham, Navarro, and Pedersen (2024) — comprehensive ggplot2 reference, free draft at https://ggplot2-book.org/.\nAll Lecture 1 R recommendations.\nLamport (1994) — Leslie Lamport’s classic LaTeX manual.\nFlynn (2019) — lshort, a beginner-friendly free LaTeX intro.\nOverleaf (2023) — Overleaf’s hands-on 30-minute LaTeX tutorial."
   },
   {
     "objectID": "courses/research-in-finance/lectures/lecture-02-data-handling/slides.html#prepare-before-next-lecture",
     "href": "courses/research-in-finance/lectures/lecture-02-data-handling/slides.html#prepare-before-next-lecture",
     "title": "Lecture 2: Data Handling & Visualization",
     "section": "Prepare before next lecture",
-    "text": "Prepare before next lecture\n\nDocument today’s code in a clean way and save as .Rmd.\nTry out a few visualizations based on the data we prepared today.\n\n\nLecture 3: Statistical analysis in R — correlations, t-tests, Wilcoxon, Shapiro-Wilk, KS, linear regression, fixed effects.\n\n\n\n\n\nSMF · Ulm University"
+    "text": "Prepare before next lecture\n\nDocument today’s code in a clean way and save as .Rmd.\nTry out a few visualizations based on the data we prepared today.\n\n\nLecture 3: Statistical analysis in R — correlations, t-tests, Wilcoxon, Shapiro-Wilk, KS, linear regression, fixed effects."
+  },
+  {
+    "objectID": "courses/research-in-finance/lectures/lecture-02-data-handling/slides.html#references",
+    "href": "courses/research-in-finance/lectures/lecture-02-data-handling/slides.html#references",
+    "title": "Lecture 2: Data Handling & Visualization",
+    "section": "References",
+    "text": "References\n\n\nFlynn, Peter. 2019. “Formatting Information: Introduction to LaTeX.” TeX Users Group (TUG). https://www.ctan.org/tex-archive/info/lshort/english/lshort.pdf.\n\n\nLamport, Leslie. 1994. LaTeX: A Document Preparation System. 2nd ed. Reading, MA: Addison-Wesley. https://www.latex-project.org/help/documentation/.\n\n\nOverleaf. 2023. “Overleaf Tutorial: Basic Guide to LaTeX.” https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes.\n\n\nPosit. 2022. “Ggplot2 Cheat Sheet.” https://posit.co/wp-content/uploads/2022/10/data-visualization-1.pdf.\n\n\nWickham, Hadley, Danielle Navarro, and Thomas Lin Pedersen. 2024. Ggplot2: Elegant Graphics for Data Analysis. 3rd ed. https://ggplot2-book.org/.\n\n\n\n\n\n\nSMF · Ulm University"
   },
   {
     "objectID": "courses/research-in-finance/lectures/lecture-02-data-handling/notes.html",
@@ -1376,7 +1411,7 @@
     "href": "courses/research-in-finance/lectures/lecture-02-data-handling/notes.html#further-reading",
     "title": "Lecture 2: Data Handling & Visualization",
     "section": "Further reading",
-    "text": "Further reading\n\nPosit (2022). ggplot2 cheat sheet. https://posit.co/wp-content/uploads/2022/10/data-visualization-1.pdf\nWickham, H., Navarro, D., Pedersen, T. L. (2024 draft). ggplot2: Elegant Graphics for Data Analysis (3rd ed.). Online draft: https://ggplot2-book.org/\nAll Lecture 1 R recommendations.\nLamport, L. (1994). LaTeX: A Document Preparation System (2nd ed.). Addison-Wesley. Updated examples: https://www.latex-project.org/help/documentation/\nFlynn, P. (2019). Formatting Information: Introduction to LaTeX (5th ed.). TUG. https://www.ctan.org/tex-archive/info/lshort/english/lshort.pdf\nOverleaf Team (2023). Overleaf tutorial: Basic guide to LaTeX. https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes"
+    "text": "Further reading\n\nPosit (2022) — quick-reference for the ggplot2 grammar.\nWickham, Navarro, and Pedersen (2024) — comprehensive ggplot2 reference, free draft at https://ggplot2-book.org/.\nAll Lecture 1 R recommendations.\nLamport (1994) — Leslie Lamport’s classic LaTeX manual.\nFlynn (2019) — lshort, a beginner-friendly free LaTeX intro.\nOverleaf (2023) — Overleaf’s hands-on 30-minute LaTeX tutorial."
   },
   {
     "objectID": "courses/research-in-finance/lectures/lecture-02-data-handling/notes.html#prepare-before-next-lecture",
@@ -1384,6 +1419,13 @@
     "title": "Lecture 2: Data Handling & Visualization",
     "section": "Prepare before next lecture",
     "text": "Prepare before next lecture\n\nDocument today’s code in a clean way and save as .Rmd.\nTry out a few visualizations based on the data we prepared today.\n\n\nLecture 3: Statistical analysis in R — correlations, t-tests, Wilcoxon, Shapiro-Wilk, KS, linear regression, fixed effects."
+  },
+  {
+    "objectID": "courses/research-in-finance/lectures/lecture-02-data-handling/notes.html#references",
+    "href": "courses/research-in-finance/lectures/lecture-02-data-handling/notes.html#references",
+    "title": "Lecture 2: Data Handling & Visualization",
+    "section": "References",
+    "text": "References\n\n\nFlynn, Peter. 2019. “Formatting Information: Introduction to LaTeX.” TeX Users Group (TUG). https://www.ctan.org/tex-archive/info/lshort/english/lshort.pdf.\n\n\nLamport, Leslie. 1994. LaTeX: A Document Preparation System. 2nd ed. Reading, MA: Addison-Wesley. https://www.latex-project.org/help/documentation/.\n\n\nOverleaf. 2023. “Overleaf Tutorial: Basic Guide to LaTeX.” https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes.\n\n\nPosit. 2022. “Ggplot2 Cheat Sheet.” https://posit.co/wp-content/uploads/2022/10/data-visualization-1.pdf.\n\n\nWickham, Hadley, Danielle Navarro, and Thomas Lin Pedersen. 2024. Ggplot2: Elegant Graphics for Data Analysis. 3rd ed. https://ggplot2-book.org/."
   },
   {
     "objectID": "courses/research-in-finance/lectures/lecture-04-academic-publishing/slides.html#three-factors",
@@ -1425,14 +1467,14 @@
     "href": "courses/research-in-finance/lectures/lecture-04-academic-publishing/slides.html#identification",
     "title": "Lecture 4: Academic Publishing & Refereeing",
     "section": "2. Identification",
-    "text": "2. Identification\n\nTop publications require very robust identification.\nDon’t confuse correlation with causality.\nRead state-of-the-art empirical papers.\nBe as close to a randomized experiment as possible.\n\n\n\n\n\n\n\n\nRecommendation\n\n\nMostly Harmless Econometrics: An Empiricist’s Companion — Angrist & Pischke."
+    "text": "2. Identification\n\nTop publications require very robust identification.\nDon’t confuse correlation with causality.\nRead state-of-the-art empirical papers.\nBe as close to a randomized experiment as possible.\n\n\n\n\n\n\n\n\nRecommendation\n\n\nMostly Harmless Econometrics: An Empiricist’s Companion (Angrist and Pischke 2009)."
   },
   {
     "objectID": "courses/research-in-finance/lectures/lecture-04-academic-publishing/slides.html#write-up",
     "href": "courses/research-in-finance/lectures/lecture-04-academic-publishing/slides.html#write-up",
     "title": "Lecture 4: Academic Publishing & Refereeing",
     "section": "3. Write-up",
-    "text": "3. Write-up\n\nAwesome: you put together a set of results!\nThe write-up should be at least as important as the econometrics.\nBe prepared to rewrite the paper many times.\nTitle / Abstract / Introduction are the most important parts.\n\n\n\n\n\n\n\n\nRecommendation\n\n\nWriting Tips for Ph.D. Students (Cochrane) — available on the course Moodle."
+    "text": "3. Write-up\n\nAwesome: you put together a set of results!\nThe write-up should be at least as important as the econometrics.\nBe prepared to rewrite the paper many times.\nTitle / Abstract / Introduction are the most important parts.\n\n\n\n\n\n\n\n\nRecommendation\n\n\nWriting Tips for Ph.D. Students (Cochrane 2005) — available on the course Moodle."
   },
   {
     "objectID": "courses/research-in-finance/lectures/lecture-04-academic-publishing/slides.html#be-patient-but-learn-now",
@@ -1656,14 +1698,21 @@
     "href": "courses/research-in-finance/lectures/lecture-04-academic-publishing/slides.html#see-you-at-the-brown-bag-seminar",
     "title": "Lecture 4: Academic Publishing & Refereeing",
     "section": "See you at the Brown Bag Seminar",
-    "text": "See you at the Brown Bag Seminar\n\n\n\n\n\n\n\nReminder\n\n\n\nBrown Bag Seminar — 20 January 2026, 13:30–16:00.\nTake careful notes on the presentations.\nPick one doctoral talk and apply the four-checklist sections from this lecture.\nSubmit your 2.5–3 page report as a group of up to 5 by 3 February 2026.\n\n\n\n\n\n\nGood luck with the problem set — and we look forward to your critical feedback at the seminar!\n\n\n\n\n\nSMF · Ulm University"
+    "text": "See you at the Brown Bag Seminar\n\n\n\n\n\n\n\nReminder\n\n\n\nBrown Bag Seminar — 20 January 2026, 13:30–16:00.\nTake careful notes on the presentations.\nPick one doctoral talk and apply the four-checklist sections from this lecture.\nSubmit your 2.5–3 page report as a group of up to 5 by 3 February 2026.\n\n\n\n\n\n\nGood luck with the problem set — and we look forward to your critical feedback at the seminar!"
+  },
+  {
+    "objectID": "courses/research-in-finance/lectures/lecture-04-academic-publishing/slides.html#references",
+    "href": "courses/research-in-finance/lectures/lecture-04-academic-publishing/slides.html#references",
+    "title": "Lecture 4: Academic Publishing & Refereeing",
+    "section": "References",
+    "text": "References\n\n\nAngrist, Joshua D., and Jörn-Steffen Pischke. 2009. Mostly Harmless Econometrics: An Empiricist’s Companion. Princeton, NJ: Princeton University Press. https://press.princeton.edu/books/paperback/9780691120355/mostly-harmless-econometrics.\n\n\nCochrane, John H. 2005. “Writing Tips for Ph.D. Students.” https://www.johnhcochrane.com/research-all/writing-tips-for-phd-students.\n\n\n\n\n\n\nSMF · Ulm University"
   },
   {
     "objectID": "courses/research-in-finance/lectures/lecture-04-academic-publishing/notes.html",
     "href": "courses/research-in-finance/lectures/lecture-04-academic-publishing/notes.html",
     "title": "Lecture 4: Academic Publishing & Refereeing",
     "section": "",
-    "text": "Contribution\nIdentification\nWrite-up\n\n\n\n\n\n\n\n\nNote\n\n\n\n\nJournal space is very scarce and many great papers compete for it.\nSolid identification and write-up are necessary but not sufficient for a top publication.\n\n\n\n\n\n\nOften, submissions get rejected because:\n\nLow incremental contribution.\nOverly narrow contribution.\nResults are not very surprising.\nResults have unclear importance.\n\n\n\n\n\n\n\nRecommendation\n\n\n\nSome Reflections on Contribution (Rynes) — available on the course Moodle.\n\n\n\n\n\n\n\nActivity — frequent interactions with industry experts and academic colleagues are related to the beginning of great research ideas.\nIntuition — often a feeling of excitement rather than logical analysis leads to important research leads.\nTheory — new pieces of theory or puzzles point towards something that is still poorly understood.\nReal world — research problems often have an applied flavour, tackling current real-world issues.\n\n\n\n\n\n\nContribution of topics varies over time.\nExample: banking topics were “hot” during the financial crisis with many insolvent banks and huge public rescue plans.\nBut: many researchers jump on these hot topics! By the time you finish, the wave has crested.\n\n\n\n\n\nNew data sets enable new research questions.\nNew data sets allow new identification strategies.\nNew (and usually larger) data sets allow better inference.\n\n\n\n\n\nTop publications require very robust identification.\nDon’t confuse correlation with causality.\nRead state-of-the-art empirical papers.\nBe as close to a randomized experiment as possible.\n\n\n\n\n\n\n\nRecommendation\n\n\n\nMostly Harmless Econometrics: An Empiricist’s Companion — Angrist & Pischke.\n\n\n\n\n\n\nAwesome: you put together a set of results!\nThe write-up should be at least as important as the econometrics.\nBe prepared to rewrite the paper many times.\nTitle / Abstract / Introduction are the most important parts.\n\n\n\n\n\n\n\nRecommendation\n\n\n\nWriting Tips for Ph.D. Students (Cochrane) — available on the course Moodle."
+    "text": "Contribution\nIdentification\nWrite-up\n\n\n\n\n\n\n\n\nNote\n\n\n\n\nJournal space is very scarce and many great papers compete for it.\nSolid identification and write-up are necessary but not sufficient for a top publication.\n\n\n\n\n\n\nOften, submissions get rejected because:\n\nLow incremental contribution.\nOverly narrow contribution.\nResults are not very surprising.\nResults have unclear importance.\n\n\n\n\n\n\n\nRecommendation\n\n\n\nSome Reflections on Contribution (Rynes) — available on the course Moodle.\n\n\n\n\n\n\n\nActivity — frequent interactions with industry experts and academic colleagues are related to the beginning of great research ideas.\nIntuition — often a feeling of excitement rather than logical analysis leads to important research leads.\nTheory — new pieces of theory or puzzles point towards something that is still poorly understood.\nReal world — research problems often have an applied flavour, tackling current real-world issues.\n\n\n\n\n\n\nContribution of topics varies over time.\nExample: banking topics were “hot” during the financial crisis with many insolvent banks and huge public rescue plans.\nBut: many researchers jump on these hot topics! By the time you finish, the wave has crested.\n\n\n\n\n\nNew data sets enable new research questions.\nNew data sets allow new identification strategies.\nNew (and usually larger) data sets allow better inference.\n\n\n\n\n\nTop publications require very robust identification.\nDon’t confuse correlation with causality.\nRead state-of-the-art empirical papers.\nBe as close to a randomized experiment as possible.\n\n\n\n\n\n\n\nRecommendation\n\n\n\nMostly Harmless Econometrics: An Empiricist’s Companion (Angrist and Pischke 2009).\n\n\n\n\n\n\nAwesome: you put together a set of results!\nThe write-up should be at least as important as the econometrics.\nBe prepared to rewrite the paper many times.\nTitle / Abstract / Introduction are the most important parts.\n\n\n\n\n\n\n\nRecommendation\n\n\n\nWriting Tips for Ph.D. Students (Cochrane 2005) — available on the course Moodle."
   },
   {
     "objectID": "courses/research-in-finance/lectures/lecture-04-academic-publishing/notes.html#three-factors",
@@ -1705,14 +1754,14 @@
     "href": "courses/research-in-finance/lectures/lecture-04-academic-publishing/notes.html#identification",
     "title": "Lecture 4: Academic Publishing & Refereeing",
     "section": "",
-    "text": "Top publications require very robust identification.\nDon’t confuse correlation with causality.\nRead state-of-the-art empirical papers.\nBe as close to a randomized experiment as possible.\n\n\n\n\n\n\n\nRecommendation\n\n\n\nMostly Harmless Econometrics: An Empiricist’s Companion — Angrist & Pischke."
+    "text": "Top publications require very robust identification.\nDon’t confuse correlation with causality.\nRead state-of-the-art empirical papers.\nBe as close to a randomized experiment as possible.\n\n\n\n\n\n\n\nRecommendation\n\n\n\nMostly Harmless Econometrics: An Empiricist’s Companion (Angrist and Pischke 2009)."
   },
   {
     "objectID": "courses/research-in-finance/lectures/lecture-04-academic-publishing/notes.html#write-up",
     "href": "courses/research-in-finance/lectures/lecture-04-academic-publishing/notes.html#write-up",
     "title": "Lecture 4: Academic Publishing & Refereeing",
     "section": "",
-    "text": "Awesome: you put together a set of results!\nThe write-up should be at least as important as the econometrics.\nBe prepared to rewrite the paper many times.\nTitle / Abstract / Introduction are the most important parts.\n\n\n\n\n\n\n\nRecommendation\n\n\n\nWriting Tips for Ph.D. Students (Cochrane) — available on the course Moodle."
+    "text": "Awesome: you put together a set of results!\nThe write-up should be at least as important as the econometrics.\nBe prepared to rewrite the paper many times.\nTitle / Abstract / Introduction are the most important parts.\n\n\n\n\n\n\n\nRecommendation\n\n\n\nWriting Tips for Ph.D. Students (Cochrane 2005) — available on the course Moodle."
   },
   {
     "objectID": "courses/research-in-finance/lectures/lecture-04-academic-publishing/notes.html#be-patient-but-learn-now",
@@ -1939,6 +1988,13 @@
     "text": "See you at the Brown Bag Seminar\n\n\n\n\n\n\nReminder\n\n\n\n\nBrown Bag Seminar — 20 January 2026, 13:30–16:00.\nTake careful notes on the presentations.\nPick one doctoral talk and apply the four-checklist sections from this lecture.\nSubmit your 2.5–3 page report as a group of up to 5 by 3 February 2026.\n\n\n\n\nGood luck with the problem set — and we look forward to your critical feedback at the seminar!"
   },
   {
+    "objectID": "courses/research-in-finance/lectures/lecture-04-academic-publishing/notes.html#references",
+    "href": "courses/research-in-finance/lectures/lecture-04-academic-publishing/notes.html#references",
+    "title": "Lecture 4: Academic Publishing & Refereeing",
+    "section": "References",
+    "text": "References\n\n\nAngrist, Joshua D., and Jörn-Steffen Pischke. 2009. Mostly Harmless Econometrics: An Empiricist’s Companion. Princeton, NJ: Princeton University Press. https://press.princeton.edu/books/paperback/9780691120355/mostly-harmless-econometrics.\n\n\nCochrane, John H. 2005. “Writing Tips for Ph.D. Students.” https://www.johnhcochrane.com/research-all/writing-tips-for-phd-students."
+  },
+  {
     "objectID": "courses/research-in-finance/MOODLE-SETUP.html",
     "href": "courses/research-in-finance/MOODLE-SETUP.html",
     "title": "Moodle setup — Research in Finance — Winter 2025/2026",
@@ -2090,7 +2146,7 @@
     "href": "courses/research-in-finance/syllabus.html#recommended-reading",
     "title": "Syllabus — Research in Finance",
     "section": "Recommended reading",
-    "text": "Recommended reading\n\nWickham, H., & Çetinkaya-Rundel, M. (2023). R for Data Science (2nd ed.). Free online: https://r4ds.hadley.nz/\nScheuch, C., Voigt, S., & Weiss, P. (2023). Tidy Finance with R. Free online: https://www.tidy-finance.org/r/\nAngrist, J. D., & Pischke, J.-S. (2009). Mostly Harmless Econometrics: An Empiricist’s Companion. Princeton University Press.\nCochrane, J. H. Writing Tips for Ph.D. Students (available on Moodle)."
+    "text": "Recommended reading\n\nWickham and Çetinkaya-Rundel (2023) — practical foundations for data wrangling and visualisation in R.\nScheuch, Voigt, and Weiss (2023) — a finance-specific application of the tidyverse, freely available online.\nAngrist and Pischke (2009) — the standard graduate text on causal inference and empirical strategies in economics.\nCochrane (2005) — writing tips by John Cochrane (available on Moodle)."
   },
   {
     "objectID": "courses/research-in-finance/syllabus.html#timetable",
@@ -2119,6 +2175,13 @@
     "title": "Syllabus — Research in Finance",
     "section": "Contact",
     "text": "Contact\n\nProf. Dr. Andre Guettler — Helmholtzstraße 22, Room 205 · andre.guettler@uni-ulm.de · +49 731 50 31 030\nOliver Padmaperuma — Helmholtzstraße 22, Room 203 · oliver.padmaperuma@uni-ulm.de · +49 731 50 31 036\nMoodle — all announcements, file drops, problem-set release, and grade postings happen on the course Moodle page."
+  },
+  {
+    "objectID": "courses/research-in-finance/syllabus.html#references",
+    "href": "courses/research-in-finance/syllabus.html#references",
+    "title": "Syllabus — Research in Finance",
+    "section": "References",
+    "text": "References\n\n\nAngrist, Joshua D., and Jörn-Steffen Pischke. 2009. Mostly Harmless Econometrics: An Empiricist’s Companion. Princeton, NJ: Princeton University Press. https://press.princeton.edu/books/paperback/9780691120355/mostly-harmless-econometrics.\n\n\nCochrane, John H. 2005. “Writing Tips for Ph.D. Students.” https://www.johnhcochrane.com/research-all/writing-tips-for-phd-students.\n\n\nScheuch, Christoph, Stefan Voigt, and Patrick Weiss. 2023. Tidy Finance with R. Chapman & Hall/CRC. https://www.tidy-finance.org/r/.\n\n\nWickham, Hadley, and Mine Çetinkaya-Rundel. 2023. R for Data Science. 2nd ed. O’Reilly. https://r4ds.hadley.nz/."
   },
   {
     "objectID": "CLAUDE.html",

@@ -22,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -196,6 +216,7 @@ window.Quarto = {
   <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions</a></li>
   </ul></li>
   <li><a href="#contact" id="toc-contact" class="nav-link" data-scroll-target="#contact">Contact</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="syllabus.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
@@ -322,10 +343,10 @@ window.Quarto = {
 <section id="recommended-reading" class="level2">
 <h2 class="anchored" data-anchor-id="recommended-reading">Recommended reading</h2>
 <ul>
-<li>Wickham, H., &amp; Çetinkaya-Rundel, M. (2023). <em>R for Data Science</em> (2nd ed.). Free online: <a href="https://r4ds.hadley.nz/" class="uri">https://r4ds.hadley.nz/</a></li>
-<li>Scheuch, C., Voigt, S., &amp; Weiss, P. (2023). <em>Tidy Finance with R</em>. Free online: <a href="https://www.tidy-finance.org/r/" class="uri">https://www.tidy-finance.org/r/</a></li>
-<li>Angrist, J. D., &amp; Pischke, J.-S. (2009). <em>Mostly Harmless Econometrics: An Empiricist’s Companion</em>. Princeton University Press.</li>
-<li>Cochrane, J. H. <em>Writing Tips for Ph.D.&nbsp;Students</em> (available on Moodle).</li>
+<li><span class="citation" data-cites="wickham2023r4ds">Wickham and Çetinkaya-Rundel (<a href="#ref-wickham2023r4ds" role="doc-biblioref">2023</a>)</span> — practical foundations for data wrangling and visualisation in R.</li>
+<li><span class="citation" data-cites="scheuch2023tidy">Scheuch, Voigt, and Weiss (<a href="#ref-scheuch2023tidy" role="doc-biblioref">2023</a>)</span> — a finance-specific application of the tidyverse, freely available online.</li>
+<li><span class="citation" data-cites="angrist2009mostly">Angrist and Pischke (<a href="#ref-angrist2009mostly" role="doc-biblioref">2009</a>)</span> — the standard graduate text on causal inference and empirical strategies in economics.</li>
+<li><span class="citation" data-cites="cochrane2005writing">Cochrane (<a href="#ref-cochrane2005writing" role="doc-biblioref">2005</a>)</span> — writing tips by John Cochrane (available on Moodle).</li>
 </ul>
 </section>
 <section id="timetable" class="level2">
@@ -367,7 +388,7 @@ Topics
 </tr>
 </thead>
 <tbody class="list">
-<tr data-index="0" data-listing-date-sort="1761696000000" data-listing-file-modified-sort="1777537154443" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2525" data-listing-title-sort="Lecture 1: Basics" data-listing-filename-sort="slides.qmd">
+<tr data-index="0" data-listing-date-sort="1761696000000" data-listing-file-modified-sort="1777537901851" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2493" data-listing-title-sort="Lecture 1: Basics" data-listing-filename-sort="slides.qmd">
 <td>
 <span class="listing-week">1</span>
 </td>
@@ -381,7 +402,7 @@ Topics
 <span class="listing-topics">Course objectives, schedule and assignments, Introduction to R and RStudio, Live coding: variables, vectors, matrices, data frames, lists, functions, loops, Data import and export</span>
 </td>
 </tr>
-<tr data-index="1" data-listing-date-sort="1762300800000" data-listing-file-modified-sort="1777537154443" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2513" data-listing-title-sort="Lecture 2: Data Handling &amp; Visualization" data-listing-filename-sort="slides.qmd">
+<tr data-index="1" data-listing-date-sort="1762300800000" data-listing-file-modified-sort="1777537901851" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2491" data-listing-title-sort="Lecture 2: Data Handling &amp; Visualization" data-listing-filename-sort="slides.qmd">
 <td>
 <span class="listing-week">2</span>
 </td>
@@ -395,7 +416,7 @@ Topics
 <span class="listing-topics">API access (Nasdaq Data Link / Quandl, FRED, Yahoo, Coingecko, Polygon), Import and cleanse: read_csv, mutate, types, Merge and append data (merge, bind_rows), Filter and mutate (dplyr): subset rows, derive variables, Group by and summarise, Pivot wide / long, Data visualization with ggplot2 (six-step pipeline), Introduction to LaTeX and Overleaf</span>
 </td>
 </tr>
-<tr data-index="2" data-listing-date-sort="1762905600000" data-listing-file-modified-sort="1777537154443" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2536" data-listing-title-sort="Lecture 3: Statistical Analysis" data-listing-filename-sort="slides.qmd">
+<tr data-index="2" data-listing-date-sort="1762905600000" data-listing-file-modified-sort="1777537901851" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2525" data-listing-title-sort="Lecture 3: Statistical Analysis" data-listing-filename-sort="slides.qmd">
 <td>
 <span class="listing-week">3</span>
 </td>
@@ -409,7 +430,7 @@ Topics
 <span class="listing-topics">Descriptive statistics in R, Correlation matrix and Pearson correlation test, t-Test and Wilcoxon test, Shapiro-Wilk and Kolmogorov-Smirnov tests, Linear regression with fixed effects, Clustered standard errors, Exporting regression tables with stargazer, Discussion of Assignment I (Problem Set)</span>
 </td>
 </tr>
-<tr data-index="3" data-listing-date-sort="1763510400000" data-listing-file-modified-sort="1777537154443" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2662" data-listing-title-sort="Lecture 4: Academic Publishing &amp; Refereeing" data-listing-filename-sort="slides.qmd">
+<tr data-index="3" data-listing-date-sort="1763510400000" data-listing-file-modified-sort="1777537901851" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2661" data-listing-title-sort="Lecture 4: Academic Publishing &amp; Refereeing" data-listing-filename-sort="slides.qmd">
 <td>
 <span class="listing-week">4</span>
 </td>
@@ -423,7 +444,7 @@ Topics
 <span class="listing-topics">What makes a good empirical paper (contribution, identification, write-up), The publication process step by step, Top finance and economics journals, Bad outcome vs revise &amp; resubmit, Referee Reports — summary, major issues, minor issues, Referee checklist (question, identification, data, econometrics, results), Discussion of Assignment II (Referee Report)</span>
 </td>
 </tr>
-<tr data-index="4" data-listing-date-sort="1768867200000" data-listing-file-modified-sort="1777537154443" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="348" data-listing-title-sort="Brown Bag Seminar" data-listing-filename-sort="slides.qmd">
+<tr data-index="4" data-listing-date-sort="1768867200000" data-listing-file-modified-sort="1777537901851" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="348" data-listing-title-sort="Brown Bag Seminar" data-listing-filename-sort="slides.qmd">
 <td>
 <span class="listing-week">13</span>
 </td>
@@ -512,6 +533,23 @@ No matching items
 <li><strong>Oliver Padmaperuma</strong> — Helmholtzstraße 22, Room 203 · <a href="mailto:oliver.padmaperuma@uni-ulm.de">oliver.padmaperuma@uni-ulm.de</a> · +49 731 50 31 036</li>
 <li><strong>Moodle</strong> — all announcements, file drops, problem-set release, and grade postings happen on the <a href="https://moodle.uni-ulm.de/">course Moodle page</a>.</li>
 </ul>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-angrist2009mostly" class="csl-entry" role="listitem">
+Angrist, Joshua D., and Jörn-Steffen Pischke. 2009. <em>Mostly Harmless Econometrics: An Empiricist’s Companion</em>. Princeton, NJ: Princeton University Press. <a href="https://press.princeton.edu/books/paperback/9780691120355/mostly-harmless-econometrics">https://press.princeton.edu/books/paperback/9780691120355/mostly-harmless-econometrics</a>.
+</div>
+<div id="ref-cochrane2005writing" class="csl-entry" role="listitem">
+Cochrane, John H. 2005. <span>“Writing Tips for <span>Ph.D.</span> Students.”</span> <a href="https://www.johnhcochrane.com/research-all/writing-tips-for-phd-students">https://www.johnhcochrane.com/research-all/writing-tips-for-phd-students</a>.
+</div>
+<div id="ref-scheuch2023tidy" class="csl-entry" role="listitem">
+Scheuch, Christoph, Stefan Voigt, and Patrick Weiss. 2023. <em>Tidy Finance with <span>R</span></em>. Chapman &amp; Hall/CRC. <a href="https://www.tidy-finance.org/r/">https://www.tidy-finance.org/r/</a>.
+</div>
+<div id="ref-wickham2023r4ds" class="csl-entry" role="listitem">
+Wickham, Hadley, and Mine Çetinkaya-Rundel. 2023. <em><span>R</span> for Data Science</em>. 2nd ed. O’Reilly. <a href="https://r4ds.hadley.nz/">https://r4ds.hadley.nz/</a>.
+</div>
+</div>
 
 
 
