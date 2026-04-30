@@ -76,10 +76,21 @@ a {
 
   .navbar-brand {
     font-weight: 700;
-    img {
-      max-height: 48px;
-      width: auto;
-    }
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+  // Quarto's brand-injected `.navbar-logo` rule sets `object-fit: cover`
+  // and tight min-height/max-height bounds, which crops the wide Ulm
+  // logo (aspect ratio ~3.5:1) into a sliver. Override fully.
+  .navbar-logo {
+    height: 44px !important;
+    max-height: 44px !important;
+    min-height: 0 !important;
+    width: auto !important;
+    max-width: none !important;
+    object-fit: contain !important;
+    margin-right: 0.75em;
+    padding-right: 0;
   }
   .nav-link {
     color: $ink !important;
@@ -191,13 +202,10 @@ table.table {
   }
 }
 
-// ---- Hide the redundant Authors / Affiliations title-block on lecture pages
-//      (per-lecture pages cascade the course-level author list, which is
-//      shown verbosely in the auto title block — it duplicates info already
-//      visible in the navbar / homepage).
-.quarto-title-meta {
-  display: none;
-}
+// Authors / Affiliations title block stays visible on course-level pages
+// (homepage, syllabus). On lecture pages the cascaded author list is
+// nulled via `author: []` in courses/<id>/lectures/_metadata.yml, so
+// the meta block disappears naturally.
 
 // ---- Title block sizing on course / lecture pages ----
 .quarto-title h1.title {

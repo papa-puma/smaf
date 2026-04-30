@@ -56,9 +56,9 @@ format:
 solutions: false
 
 # Default author / affiliation cascade (overridable per course or lecture)
-author:
-  - name: "Institute of Strategic Management and Finance"
-    affiliation: "Ulm University"
+# author:
+#   - name: "Institute of Strategic Management and Finance"
+#     affiliation: "Ulm University"
 
 execute:
   freeze: auto

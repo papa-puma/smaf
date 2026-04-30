@@ -1,7 +1,8 @@
-author:
-  - name: "Institute of Strategic Management and Finance"
-    affiliation: "Ulm University"
-    url: https://www.uni-ulm.de/mawi/strategische-unternehmensfuehrung-und-finanzierung/
+# Project-level defaults that apply to all courses.
+# NOTE: do NOT set `author:` here — Quarto MERGES author lists across the
+# cascade rather than replacing them, so any author declared here would
+# appear in addition to per-course authors. Each course declares its own
+# `author:` block in its own `_metadata.yml`.
 
 format:
   html:

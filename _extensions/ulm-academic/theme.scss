@@ -277,7 +277,6 @@ $presentation-line-height:    1.5;
   font-size: 1.0em;
 }
 
-// Hide the auto-rendered Quarto title meta block on slides where it appears.
-.reveal .quarto-title-meta {
-  display: none;
-}
+// The auto-rendered Quarto title meta block on lecture title slides is
+// suppressed by setting `author: []` in courses/<id>/lectures/_metadata.yml,
+// which nulls the cascaded author list. No extra CSS rule needed.

@@ -26,3 +26,16 @@ format:
     fontsize: 11pt
   html:
     output-file: notes.html
+    # Hide the auto-rendered Authors / Affiliations meta block on the
+    # long-form notes view — it duplicates info already on the course
+    # homepage and the slide-deck title slide.
+    include-in-header:
+      text: |
+        <style>
+          .quarto-title-meta-author,
+          .quarto-title-meta-author + .quarto-title-meta { margin-top: 0; }
+          .quarto-title-meta-author { display: none !important; }
+        </style>
+  pptx:
+    output-file: slides.pptx
+    slide-level: 2
