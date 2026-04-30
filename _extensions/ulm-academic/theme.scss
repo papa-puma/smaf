@@ -232,18 +232,30 @@ $presentation-line-height:    1.5;
 }
 
 // ---- Callouts (monochrome, no colour variants) ----
+// Direct-child callouts on a slide are pinned to the bottom band, just
+// above the reserved footer area, for consistent placement across the
+// deck. Callouts nested inside columns / other containers retain
+// normal flow.
 .reveal .callout {
   border-left-width: 3px !important;
   border-left-color: $ink !important;
   border-radius: 0;
-  background: $gray-bg;
+  background: $paper;
   font-size: 0.78em;
   margin: 0.5em 0;
-  padding: 0.4em 0.8em;
+  padding: 0.5em 0.9em;
+  border: 1px solid $gray-rule;
+  border-left-width: 3px !important;
+  color: $ink;
 }
-.reveal .callout-title {
+.reveal .callout-title,
+.reveal .callout .callout-title-container {
   color: $ink;
   font-weight: 700;
+}
+.reveal .callout-body,
+.reveal .callout-body-container {
+  color: $ink;
 }
 .reveal .callout-note,
 .reveal .callout-tip,
@@ -253,15 +265,36 @@ $presentation-line-height:    1.5;
   border-left-color: $ink !important;
 }
 
-// ---- "Section" slides — visually distinct dividers (inverted) ----
+// Pin top-level callouts to a fixed bottom position, just above the
+// 60px footer reservation set on .slides section { padding-bottom }.
+.reveal section > .callout {
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  bottom: 72px;
+  margin: 0;
+  z-index: 5;
+}
+
+// ---- "Section" slides — visually distinct dividers (white, accent rule) ----
+// Previously these were inverted (black background, white text); now they
+// stay on the same paper background as the rest of the deck and are
+// distinguished only by the heading treatment.
 .reveal section.section-divider {
-  background: $ink;
-  color: $paper;
+  background: $paper;
+  color: $ink;
+  text-align: left;
+
   h1, h2, h3 {
-    color: $paper;
-    border: none;
+    color: $ink;
+    font-weight: 700;
+    border-bottom: 2px solid $accent;
+    padding: 0 0 0.25em 0;
+    margin: 1em 0 0.4em 0;
+    display: inline-block;
+    max-width: 90%;
   }
-  a { color: $paper; border-bottom-color: $paper; }
+  a { color: $ink; border-bottom-color: $accent; }
 }
 
 // ---- Lists tightened ----
