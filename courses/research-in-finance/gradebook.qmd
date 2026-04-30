@@ -1,11 +1,12 @@
 ---
 title: "Gradebook — Research in Finance"
-subtitle: "Winter 2025/2026"
 format:
   html:
     toc: true
     code-fold: true
 ---
+
+**Term:** {{< meta semester >}}
 
 > **Staff only.** Update `grades.csv` and re-render to refresh.
 

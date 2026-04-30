@@ -1,6 +1,5 @@
 ---
 title: "Syllabus — Research in Finance"
-subtitle: "Winter 2025/2026"
 format:
   html: default
   pdf: default
@@ -24,13 +23,14 @@ listing:
 | | |
 |---|---|
 | **Title** | Research in Finance |
-| **Term** | Winter 2025/2026 |
+| **Term** | {{< meta semester >}} |
 | **Level** | Master / PhD |
 | **ECTS** | 6 |
-| **Exam number** | 13337 |
+| **Exam number** | {{< meta exam-id >}} |
 | **Instructors** | Prof. Dr. Andre Guettler · Oliver Padmaperuma |
 | **Contact** | [oliver.padmaperuma@uni-ulm.de](mailto:oliver.padmaperuma@uni-ulm.de) |
-| **Location** | Helmholtzstraße 22, Ulm |
+| **Location** | {{< meta default-venue >}} |
+| **Time** | {{< meta default-time >}} |
 | **Language** | English |
 
 ## Course objectives
@@ -76,10 +76,10 @@ By the end of the term, students will be able to:
 
 | Component | Weight | Deadline |
 |---|---|---|
-| Assignment I — Problem Set (group, R + LaTeX) | 50% | 19 January 2026, midnight |
-| Assignment II — Referee Report (group of up to 5) | 50% | 3 February 2026 |
+| Assignment I — Problem Set (group, R + LaTeX) | {{< meta assignment-1-problem-set-weight >}}% | {{< meta assignment-1-problem-set-deadline >}}, midnight |
+| Assignment II — Referee Report (group of up to 5) | {{< meta assignment-2-referee-report-weight >}}% | {{< meta assignment-2-referee-report-deadline >}} |
 
-There is **no written final exam**. Registration in `campusonline` for exam **13337** is mandatory by **30 November 2025**. Without registration you cannot submit either deliverable.
+There is **no written final exam**. Registration in `{{< meta registration-system >}}` for exam **{{< meta exam-id >}}** is mandatory by **{{< meta registration-deadline >}}**. Without registration you cannot submit either deliverable.
 
 **Grading scale:** German scale 1.0 (excellent) – 5.0 (fail). 4.0 is passing. Registered students who do not submit receive 5.0.
 

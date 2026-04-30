@@ -1,26 +1,19 @@
 ---
 title: "Brown Bag Seminar"
 subtitle: "Engage with doctoral research and prepare your referee report"
-date: 2026-01-20
-week: 13
 topics:
   - Doctoral research presentations
   - Apply empirical / writing tips for the referee report
   - Group discussion and Q&A
-authors:
-  - name: "Prof. Dr. Andre Guettler"
-    affiliation: "Institute of Strategic Management and Finance, Ulm University"
-  - name: "Oliver Padmaperuma"
-    affiliation: "Institute of Strategic Management and Finance, Ulm University"
 ---
 
 ## Format
 
 ::: {.callout-note title="Logistics"}
-- **Date:** 20 January 2026
-- **Time:** 13:30 – 16:00
+- **Date:** {{< meta lecture-05-brown-bag-seminar-date >}}
+- **Time:** {{< meta lecture-05-brown-bag-seminar-time >}}
 - **Attendance:** mandatory for all registered students
-- **Location:** Helmholtzstraße 22 (room confirmed via Moodle)
+- **Location:** {{< meta lecture-05-brown-bag-seminar-venue >}}
 :::
 
 The Brown Bag Seminar is a regular institute event where doctoral candidates present work in progress to faculty and peers. For this course it doubles as the input for **Assignment II**.
@@ -48,7 +41,7 @@ The Brown Bag Seminar is a regular institute event where doctoral candidates pre
 - Choose **one** doctoral presentation.
 - Write a **2.5–3 page** report in academic referee style (11 pt Times New Roman, 1.5 spaced).
 - Submit as a group of up to **5** students.
-- **Deadline:** 3 February 2026, email to [oliver.padmaperuma@uni-ulm.de](mailto:oliver.padmaperuma@uni-ulm.de), CC [andre.guettler@uni-ulm.de](mailto:andre.guettler@uni-ulm.de).
+- **Deadline:** {{< meta assignment-2-referee-report-deadline >}}, email to [oliver.padmaperuma@uni-ulm.de](mailto:oliver.padmaperuma@uni-ulm.de), CC [andre.guettler@uni-ulm.de](mailto:andre.guettler@uni-ulm.de).
 - Include your name(s) and the **title of the chosen presentation** in the document.
 :::
 

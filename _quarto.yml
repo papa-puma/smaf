@@ -1,5 +1,6 @@
 project:
   type: website
+  pre-render: python scripts/apply-schedule.py
   resources:
     - "assets/**"
 
@@ -10,8 +11,10 @@ website:
   repo-url: https://github.com/papa-puma/smaf
   navbar:
     background: light
-    logo: assets/logos/smf.svg
-    logo-alt: "SMF Institute"
+    # NOTE: using the Ulm University logo as a placeholder until a dedicated
+    # SMF logo SVG is added at assets/logos/smf.svg.
+    logo: assets/logos/uulm.svg
+    logo-alt: "Ulm University"
     title: false
     left:
       - href: index.qmd

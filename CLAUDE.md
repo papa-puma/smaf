@@ -5,25 +5,31 @@ This file is read first by any AI assistant (Claude Code, Cursor, Continue.dev) 
 ## Repository identity
 
 - **Owner:** Institute of Strategic Management and Finance (SMF), Ulm University.
-- **Visibility:** Private GitHub repo. Solutions and exam keys may live in-tree.
+- **Visibility:** Public GitHub repo (only solutions are gated, via the `solutions:` parameter). Solutions may live in-tree.
 - **Student-facing surface:** GitHub Pages site, linked from Moodle. Never expose solutions in deployed output.
+- **One folder per course, ever.** Slides are stable across semesters. Per-semester data (dates, exam id, deadlines, venue, term string) lives in `courses/<course-id>/schedule.yml`. The pre-render hook `scripts/apply-schedule.py` injects those values into Quarto metadata, so qmd files reference them via `{{< meta key >}}` shortcodes.
 
 ## Folder layout (must match exactly)
 
 ```
 courses/<course-id>/
-├── _metadata.yml
+├── _metadata.yml               # static + auto-generated managed block
+├── schedule.yml                # ★ per-semester source of truth (term, dates, deadlines)
 ├── index.qmd
 ├── syllabus.qmd
 ├── gradebook.qmd
 ├── grades.csv
 ├── MOODLE-SETUP.md             # generated, do not hand-edit
+├── assignments/
+│   ├── assignment-1-…​.qmd
+│   └── assignment-2-…​.qmd
 └── lectures/
-    ├── _metadata.yml
+    ├── _metadata.yml           # multi-format render config (revealjs + pdf + html)
     └── lecture-NN-<slug>/
-        ├── slides.qmd
-        ├── assignment.qmd      # optional
-        ├── exam.qmd            # optional
+        ├── slides.qmd          # stable across semesters; no date/week/authors front-matter
+        ├── _metadata.yml       # AUTO-GENERATED from schedule.yml (gitignored)
+        ├── assignment.qmd      # optional, lecture-local
+        ├── exam.qmd            # optional, lecture-local
         └── images/
 ```
 
@@ -39,18 +45,20 @@ Rules:
 ---
 title: "Lecture 01: Introduction to Research in Finance"
 subtitle: "Course overview and methodology"
-date: 2026-04-21
-week: 1
 topics:
   - Course logistics
   - What is "research in finance"?
   - Empirical vs theoretical methods
-authors:
-  - "Prof. Dr. Andre Guettler"
 ---
 ```
 
-The `date`, `week`, `title`, and `topics` fields are read by Quarto listings to populate the syllabus timetable and course homepage. **Do not skip them.**
+That's it. **Do NOT** add `date:`, `week:`, or `authors:` to slides front-matter — those values come from `schedule.yml` via the pre-render hook. The course homepage / syllabus listings read week & date from the auto-generated lecture-level `_metadata.yml`.
+
+When body content references a date, exam id, registration deadline, or assignment deadline, use a `{{< meta KEY >}}` shortcode rather than a hard-coded string. The keys exposed by `apply-schedule.py` include:
+
+- `semester`, `exam-id`, `registration-deadline`, `registration-system`, `default-venue`, `default-time`
+- `<assignment-slug>-deadline`, `<assignment-slug>-weight`
+- `<lecture-folder>-date`, `<lecture-folder>-date-short` (DD.MM.YYYY), `<lecture-folder>-week`, optional `-time` and `-venue`
 
 ## Workflow A — Create a new lecture
 
@@ -63,10 +71,11 @@ Steps:
 3. **Slugify title** — lowercase, ASCII, kebab-case, max 6 words.
 4. **Folder name** — `lecture-NN-<slug>/`.
 5. **Copy templates** — copy `_templates/slides.qmd` to the new folder. If user asked for assignment / exam, also copy those templates.
-6. **Fill front-matter** — write `title`, `subtitle` (if given), `date` (if given), `week` (week number = lecture number unless user says otherwise), `topics` (list from prompt).
-7. **Stub topic sections** — for each topic, add `## <Topic>` followed by a placeholder bullet list.
-8. **Do NOT edit the syllabus** — it auto-updates via Quarto listings.
-9. **Do NOT manually update navbar / index** — the listing covers it.
+6. **Fill front-matter** — write `title`, `subtitle` (if given), and `topics` (list from prompt). **Do NOT add `date:` or `week:`** — those go in `schedule.yml`.
+7. **Add the lecture to `courses/<course-id>/schedule.yml`** under `lectures:` with the user-supplied date and a `week:` number (default = lecture number).
+8. **Stub topic sections** — for each topic, add `## <Topic>` followed by a placeholder bullet list.
+9. **Do NOT edit the syllabus** — it auto-updates via Quarto listings.
+10. **Do NOT manually update navbar / index** — the listing covers it.
 
 ## Workflow B — Update existing content
 
@@ -77,7 +86,7 @@ Steps:
 1. **Locate the target file** using glob (`courses/**/lecture-*/slides.qmd` etc.). Confirm with user if ambiguous.
 2. **Read** the file before editing.
 3. **Edit in place** — preserve YAML front-matter structure, preserve callout blocks, preserve solution gating in exams.
-4. **Date shifts**: when asked to "shift all dates by N days", read every `slides.qmd` in the named course's `lectures/`, parse `date:`, add the offset, write back.
+4. **Date shifts**: when asked to "shift all dates by N days" or "roll over to a new semester", edit `courses/<course-id>/schedule.yml` (NOT slides.qmd front-matter). Apply the offset to each lecture's `date:` and to assignment deadlines / `registration-deadline` if appropriate.
 5. **Cross-file consistency** — if updating a topic, also check `assignment.qmd` and `exam.qmd` in the same lecture folder; ask the user before propagating.
 6. **Never silently rename folders** — folder renames break URLs already pasted into Moodle. If a rename is needed, flag it explicitly to the user.
 
@@ -95,7 +104,7 @@ Steps:
    - Inline math → `$…$`. Display math → `$$…$$`.
    - Tables → Markdown pipe tables.
    - Figures and complex diagrams → leave a TODO marker: `<!-- TODO: figure from PDF p.<n> — describe and recreate or import as image -->`.
-3. **Map to slide template** — copy `_templates/slides.qmd`, fill front-matter (title, date, week, topics inferred from headings).
+3. **Map to slide template** — copy `_templates/slides.qmd`, fill front-matter (title, subtitle, topics inferred from headings). Per Workflow A, dates and weeks go in `schedule.yml`, not in front-matter.
 4. **Place output** — at `courses/<course-id>/lectures/lecture-NN-<slug>/slides.qmd` (use Workflow A's numbering rules).
 5. **Report TODOs** — summarize at end of conversion how many figures/tables need manual review and where they are.
 
@@ -124,9 +133,10 @@ Trigger: *"Scaffold a new course called `<course-id>` titled '<Title>', instruct
 Steps:
 
 1. Copy `_templates/new-course/` to `courses/<course-id>/`.
-2. Fill `_metadata.yml` (course title, term, instructor).
-3. Add a navbar entry to root `_quarto.yml` for the new course.
-4. Do NOT create any lectures — user will trigger Workflow A separately.
+2. Fill `_metadata.yml` with the **static** course info (title, language, ects, level, instructors, contact). **Do NOT** put `term:` or `exam-number:` here — those go in `schedule.yml`.
+3. Create `courses/<course-id>/schedule.yml` with semester string, exam-id, registration-deadline, default-venue/time, plus `lectures:` and `assignments:` sections (initially empty).
+4. Add a navbar entry to root `_quarto.yml` for the new course.
+5. Do NOT create any lectures — user will trigger Workflow A separately.
 
 ## General rules
 

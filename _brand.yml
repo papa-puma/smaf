@@ -3,46 +3,45 @@ meta:
   link: https://www.uni-ulm.de/mawi/strategische-unternehmensfuehrung-und-finanzierung/
 
 logo:
-  small: assets/logos/smf.svg
-  medium: assets/logos/smf.svg
+  # Using the Ulm University logo as a placeholder until a dedicated SMF
+  # logo SVG is added at assets/logos/smf.svg.
+  small: assets/logos/uulm.svg
+  medium: assets/logos/uulm.svg
   large: assets/logos/uulm.svg
 
 color:
   palette:
-    ulm-blue: "#7D9AAA"
-    ulm-dark: "#575756"
-    ulm-accent: "#A9A28D"
-    ulm-bg: "#FFFFFF"
-    ulm-bg-alt: "#F5F4F0"
-  primary: ulm-blue
-  secondary: ulm-dark
-  tertiary: ulm-accent
-  background: ulm-bg
-  foreground: ulm-dark
-  link: ulm-blue
+    ink:        "#111111"
+    paper:      "#FFFFFF"
+    gray-fg:    "#2a2a2a"
+    gray-muted: "#6e6e6e"
+    gray-rule:  "#d8d8d8"
+    gray-bg:    "#f6f6f6"
+    accent:     "#5b7a8c"   # subtle Ulm blue, used sparingly
+  primary:    ink
+  secondary:  gray-muted
+  tertiary:   accent
+  background: paper
+  foreground: ink
+  link:       ink
 
 typography:
-  fonts:
-    - family: Inter
-      source: google
-      weight: [300, 400, 500, 600, 700]
-    - family: "Source Serif 4"
-      source: google
-      weight: [400, 600, 700]
-    - family: "JetBrains Mono"
-      source: google
-      weight: [400, 500]
+  # Computer Modern Serif (LaTeX standard) and Computer Modern Typewriter
+  # are loaded via @import in assets/styles/html.scss and
+  # _extensions/ulm-academic/theme.scss — Quarto's brand-yml only accepts
+  # `google` as a font source, so we declare the family here for reference
+  # but skip the `source:` field.
   base:
-    family: Inter
+    family: "Computer Modern Serif"
     size: 1.05rem
-    line-height: 1.6
+    line-height: 1.65
   headings:
-    family: Inter
-    weight: 600
-    color: ulm-dark
+    family: "Computer Modern Serif"
+    weight: 700
+    color: ink
   monospace:
-    family: "JetBrains Mono"
-    size: 0.9em
+    family: "Computer Modern Typewriter"
+    size: 0.95em
   link:
-    color: ulm-blue
+    color: ink
     decoration: underline

@@ -1,14 +1,6 @@
 ---
 title: "Assignment I — Problem Set"
-subtitle: "Research in Finance · Winter 2025/2026"
-date: 2025-11-12
-due-date: 2026-01-19
-week: 3
-authors:
-  - name: "Prof. Dr. Andre Guettler"
-    affiliation: "Institute of Strategic Management and Finance, Ulm University"
-  - name: "Oliver Padmaperuma"
-    affiliation: "Institute of Strategic Management and Finance, Ulm University"
+subtitle: "Research in Finance"
 format:
   html:
     toc: true
@@ -19,10 +11,10 @@ solutions: false
 
 ## Overview
 
-> **Due:** 19 January 2026 (midnight) via email.
+> **Due:** {{< meta assignment-1-problem-set-deadline >}} (midnight) via email.
 > **Submission format:** one `.R` script + one PDF (compiled from the Overleaf template on Moodle).
 > **Group size:** up to **5** students.
-> **Weight:** **50%** of the final grade.
+> **Weight:** **{{< meta assignment-1-problem-set-weight >}}%** of the final grade.
 
 Solve the problem set posted on Moodle, building on the skills taught in Lectures 1–3 (R fundamentals, data handling, statistical analysis).
 

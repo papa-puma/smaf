@@ -1,14 +1,6 @@
 ---
 title: "Assignment II — Referee Report"
-subtitle: "Research in Finance · Winter 2025/2026"
-date: 2025-11-19
-due-date: 2026-02-03
-week: 4
-authors:
-  - name: "Prof. Dr. Andre Guettler"
-    affiliation: "Institute of Strategic Management and Finance, Ulm University"
-  - name: "Oliver Padmaperuma"
-    affiliation: "Institute of Strategic Management and Finance, Ulm University"
+subtitle: "Research in Finance"
 format:
   html:
     toc: true
@@ -19,12 +11,12 @@ solutions: false
 
 ## Overview
 
-> **Due:** 3 February 2026 via email.
+> **Due:** {{< meta assignment-2-referee-report-deadline >}} via email.
 > **Submission format:** one PDF, 2.5–3 pages, 11 pt Times New Roman, 1.5 spaced.
 > **Group size:** up to **5** students.
-> **Weight:** **50%** of the final grade.
+> **Weight:** **{{< meta assignment-2-referee-report-weight >}}%** of the final grade.
 
-Attend the mandatory **Brown Bag Seminar on 20 January 2026 (13:30 to 16:00)** and select **one doctoral presentation** to critique, applying the writing, publishing, and refereeing tips from Lecture 4 to practice thesis-level analysis.
+Attend the mandatory **Brown Bag Seminar on {{< meta lecture-05-brown-bag-seminar-date >}} ({{< meta lecture-05-brown-bag-seminar-time >}})** and select **one doctoral presentation** to critique, applying the writing, publishing, and refereeing tips from Lecture 4 to practice thesis-level analysis.
 
 ## Submission rules
 

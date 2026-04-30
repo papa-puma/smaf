@@ -1,0 +1,48 @@
+# Per-semester schedule for the Research in Finance course.
+# This is the SINGLE source of truth for everything that changes per semester:
+# semester string, exam id, deadlines, lecture dates and venues.
+#
+# The slides.qmd files are stable across semesters; do not edit them when
+# rolling over to a new term. Only edit this file, then re-render and
+# regenerate the Moodle setup checklist.
+#
+# Workflow:
+#   1. Update the values below for the new semester.
+#   2. Run `quarto render` (the pre-render hook applies the schedule).
+#   3. Run `python scripts/generate-moodle-setup.py courses/research-in-finance`.
+#   4. (Optional) tag the previous semester's final state in git, e.g.
+#      `git tag -a winter-2025-26 -m "Final state, Winter 2025/2026"`.
+
+semester: "Winter 2025/2026"
+exam-id: "13337"
+registration-deadline: 2025-11-30
+registration-system: "campusonline"
+default-venue: "Helmholtzstraße 22, Ulm"
+default-time: "Wednesdays 14:15–15:45"
+
+lectures:
+  lecture-01-basics:
+    week: 1
+    date: 2025-10-29
+  lecture-02-data-handling:
+    week: 2
+    date: 2025-11-05
+  lecture-03-statistical-analysis:
+    week: 3
+    date: 2025-11-12
+  lecture-04-academic-publishing:
+    week: 4
+    date: 2025-11-19
+  lecture-05-brown-bag-seminar:
+    week: 13
+    date: 2026-01-20
+    venue: "Helmholtzstraße 22, Ulm — Brown Bag room (TBA)"
+    time: "13:30–16:00"
+
+assignments:
+  assignment-1-problem-set:
+    deadline: 2026-01-19
+    weight: 50
+  assignment-2-referee-report:
+    deadline: 2026-02-03
+    weight: 50

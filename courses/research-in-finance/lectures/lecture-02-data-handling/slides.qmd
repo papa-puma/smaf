@@ -1,8 +1,6 @@
 ---
 title: "Lecture 2: Data Handling & Visualization"
 subtitle: "API access, merging, cleansing, transforming and visualising financial data in R · Introduction to Overleaf"
-date: 2025-11-05
-week: 2
 topics:
   - API access (Nasdaq Data Link / Quandl, FRED, Yahoo, Coingecko, Polygon)
   - "Import and cleanse: read_csv, mutate, types"
@@ -12,11 +10,6 @@ topics:
   - Pivot wide / long
   - "Data visualization with ggplot2 (six-step pipeline)"
   - Introduction to LaTeX and Overleaf
-authors:
-  - name: "Prof. Dr. Andre Guettler"
-    affiliation: "Institute of Strategic Management and Finance, Ulm University"
-  - name: "Oliver Padmaperuma"
-    affiliation: "Institute of Strategic Management and Finance, Ulm University"
 ---
 
 # 1.1 Recap from Lecture 1 {.section-divider}

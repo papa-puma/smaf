@@ -1,6 +1,6 @@
 ---
 title: "Research in Finance"
-subtitle: "Winter 2025/2026 · Institute of Strategic Management and Finance, Ulm University"
+subtitle: "Institute of Strategic Management and Finance, Ulm University"
 listing:
   - id: lectures
     contents: lectures/*/slides.qmd
@@ -14,6 +14,8 @@ listing:
     filter-ui: false
     page-size: 30
 ---
+
+**Term:** {{< meta semester >}}
 
 ## About this course
 
@@ -34,8 +36,8 @@ The course is project-based: a group problem set replicates a complete empirical
 ## Quick links
 
 - [Syllabus](syllabus.qmd)
-- [Assignment I — Problem Set](assignments/assignment-1-problem-set.qmd) (50% · due 19 January 2026)
-- [Assignment II — Referee Report](assignments/assignment-2-referee-report.qmd) (50% · due 3 February 2026)
+- [Assignment I — Problem Set](assignments/assignment-1-problem-set.qmd) ({{< meta assignment-1-problem-set-weight >}}% · due {{< meta assignment-1-problem-set-deadline >}})
+- [Assignment II — Referee Report](assignments/assignment-2-referee-report.qmd) ({{< meta assignment-2-referee-report-weight >}}% · due {{< meta assignment-2-referee-report-deadline >}})
 - [Gradebook (staff only)](gradebook.qmd)
 
 ## Schedule
@@ -45,7 +47,7 @@ The course is project-based: a group problem set replicates a complete empirical
 
 ## Registration
 
-You **must register for "exam" 13337** in `campusonline` by **30 November 2025**. Without this registration you cannot submit the problem set or referee report. Registered students who fail to submit will receive a fail grade (5.0).
+You **must register for "exam" {{< meta exam-id >}}** in `{{< meta registration-system >}}` by **{{< meta registration-deadline >}}**. Without this registration you cannot submit the problem set or referee report. Registered students who fail to submit will receive a fail grade (5.0).
 
 ## How students access materials
 

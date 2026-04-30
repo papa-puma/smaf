@@ -1,8 +1,6 @@
 ---
 title: "Lecture 3: Statistical Analysis"
 subtitle: "Descriptive · inferential · modelling — applied in R"
-date: 2025-11-12
-week: 3
 topics:
   - Descriptive statistics in R
   - Correlation matrix and Pearson correlation test
@@ -12,11 +10,6 @@ topics:
   - Clustered standard errors
   - Exporting regression tables with stargazer
   - Discussion of Assignment I (Problem Set)
-authors:
-  - name: "Prof. Dr. Andre Guettler"
-    affiliation: "Institute of Strategic Management and Finance, Ulm University"
-  - name: "Oliver Padmaperuma"
-    affiliation: "Institute of Strategic Management and Finance, Ulm University"
 ---
 
 # 1.1 Recap from Lecture 2 {.section-divider}
@@ -494,8 +487,8 @@ Solve the problem set posted on Moodle, building on Lectures 1–3.
 ### How
 - Work in **teams of up to 5** students.
 - **50% of the final grade.** Evaluated on code quality, creativity (plots/RQ), writing (concise, skim-friendly, with economic justifications).
-- **Deadline:** **19 January 2026 (midnight)**. Email files to [oliver.padmaperuma@uni-ulm.de](mailto:oliver.padmaperuma@uni-ulm.de), with [andre.guettler@uni-ulm.de](mailto:andre.guettler@uni-ulm.de) and your teammates in CC.
-- Subject / file pattern: **`RiF2025_ProblemSet_surname1_surname2_...`**
+- **Deadline:** **{{< meta assignment-1-problem-set-deadline >}} (midnight)**. Email files to [oliver.padmaperuma@uni-ulm.de](mailto:oliver.padmaperuma@uni-ulm.de), with [andre.guettler@uni-ulm.de](mailto:andre.guettler@uni-ulm.de) and your teammates in CC.
+- Subject / file pattern: **`RiF_ProblemSet_surname1_surname2_...`**
 - If attachments are too large, share a cloud link in the email body.
 :::
 

@@ -32,7 +32,7 @@ jobs:
           python-version: "3.11"
 
       - name: Install Python dependencies
-        run: pip install --upgrade pip pandas matplotlib jupyter
+        run: pip install --upgrade pip pandas matplotlib jupyter pyyaml
 
       - name: Set up TinyTeX (for PDF output)
         run: quarto install tinytex --no-prompt

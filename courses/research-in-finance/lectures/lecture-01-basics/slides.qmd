@@ -1,18 +1,11 @@
 ---
 title: "Lecture 1: Basics"
 subtitle: "Course objectives, schedule, assignments · Introduction to R · Live coding"
-date: 2025-10-29
-week: 1
 topics:
   - Course objectives, schedule and assignments
   - Introduction to R and RStudio
   - "Live coding: variables, vectors, matrices, data frames, lists, functions, loops"
   - Data import and export
-authors:
-  - name: "Prof. Dr. Andre Guettler"
-    affiliation: "Institute of Strategic Management and Finance, Ulm University"
-  - name: "Oliver Padmaperuma"
-    affiliation: "Institute of Strategic Management and Finance, Ulm University"
 ---
 
 ## Welcome to the course {.section-divider}
@@ -47,7 +40,7 @@ Helmholtzstraße 22, Room 203
 :::
 
 ::: {.column width="60%"}
-- **Registration:** register for "exam" **13337** in `campusonline` by **30 November**. Without registration you cannot submit problem sets or the review.
+- **Registration:** register for "exam" **{{< meta exam-id >}}** in `{{< meta registration-system >}}` by **{{< meta registration-deadline >}}**. Without registration you cannot submit problem sets or the review.
 - Registered students who don't submit receive a fail grade (5.0).
 - Questions are best asked **during or immediately after** class.
 - Administrative matters → [studiensekretariat@uni-ulm.de](mailto:studiensekretariat@uni-ulm.de).
@@ -65,7 +58,7 @@ Helmholtzstraße 22, Room 203
 
 | | Lecture 1 | Lecture 2 | Lecture 3 | Lecture 4 | Brown Bag Seminar |
 |---|---|---|---|---|---|
-| **Date** | 29.10.2025 | 05.11.2025 | 12.11.2025 | 19.11.2025 | 20.01.2026 |
+| **Date** | {{< meta lecture-01-basics-date-short >}} | {{< meta lecture-02-data-handling-date-short >}} | {{< meta lecture-03-statistical-analysis-date-short >}} | {{< meta lecture-04-academic-publishing-date-short >}} | {{< meta lecture-05-brown-bag-seminar-date-short >}} |
 | **Theme** | Course intro & R fundamentals | R Data Handling & Visualization | Statistical Analysis using R | Academic Publishing process | Apply tips to a doctoral talk |
 
 ## Assignment I — Problem Set (50%)
@@ -74,15 +67,15 @@ Helmholtzstraße 22, Room 203
 - Submit **two files** as a group of up to **5** students:
   1. one well-commented `.R` script (efficient, meaningful variable names, no needless loops);
   2. one PDF compiled from the Overleaf template (plots, captions, LaTeX tables, written text).
-- **Deadline:** 19 January 2026 (midnight). Email to [oliver.padmaperuma@uni-ulm.de](mailto:oliver.padmaperuma@uni-ulm.de), CC [andre.guettler@uni-ulm.de](mailto:andre.guettler@uni-ulm.de).
-- File / subject pattern: `RiF2025_ProblemSet_surname1_surname2_...`
+- **Deadline:** {{< meta assignment-1-problem-set-deadline >}} (midnight). Email to [oliver.padmaperuma@uni-ulm.de](mailto:oliver.padmaperuma@uni-ulm.de), CC [andre.guettler@uni-ulm.de](mailto:andre.guettler@uni-ulm.de).
+- File / subject pattern: `RiF_ProblemSet_surname1_surname2_...`
 
 ## Assignment II — Referee Report (50%)
 
-- **Attend the mandatory Brown Bag Seminar on 20 January 2026, 13:30–16:00.**
+- **Attend the mandatory Brown Bag Seminar on {{< meta lecture-05-brown-bag-seminar-date >}}, {{< meta lecture-05-brown-bag-seminar-time >}}.**
 - Pick one doctoral presentation, apply the writing/publishing/refereeing tips from the course.
 - Submit one 2.5–3 page PDF report (academic referee style) per group of up to **5**.
-- **Deadline:** 3 February 2026. Email to [oliver.padmaperuma@uni-ulm.de](mailto:oliver.padmaperuma@uni-ulm.de), CC [andre.guettler@uni-ulm.de](mailto:andre.guettler@uni-ulm.de).
+- **Deadline:** {{< meta assignment-2-referee-report-deadline >}}. Email to [oliver.padmaperuma@uni-ulm.de](mailto:oliver.padmaperuma@uni-ulm.de), CC [andre.guettler@uni-ulm.de](mailto:andre.guettler@uni-ulm.de).
 
 ::: {.callout-tip title="Any questions before we begin?"}
 Now is the moment.
@@ -565,7 +558,7 @@ Unless (a) you ran something very expensive, or (b) you're nearly done with the 
 ## See you next time
 
 ::: {.callout-note title="Reminder"}
-- **Register** for "exam" 13337 in `campusonline` by **30 November 2025**.
+- **Register** for "exam" {{< meta exam-id >}} in `{{< meta registration-system >}}` by **{{< meta registration-deadline >}}**.
 - Bring your laptop with R + RStudio installed and the `tidyverse`, `tidyquant`, `Quandl` packages already loaded.
 :::
 

@@ -1,8 +1,6 @@
 ---
 title: "Lecture 4: Academic Publishing & Refereeing"
 subtitle: "What makes a great empirical paper · publication process · how to write a referee report"
-date: 2025-11-19
-week: 4
 topics:
   - What makes a good empirical paper (contribution, identification, write-up)
   - The publication process step by step
@@ -11,11 +9,6 @@ topics:
   - Referee Reports — summary, major issues, minor issues
   - Referee checklist (question, identification, data, econometrics, results)
   - Discussion of Assignment II (Referee Report)
-authors:
-  - name: "Prof. Dr. Andre Guettler"
-    affiliation: "Institute of Strategic Management and Finance, Ulm University"
-  - name: "Oliver Padmaperuma"
-    affiliation: "Institute of Strategic Management and Finance, Ulm University"
 ---
 
 # 1.1 What makes a good empirical paper? {.section-divider}
@@ -430,7 +423,7 @@ However, hopefully the papers you'll be reading are not so bad — and you may h
 
 ::: {.column width="50%"}
 ### What
-- Attend the mandatory **Brown Bag Seminar on 20 January 2026 (13:30 to 16:00)** and select **one doctoral presentation** to critique, applying the writing, publishing, and refereeing tips from the course to practice thesis-level analysis.
+- Attend the mandatory **Brown Bag Seminar on {{< meta lecture-05-brown-bag-seminar-date >}} ({{< meta lecture-05-brown-bag-seminar-time >}})** and select **one doctoral presentation** to critique, applying the writing, publishing, and refereeing tips from the course to practice thesis-level analysis.
 
 **You must submit ONLY one file:**
 
@@ -443,7 +436,7 @@ However, hopefully the papers you'll be reading are not so bad — and you may h
 - Work in **teams of up to 5** students.
 - You'll receive the PDF of the presentation and the working paper. Sometimes there is no working paper available; in that case base your report **solely on the presentation**.
 - **Grading:** this report accounts for **50%** of your grade — depth of analysis (contribution and empirical aspects), writing quality (concise, organised, skim-friendly), and originality of insights.
-- **Deadline:** Submit your review as a PDF via email to [oliver.padmaperuma@uni-ulm.de](mailto:oliver.padmaperuma@uni-ulm.de), with [andre.guettler@uni-ulm.de](mailto:andre.guettler@uni-ulm.de) in CC by **3 February 2026**, including your name and the title of the chosen presentation in the document.
+- **Deadline:** Submit your review as a PDF via email to [oliver.padmaperuma@uni-ulm.de](mailto:oliver.padmaperuma@uni-ulm.de), with [andre.guettler@uni-ulm.de](mailto:andre.guettler@uni-ulm.de) in CC by **{{< meta assignment-2-referee-report-deadline >}}**, including your name and the title of the chosen presentation in the document.
 - **11 pt Times New Roman, 1.5 spaced.**
 :::
 
@@ -481,10 +474,10 @@ However, hopefully the papers you'll be reading are not so bad — and you may h
 ## See you at the Brown Bag Seminar
 
 ::: {.callout-note title="Reminder"}
-- **Brown Bag Seminar — 20 January 2026, 13:30 to 16:00.**
+- **Brown Bag Seminar — {{< meta lecture-05-brown-bag-seminar-date >}}, {{< meta lecture-05-brown-bag-seminar-time >}}.**
 - Take careful notes on the presentations.
 - Pick **one** doctoral talk and apply the four-checklist sections from this lecture.
-- Submit your **2.5–3 page** report as a group of up to 5 by **3 February 2026**.
+- Submit your **2.5–3 page** report as a group of up to 5 by **{{< meta assignment-2-referee-report-deadline >}}**.
 :::
 
 > Good luck with the problem set — and we look forward to your critical feedback at the seminar!

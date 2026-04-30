@@ -1,11 +1,14 @@
+# Static (semester-invariant) course metadata.
+# Per-semester values (term, exam id, registration deadline, assignment
+# deadlines) live in `schedule.yml` and are injected into the auto-generated
+# block at the bottom of this file by `scripts/apply-schedule.py`.
+
 course:
   id: "research-in-finance"
   title: "Research in Finance"
-  term: "Winter 2025/2026"
   language: "English"
   ects: "6"
   level: "Master / PhD"
-  exam-number: "13337"
   instructors:
     - "Prof. Dr. Andre Guettler"
     - "Oliver Padmaperuma"
@@ -18,3 +21,41 @@ author:
   - name: "Oliver Padmaperuma"
     affiliation: "Institute of Strategic Management and Finance, Ulm University"
     email: "oliver.padmaperuma@uni-ulm.de"
+
+# === BEGIN auto-generated from schedule.yml — do not hand-edit below ===
+semester: Winter 2025/2026
+exam-id: '13337'
+registration-deadline: 30 November 2025
+registration-deadline-iso: '2025-11-30'
+registration-system: campusonline
+default-venue: Helmholtzstraße 22, Ulm
+default-time: Wednesdays 14:15–15:45
+assignment-1-problem-set-deadline: 19 January 2026
+assignment-1-problem-set-deadline-iso: '2026-01-19'
+assignment-1-problem-set-weight: 50
+assignment-2-referee-report-deadline: 3 February 2026
+assignment-2-referee-report-deadline-iso: '2026-02-03'
+assignment-2-referee-report-weight: 50
+lecture-01-basics-date: 29 October 2025
+lecture-01-basics-date-short: 29.10.2025
+lecture-01-basics-date-iso: '2025-10-29'
+lecture-01-basics-week: 1
+lecture-02-data-handling-date: 5 November 2025
+lecture-02-data-handling-date-short: 05.11.2025
+lecture-02-data-handling-date-iso: '2025-11-05'
+lecture-02-data-handling-week: 2
+lecture-03-statistical-analysis-date: 12 November 2025
+lecture-03-statistical-analysis-date-short: 12.11.2025
+lecture-03-statistical-analysis-date-iso: '2025-11-12'
+lecture-03-statistical-analysis-week: 3
+lecture-04-academic-publishing-date: 19 November 2025
+lecture-04-academic-publishing-date-short: 19.11.2025
+lecture-04-academic-publishing-date-iso: '2025-11-19'
+lecture-04-academic-publishing-week: 4
+lecture-05-brown-bag-seminar-date: 20 January 2026
+lecture-05-brown-bag-seminar-date-short: 20.01.2026
+lecture-05-brown-bag-seminar-date-iso: '2026-01-20'
+lecture-05-brown-bag-seminar-week: 13
+lecture-05-brown-bag-seminar-time: 13:30–16:00
+lecture-05-brown-bag-seminar-venue: Helmholtzstraße 22, Ulm — Brown Bag room (TBA)
+# === END auto-generated ===

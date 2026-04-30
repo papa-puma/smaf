@@ -2,121 +2,202 @@
 
 > Source-of-truth repository for all teaching materials of the **Institute of Strategic Management and Finance (SMF)**, Faculty of Mathematics and Economics, **Ulm University**.
 
-This repository is the authoring system for slides, syllabi, assignments, exams, and gradebook data for one or more SMF courses. All content is **pure Markdown via [Quarto](https://quarto.org)**, branded for Ulm/SMF, rendered with one command, and deployed to GitHub Pages on every push to `main`. **Moodle is the student entry point** — Moodle pages just link to the rendered URLs hosted on GitHub Pages.
+This repo authors slides, syllabi, assignments, exams, and gradebook data for SMF courses as **pure Markdown via [Quarto](https://quarto.org)**. One command renders everything; CI deploys to GitHub Pages on every push to `main`. **Moodle is the student entry point** — Moodle pages just link to the rendered URLs hosted on GitHub Pages.
+
+The deployed site lives at **<https://papa-puma.github.io/smaf/>**.
+
+---
 
 ## What's inside
 
 | Path | Purpose |
 |---|---|
-| `_quarto.yml` | Site-wide Quarto config (theme, formats, navbar) |
-| `_brand.yml` | Ulm/SMF brand tokens (colors, fonts, logos) |
-| `_extensions/ulm-academic/` | Custom Quarto extension — reveal.js theme + format defaults |
+| `_quarto.yml` | Site-wide Quarto config (theme, formats, navbar, pre-render hook) |
+| `_brand.yml` | Brand tokens (colors, fonts, logos) |
+| `_extensions/ulm-academic/` | Custom Quarto extension — reveal.js theme |
 | `_templates/` | Master scaffolds (`slides.qmd`, `assignment.qmd`, `exam.qmd`, new-course) |
 | `assets/` | Logos, shared images, SCSS partials, PDF preamble |
-| `courses/<course-id>/` | One folder per course |
-| `courses/<course-id>/lectures/lecture-NN-slug/` | One folder per lecture |
-| `scripts/` | Helper scripts (Moodle setup generator, optional iCal export) |
-| `.github/workflows/` | CI: render + deploy to GH Pages |
+| `courses/<course-id>/` | One folder per course — **never duplicated per semester** |
+| `courses/<course-id>/schedule.yml` | Per-semester data (dates, deadlines, term, exam id) — the only file you edit when rolling over to a new term |
+| `courses/<course-id>/lectures/lecture-NN-slug/` | One folder per lecture — content is stable across semesters |
+| `scripts/apply-schedule.py` | Pre-render hook: injects `schedule.yml` values into Quarto metadata |
+| `scripts/generate-moodle-setup.py` | Generates `MOODLE-SETUP.md` (the per-term checklist for Moodle) |
+| `.github/workflows/publish.yml` | CI: render + deploy to GH Pages |
 | `CLAUDE.md` | Conventions for AI assistants (Cursor / Continue / Claude Code) |
 
-## Initial setup
+---
 
-### 1. Install Quarto
+## A. First-time setup (≈ 15 minutes)
 
-- **Windows:** `winget install --id Posit.Quarto` (or download from <https://quarto.org/docs/get-started/>)
-- Verify: `quarto --version` (must be ≥ 1.5)
+### 1. Install tools
 
-### 2. Install VS Code extensions (auto-prompted)
+| Tool | Why | Install |
+|---|---|---|
+| **Quarto** ≥ 1.5 | Renders the site | Windows: `winget install --id Posit.Quarto` · macOS: `brew install --cask quarto` · or <https://quarto.org/docs/get-started/> |
+| **Python** ≥ 3.11 + `pyyaml` | Pre-render hook + Moodle generator | `pip install pyyaml pandas matplotlib` |
+| **R + RStudio** | Course content (live coding in lectures) | <https://cran.r-project.org/> + <https://posit.co/download/rstudio-desktop> |
+| **TinyTeX** (one-off) | PDF rendering | `quarto install tinytex` |
 
-The repo's `.vscode/extensions.json` recommends Quarto, YAML, and Spell Checker. VS Code prompts on first open.
-
-### 3. Drop the logos in
-
-Place these files (SVG preferred):
-
-- `assets/logos/uulm.svg` — Ulm University logo
-- `assets/logos/smf.svg` — SMF institute logo
-
-The Ulm logo is available from the official site: <https://www.uni-ulm.de/_assets/a92153751098915699a1afa17e77f864/Images/logo-uni-ulm.svg>
-
-### 4. First render
-
-From the repo root:
+Verify:
 
 ```bash
+quarto --version          # ≥ 1.5
+python -c "import yaml"   # silent = success
+```
+
+### 2. Clone & render
+
+```bash
+git clone https://github.com/papa-puma/smaf.git
+cd smaf
 quarto preview
 ```
 
-Opens a live-reload preview at `http://localhost:4200`. Edit any `.qmd` file and the browser refreshes automatically.
+`quarto preview` opens a live-reload preview at `http://localhost:4200`. Edit any `.qmd` file and the browser refreshes. For a one-shot full build: `quarto render` (output lands in `_site/`).
 
-For a one-shot full build:
+### 3. VS Code extensions
 
-```bash
-quarto render
+Open the repo in VS Code; it auto-prompts to install the recommended extensions (Quarto, YAML, Spell Checker) from `.vscode/extensions.json`.
+
+---
+
+## B. Day-one workflows (every TA needs these)
+
+### B1. Roll over to a new semester — **the most common task**
+
+Slides do **not** change between semesters. The only thing that changes is the per-semester data: term string, exam id, registration deadline, lecture dates, venue, assignment deadlines.
+
+Edit a single file, `courses/<course-id>/schedule.yml`:
+
+```yaml
+semester: "Summer 2026"
+exam-id: "13337"
+registration-deadline: 2026-04-30
+default-venue: "Helmholtzstraße 22, Ulm"
+default-time: "Wednesdays 14:15–15:45"
+
+lectures:
+  lecture-01-basics:        { week: 1, date: 2026-04-22 }
+  lecture-02-data-handling: { week: 2, date: 2026-04-29 }
+  ...
+
+assignments:
+  assignment-1-problem-set:    { deadline: 2026-07-13, weight: 50 }
+  assignment-2-referee-report: { deadline: 2026-07-27, weight: 50 }
 ```
 
-Output lands in `_site/`.
-
-### 5. Push to GitHub (private repo)
+Then:
 
 ```bash
-git init
-git add .
-git commit -m "Initial scaffold"
-gh repo create papa-puma/smaf --private --source=. --push
+quarto render                                                # pre-render hook applies schedule.yml automatically
+python scripts/generate-moodle-setup.py courses/<course-id>  # regenerate Moodle checklist
+git add -A && git commit -m "Roll over to Summer 2026"
+git push                                                     # CI deploys
 ```
 
-Then in the GitHub UI: **Settings → Pages → Source: `gh-pages` branch**. The first push to `main` will run `.github/workflows/publish.yml`, deploy the site, and Pages will go live.
+The pre-render hook (`scripts/apply-schedule.py`) reads `schedule.yml` and injects all dates / venue / deadline strings into Quarto metadata that the qmd files already reference via `{{< meta key >}}` shortcodes. **Do not edit slides.qmd files for a roll-over.**
 
-## The four workflows
+### B2. Update lecture content
 
-This repo is designed to be driven from any AI editor (Cursor, Continue.dev, Claude Code). All conventions are encoded in [`CLAUDE.md`](CLAUDE.md). Use plain English prompts — the AI reads `CLAUDE.md` and acts deterministically.
+Just edit `courses/<course-id>/lectures/lecture-NN-<slug>/slides.qmd`. Slide content is stable across semesters — feel free to fix a typo, replace a citation, add a new section, etc.
 
-### Workflow A — Create a new lecture (one prompt)
+```bash
+quarto preview      # see changes live
+git add . && git commit -m "Lecture 02: clarify ggplot pipeline" && git push
+```
 
-> Create Lecture 03 for the research-in-finance course titled "Capital Structure Theory". Topics: Modigliani-Miller theorem, trade-off theory, pecking order theory. Schedule on 2026-05-12. Include assignment and exam.
+### B3. Add a new lecture
 
-The AI:
+Use the AI workflow (Workflow A in [`CLAUDE.md`](CLAUDE.md)) or do it manually:
 
-1. Picks the next lecture number (or uses the one you give).
-2. Slugifies the title → `lecture-03-capital-structure-theory/`.
-3. Copies the master templates and fills in front-matter (`title`, `subtitle`, `date`, `week`, `topics`).
-4. Adds `## <Topic>` section stubs for each topic.
-5. (Optional) generates `assignment.qmd` and `exam.qmd`.
+```bash
+# 1. Copy the template
+cp -r _templates/slides.qmd courses/<course-id>/lectures/lecture-06-<slug>/slides.qmd
 
-The syllabus timetable updates **automatically** because it's a Quarto listing reading lecture front-matter. No manual index editing.
+# 2. Edit front-matter (title, subtitle, topics — NO date/week, those go in schedule.yml)
 
-### Workflow B — Update existing content
+# 3. Add the lecture to schedule.yml:
+#       lectures:
+#         lecture-06-<slug>: { week: 6, date: 2026-05-27 }
 
-> Add a section on "Modigliani-Miller with corporate taxes" between sections 2 and 3 of Lecture 03 slides.
-> Replace question 2 of the Lecture 03 assignment with a problem on weighted average cost of capital.
-> Shift all lecture dates in research-in-finance forward by 7 days for the new term.
-> Update the syllabus deadline to 2026-07-15.
+# 4. Render and commit.
+```
 
-The AI edits in place and produces a clean git diff for review.
+The course homepage and syllabus listings auto-update.
 
-### Workflow C — Convert a PDF lecture into a Quarto lecture
+### B4. Add a new course
 
-1. Drop the PDF in `inputs/old-lecture-04.pdf` (folder is gitignored).
-2. Prompt:
+Prompt the AI (Workflow E in `CLAUDE.md`) or copy `_templates/new-course/` to `courses/<new-course-id>/`. Fill in the static fields in the new `_metadata.yml`, create a `schedule.yml`, and add a navbar entry to `_quarto.yml`.
 
-> Convert this PDF (`inputs/old-lecture-04.pdf`) into Lecture 04 of the research-in-finance course. Title: "Behavioral Corporate Finance".
+### B5. Convert a PDF lecture
+
+Drop the PDF in `inputs/` (gitignored) and prompt the AI (Workflow C in `CLAUDE.md`):
+
+> Convert this PDF (`inputs/old-lecture-04.pdf`) into Lecture 04 of `<course-id>` titled "Behavioral Corporate Finance".
 
 The AI extracts headings, bullets, and math; populates `_templates/slides.qmd`; flags unclear figures with `<!-- TODO: figure from PDF p.7 -->` markers for your review.
 
-### Workflow D — Regenerate the Moodle setup checklist
-
-> Regenerate the Moodle setup file for research-in-finance for the summer 2026 term.
-
-Or directly:
+### B6. Regenerate the Moodle setup checklist
 
 ```bash
-python scripts/generate-moodle-setup.py courses/research-in-finance --term "Summer 2026"
+python scripts/generate-moodle-setup.py courses/<course-id>
 ```
 
-Produces `courses/research-in-finance/MOODLE-SETUP.md` — a copy-paste checklist of section titles + GH Pages URLs to drop into Moodle once.
+Produces `courses/<course-id>/MOODLE-SETUP.md` — a copy-paste checklist of Moodle topic titles + GH Pages URLs. **Re-running after content edits does NOT require updating Moodle** — the URLs are stable. Only the per-term roll-over (B1) creates a new Moodle-setup task.
 
-## Solution gating (instructor vs student renders)
+### B7. Update grades
+
+Edit `courses/<course-id>/grades.csv`, push. The `gradebook.qmd` page re-renders with new headline numbers, the score histogram, and the per-component breakdown.
+
+---
+
+## C. Less-frequent workflows
+
+### C1. Add a bibliography (`references.bib`)
+
+1. Place `references.bib` at the repo root, or per-course at `courses/<course-id>/references.bib`.
+2. Add to the qmd front-matter (or its parent `_metadata.yml`):
+   ```yaml
+   bibliography: ../../references.bib   # adjust depth
+   csl: chicago-author-date.csl         # optional, defaults to Chicago author-date
+   ```
+3. Cite inline with `[@guettler2024]`. Quarto auto-renders a `## References` section at the end.
+4. To suppress the bibliography section but keep in-text citations: `suppress-bibliography: true`.
+
+### C2. Archive a finished semester as a git tag
+
+At the end of each term, capture the rendered state for posterity:
+
+```bash
+git tag -a winter-2025-26 -m "Final state, Winter 2025/2026"
+git push origin winter-2025-26
+```
+
+To revisit a past semester's `schedule.yml`, slides, or grades:
+
+```bash
+git checkout winter-2025-26     # or browse on GitHub at /tree/winter-2025-26
+```
+
+**Naming convention:** lower-cased semester slug — `winter-2026-27`, `summer-2027`.
+
+### C3. Add lecture recordings or external readings
+
+Put them in `schedule.yml` under the relevant lecture:
+
+```yaml
+lecture-01-basics:
+  week: 1
+  date: 2026-04-22
+  recording: "https://uni-ulm.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=…"
+  readings:
+    - title: "Tidy Finance with R, ch. 1"
+      url:   "https://www.tidy-finance.org/r/introduction-to-tidy-finance.html"
+```
+
+`apply-schedule.py` injects `recording` and `readings` into the lecture's `_metadata.yml`, so any `{{< meta recording >}}` shortcode in the slides resolves at render time.
+
+### C4. Run the instructor build (with solutions)
 
 Every `exam.qmd` ships with `solutions: false` in its front-matter. Solution blocks are wrapped:
 
@@ -126,68 +207,78 @@ Every `exam.qmd` ships with `solutions: false` in its front-matter. Solution blo
 :::
 ```
 
-- **Student-facing build** (deployed to GH Pages by the GitHub Actions workflow) always runs with `solutions: false` — solutions are stripped.
+- **Student-facing build** (deployed to GH Pages by `publish.yml`) always runs with `solutions: false` — solutions are stripped.
 - **Instructor build** (local only):
   ```bash
-  quarto render courses/research-in-finance/lectures/lecture-01-intro/exam.qmd --metadata solutions:true
+  quarto render courses/<course-id>/lectures/lecture-NN-<slug>/exam.qmd --metadata solutions:true
   ```
 
-## Daily workflow
+### C5. Branding adjustments
 
-```bash
-# 1. Pull latest
-git pull
-
-# 2. Live preview
-quarto preview
-
-# 3. Edit content (or prompt your AI assistant)
-
-# 4. Commit + push
-git add .
-git commit -m "Add lecture 04 on behavioral finance"
-git push  # CI deploys to GH Pages
-```
-
-## Adding a new course
-
-```
-> Scaffold a new course called "behavioral-finance" with title "Behavioral Finance", instructor "Prof. Dr. Andre Guettler", term "Winter 2026/27".
-```
-
-The AI copies `_templates/new-course/` into `courses/behavioral-finance/` and updates the navbar in `_quarto.yml`.
-
-## Branding
-
-All Ulm/SMF brand tokens live in **two places only**:
+All brand tokens live in two files:
 
 1. `_brand.yml` — colors, fonts, logos.
 2. `_extensions/ulm-academic/theme.scss` — reveal.js slide theme overrides.
 
-Edit those once and the entire repo restyles.
+To replace the placeholder Ulm logo with a real SMF logo:
 
-| Token | Hex |
+1. Drop the SVG at `assets/logos/smf.svg`.
+2. Update `_quarto.yml` (`navbar.logo`), `_brand.yml` (`logo:`), and the `lectures/_metadata.yml` (`logo:` under `revealjs:`).
+
+---
+
+## D. Repository conventions
+
+- **One folder per course, ever.** `courses/<course-id>/` lives forever. Never copy it into `courses/<course-id>-summer-2026/`. Use git tags (C2) for historical snapshots.
+- **`schedule.yml` is the only file you edit on a semester roll-over.** All other content is stable.
+- **Lecture folders** are `lecture-NN-<slug>/` (zero-padded NN, kebab-case slug).
+- **Required front-matter** for `slides.qmd`: `title`, `subtitle`, `topics`. **No** `date`, `week`, or `authors` — those come from the cascade.
+- **Listings auto-update.** The course homepage and syllabus timetable are Quarto listings reading lecture metadata. Do **not** hand-edit them.
+- **Auto-generated files** (gitignored): `courses/*/lectures/lecture-*/_metadata.yml`. Hand-edited at course level: `courses/<id>/_metadata.yml` (which has a managed block at the bottom — leave it alone).
+- **Solutions default to `false`.** Never flip to `true` in committed files.
+- **No emojis** in lecture content unless explicitly asked.
+- **LaTeX math:** `$…$` (inline), `$$…$$` (display).
+
+---
+
+## E. Reference: AI-assisted workflows
+
+The repo is designed for prompt-driven editing in Cursor, Continue.dev, or Claude Code. Conventions for AI assistants live in [`CLAUDE.md`](CLAUDE.md). The five canonical workflows:
+
+| | Trigger phrase |
 |---|---|
-| Ulm blue | `#7D9AAA` |
-| Ulm dark gray | `#575756` |
-| Accent beige | `#A9A28D` |
+| **A. Create a new lecture** | *"Create Lecture NN for the `<course-id>` course titled '…'. Topics: …"* |
+| **B. Update existing content** | *"Add a section on '…' to Lecture 03 slides."* / *"Replace question 2 of …"* |
+| **C. Convert a PDF lecture** | *"Convert this PDF (`inputs/…`) into Lecture NN of `<course-id>`. Title: '…'."* |
+| **D. Regenerate the Moodle checklist** | *"Regenerate the Moodle setup file for `<course-id>` for the `<term>` term."* |
+| **E. Scaffold a new course** | *"Scaffold a new course called `<id>` titled '…', instructor '…', term '…'."* |
 
-## Repository conventions
+The AI reads `CLAUDE.md` and acts deterministically.
 
-See [`CLAUDE.md`](CLAUDE.md) for the canonical specification. Key rules:
+---
 
-- Lecture folders are `lecture-NN-slug/` (zero-padded, kebab-case slug).
-- Every `slides.qmd` has YAML front-matter with at minimum: `title`, `date`, `week`, `topics`.
-- The syllabus timetable is **never** edited by hand.
-- Exams default to `solutions: false`.
-- The repo is **private**.
+## Daily workflow
+
+```bash
+git pull
+quarto preview                  # live preview at localhost:4200
+# … edit content (manually or via AI prompt) …
+git add . && git commit -m "Lecture 04: refine identification slide"
+git push                        # CI renders + deploys to GH Pages (~3 min)
+```
+
+---
 
 ## Troubleshooting
 
-- **Preview doesn't refresh:** kill `quarto preview` and re-run.
-- **PDF render fails:** install TinyTeX once with `quarto install tinytex`.
-- **Listings table empty:** the lecture folder needs at least `slides.qmd` with `date:` in YAML.
-- **Theme looks wrong:** the custom extension lives at `_extensions/ulm-academic/`. Check `theme:` in `_quarto.yml` references it correctly.
+- **Preview doesn't refresh** — kill `quarto preview` and re-run.
+- **PDF render fails** — install TinyTeX once: `quarto install tinytex`.
+- **Listings table empty** — the lecture folder needs `slides.qmd` with `title:` and an entry in `schedule.yml`.
+- **Theme looks wrong** — check `theme:` in `courses/<id>/lectures/_metadata.yml` references the extension correctly.
+- **`{{< meta key >}}` shows up literally** in the rendered output — usually means `apply-schedule.py` didn't run (the pre-render hook is wired in `_quarto.yml`); run it manually with `python scripts/apply-schedule.py` and re-render.
+- **`ImportError: yaml`** — `pip install pyyaml`.
+
+---
 
 ## License
 
