@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh run *)",
+      "Bash(git add *)",
+      "Bash(git -c user.email=oliver.padmaperuma@uni-ulm.de -c 'user.name=Oliver Padmaperuma' commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(curl -fsSL --ssl-no-revoke -I \"https://papa-puma.github.io/smaf/\")",
+      "Bash(curl -fsSL --ssl-no-revoke -I \"https://papa-puma.github.io/smaf/courses/research-in-finance/lectures/lecture-01-basics/slides.html\")",
+      "Bash(gh api *)",
+      "Bash(python scripts/generate-moodle-setup.py courses/research-in-finance --term \"Winter 2025/2026\" --site-url \"https://papa-puma.github.io/smaf\")",
+      "Bash(curl -fsSL --ssl-no-revoke \"https://papa-puma.github.io/smaf/\")",
+      "Bash(curl -s \"https://api.github.com/repos/aaaakshat/cm-web-fonts/contents/font\")",
+      "Bash(curl -sS \"https://raw.githubusercontent.com/aaaakshat/cm-web-fonts/master/fonts.css\")",
+      "Bash(curl -sS -k \"https://raw.githubusercontent.com/aaaakshat/cm-web-fonts/master/fonts.css\")",
+      "Bash(curl *)",
+      "Bash(python *)",
+      "Bash(quarto render *)",
+      "Bash(git commit *)",
+      "Read(//tmp/**)"
+    ]
+  }
+}

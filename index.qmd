@@ -8,7 +8,7 @@ toc: false
 
 ## Courses
 
-- [Research in Finance — Winter 2025/2026](courses/research-in-finance/index.qmd)
+- [Research in Finance](courses/research-in-finance/index.qmd)
 
 ## How this site works
 
