@@ -153,16 +153,19 @@ Edit `courses/<course-id>/grades.csv`, push. The `gradebook.qmd` page re-renders
 
 ## C. Less-frequent workflows
 
-### C1. Add a bibliography (`references.bib`)
+### C1. Add or extend the bibliography (`references.bib`)
 
-1. Place `references.bib` at the repo root, or per-course at `courses/<course-id>/references.bib`.
-2. Add to the qmd front-matter (or its parent `_metadata.yml`):
-   ```yaml
-   bibliography: ../../references.bib   # adjust depth
-   csl: chicago-author-date.csl         # optional, defaults to Chicago author-date
-   ```
-3. Cite inline with `[@guettler2024]`. Quarto auto-renders a `## References` section at the end.
-4. To suppress the bibliography section but keep in-text citations: `suppress-bibliography: true`.
+A shared bibliography lives at the repo root: [`references.bib`](references.bib). It is wired into every Research-in-Finance lecture via `bibliography: ../../../../references.bib` in `courses/research-in-finance/lectures/_metadata.yml`, and into the syllabus via the qmd front-matter. New courses cite from the same file; adjust the relative path per depth.
+
+Citation syntax:
+
+- `[@key]` → "(Author, Year)" parenthetical.
+- `@key` → "Author (Year)" textual.
+- `[-@key]` → "(Year)" — author suppressed.
+
+Each lecture ends with a `## References` heading containing `::: {#refs} :::`; Quarto auto-fills it with the formatted entries that appear cited above.
+
+**Adding a new entry**: append a BibTeX block to `references.bib` and cite it from any qmd. Quarto picks it up on next render — no further config.
 
 ### C2. Archive a finished semester as a git tag
 

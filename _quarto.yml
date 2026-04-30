@@ -1,6 +1,7 @@
 project:
   type: website
-  pre-render: python scripts/apply-schedule.py
+  pre-render:
+    - scripts/apply-schedule.py
   resources:
     - "assets/**"
 

@@ -520,14 +520,19 @@ Solve the problem set posted on Moodle, building on Lectures 1–3.
 
 ## Further reading
 
-- Angrist, J. D., & Pischke, J.-S. (2009). *Mostly Harmless Econometrics: An Empiricist's Companion*. Princeton University Press. <https://press.princeton.edu/books/paperback/9780691120355/mostly-harmless-econometrics>
-- Thulin, M. (2024). *Modern Statistics with R*. Free: <https://www.modernstatisticswithr.com/>
-- Navarro, D. J. (2015). *Learning Statistics with R*. Free: <https://learningstatisticswithr.com/>
-- Gentle, J. E. (2020). *Statistical Analysis of Financial Data: With Examples in R*. CRC Press.
-- James, G. et al. (2021). *An Introduction to Statistical Learning with applications in R* (2nd ed.). Springer. Free PDF: <https://www.statlearning.com/>
+- @angrist2009mostly — the standard graduate text on identification and causal inference in empirical economics.
+- @thulin2024modern — modern statistical methods worked through in R, free at <https://www.modernstatisticswithr.com/>.
+- @navarro2015learning — accessible introduction to statistics with R, free at <https://learningstatisticswithr.com/>.
+- @gentle2020statistical — applied statistical analysis on financial data, with R examples.
+- @james2021introduction — covers regression, model selection, resampling, and tree-based methods.
 
 ## Prepare before next lecture
 
 1. **Document today's code** in a clean way and save as an `.Rmd` file.
 
 > **Lecture 4:** Academic publishing and refereeing — what makes a great empirical paper, the publication process, how to write a referee report.
+
+## References
+
+::: {#refs}
+:::

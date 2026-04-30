@@ -1,5 +1,6 @@
 ---
 title: "Syllabus — Research in Finance"
+bibliography: ../../references.bib
 format:
   html: default
   pdf: default
@@ -60,10 +61,10 @@ By the end of the term, students will be able to:
 
 ## Recommended reading
 
-- Wickham, H., & Çetinkaya-Rundel, M. (2023). *R for Data Science* (2nd ed.). Free online: <https://r4ds.hadley.nz/>
-- Scheuch, C., Voigt, S., & Weiss, P. (2023). *Tidy Finance with R*. Free online: <https://www.tidy-finance.org/r/>
-- Angrist, J. D., & Pischke, J.-S. (2009). *Mostly Harmless Econometrics: An Empiricist's Companion*. Princeton University Press.
-- Cochrane, J. H. *Writing Tips for Ph.D. Students* (available on Moodle).
+- @wickham2023r4ds — practical foundations for data wrangling and visualisation in R.
+- @scheuch2023tidy — a finance-specific application of the tidyverse, freely available online.
+- @angrist2009mostly — the standard graduate text on causal inference and empirical strategies in economics.
+- @cochrane2005writing — writing tips by John Cochrane (available on Moodle).
 
 ## Timetable
 
@@ -110,3 +111,8 @@ Asking questions **during or immediately after class** is preferred. Administrat
 - **Prof. Dr. Andre Guettler** — Helmholtzstraße 22, Room 205 · [andre.guettler@uni-ulm.de](mailto:andre.guettler@uni-ulm.de) · +49 731 50 31 030
 - **Oliver Padmaperuma** — Helmholtzstraße 22, Room 203 · [oliver.padmaperuma@uni-ulm.de](mailto:oliver.padmaperuma@uni-ulm.de) · +49 731 50 31 036
 - **Moodle** — all announcements, file drops, problem-set release, and grade postings happen on the [course Moodle page](https://moodle.uni-ulm.de/).
+
+## References
+
+::: {#refs}
+:::

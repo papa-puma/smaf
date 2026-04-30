@@ -78,6 +78,8 @@ a {
     font-weight: 700;
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
+    border-bottom: 0 !important;   // suppress the global a { border-bottom } rule under the logo
+    &:hover { border-bottom: 0 !important; }
   }
   // Quarto's brand-injected `.navbar-logo` rule sets `object-fit: cover`
   // and tight min-height/max-height bounds, which crops the wide Ulm

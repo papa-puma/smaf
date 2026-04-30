@@ -1,3 +1,7 @@
+# Shared bibliography — every lecture in this folder cites from references.bib.
+# Quarto auto-renders the formatted list under any `## References` heading.
+bibliography: ../../../../references.bib
+
 format:
   revealjs:
     output-file: slides.html

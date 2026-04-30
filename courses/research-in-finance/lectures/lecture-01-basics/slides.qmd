@@ -542,10 +542,10 @@ Unless (a) you ran something very expensive, or (b) you're nearly done with the 
 
 ## Further reading
 
-- James, G., Witten, D., Hastie, T., & Tibshirani, R. (2021). *An Introduction to Statistical Learning with applications in R* (2nd ed.). Springer. Free PDF: <https://www.statlearning.com/>
-- Scheuch, C., Voigt, S., & Weiss, P. (2023). *Tidy Finance with R*. Chapman & Hall/CRC. Free: <https://www.tidy-finance.org/r/>
-- Wickham, H., & Çetinkaya-Rundel, M. (2023). *R for Data Science* (2nd ed.). O'Reilly. Free: <https://r4ds.hadley.nz/>
-- Kaggle Discussions (2021). *List of free R books*. <https://www.kaggle.com/discussions/general/274029>
+- @james2021introduction — free PDF and exercises at <https://www.statlearning.com/>.
+- @scheuch2023tidy — finance-specific tidyverse cookbook, free at <https://www.tidy-finance.org/r/>.
+- @wickham2023r4ds — second edition, free at <https://r4ds.hadley.nz/>.
+- @kaggle2021rbooks — community-curated list of additional free R books.
 
 ## Prepare before next lecture
 
@@ -563,3 +563,8 @@ Unless (a) you ran something very expensive, or (b) you're nearly done with the 
 :::
 
 > **Lecture 2:** R Data Handling and Visualization — APIs, merging, cleansing, `dplyr`, `ggplot2`.
+
+## References
+
+::: {#refs}
+:::

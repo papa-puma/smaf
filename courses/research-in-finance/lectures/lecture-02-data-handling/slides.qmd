@@ -426,12 +426,12 @@ ggsave("plot.pdf", width = 15, height = 10, units = "cm")
 
 ## Further reading
 
-- Posit (2022). *ggplot2 cheat sheet*. <https://posit.co/wp-content/uploads/2022/10/data-visualization-1.pdf>
-- Wickham, H., Navarro, D., Pedersen, T. L. (2024 draft). *ggplot2: Elegant Graphics for Data Analysis* (3rd ed.). Online draft: <https://ggplot2-book.org/>
+- @posit2022ggplot2cheat — quick-reference for the ggplot2 grammar.
+- @wickham2024ggplot2 — comprehensive ggplot2 reference, free draft at <https://ggplot2-book.org/>.
 - All Lecture 1 R recommendations.
-- Lamport, L. (1994). *LaTeX: A Document Preparation System* (2nd ed.). Addison-Wesley. Updated examples: <https://www.latex-project.org/help/documentation/>
-- Flynn, P. (2019). *Formatting Information: Introduction to LaTeX* (5th ed.). TUG. <https://www.ctan.org/tex-archive/info/lshort/english/lshort.pdf>
-- Overleaf Team (2023). *Overleaf tutorial: Basic guide to LaTeX*. <https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes>
+- @lamport1994latex — Leslie Lamport's classic LaTeX manual.
+- @flynn2019latex — *lshort*, a beginner-friendly free LaTeX intro.
+- @overleaf2023tutorial — Overleaf's hands-on 30-minute LaTeX tutorial.
 
 ## Prepare before next lecture
 
@@ -439,3 +439,8 @@ ggsave("plot.pdf", width = 15, height = 10, units = "cm")
 2. **Try out a few visualizations** based on the data we prepared today.
 
 > **Lecture 3:** Statistical analysis in R — correlations, t-tests, Wilcoxon, Shapiro-Wilk, KS, linear regression, fixed effects.
+
+## References
+
+::: {#refs}
+:::
