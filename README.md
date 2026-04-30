@@ -228,6 +228,155 @@ To replace the placeholder Ulm logo with a real SMF logo:
 1. Drop the SVG at `assets/logos/smf.svg`.
 2. Update `_quarto.yml` (`navbar.logo`), `_brand.yml` (`logo:`), and the `lectures/_metadata.yml` (`logo:` under `revealjs:`).
 
+### C6. Author rich slide content (tables, figures, diagrams, images, code) and tweak the theme
+
+Quarto markdown for slides is the same syntax that drives the HTML notes and PDF handout. Anything below renders in all four output formats (revealjs slides, notes html, pdf handout, pptx) unless noted.
+
+#### Tables
+
+Use Markdown pipe tables — simple and portable:
+
+```markdown
+| Method   | When to use                  |
+|----------|------------------------------|
+| t-test   | Compare two means, normal    |
+| Wilcoxon | Compare medians, non-normal  |
+```
+
+For tables with more layout (merged cells, multi-line content), drop into HTML tables; they still render in every format. Programmatic tables in R use `knitr::kable()` or `gt::gt()` inside an executed `{r}` chunk.
+
+#### Figures and images
+
+Drop the file into the lecture's `images/` folder, then reference inline:
+
+```markdown
+![Identification strategy schematic](images/iv-diagram.png){width=70% fig-align="center"}
+```
+
+Knobs:
+
+- `width=` accepts `%`, `px`, or `em` (e.g. `width=480px`).
+- `fig-align=` is `"center"`, `"left"`, or `"right"`.
+- For full-bleed images on a slide, set `width=100%` and put the image alone on its own slide.
+- SVGs are preferred for diagrams (sharp at any zoom); PNG/JPG for screenshots and photos.
+
+#### Diagrams (Mermaid, Graphviz)
+
+Quarto renders [Mermaid](https://mermaid.js.org/) and Graphviz natively — no extra install:
+
+````markdown
+```{mermaid}
+flowchart LR
+  Data --> Cleansing --> Analysis --> Write-up
+  Analysis --> Tables
+  Analysis --> Figures
+```
+````
+
+````markdown
+```{dot}
+//| label: fig-causal
+digraph {
+  rankdir=LR;
+  X -> Y; Z -> X; Z -> Y;
+}
+```
+````
+
+For more elaborate plots/charts, generate them inside an executed `{r}` or `{python}` chunk and let the figure embed automatically.
+
+#### Code blocks (highlighted, executed, or both)
+
+Language-tagged fences for **highlighting only** (no execution):
+
+````markdown
+```r
+library(tidyverse)
+mtcars |> filter(mpg > 25)
+```
+````
+
+Wrap the language in braces `{r}` / `{python}` to **execute** the chunk and embed its output:
+
+````markdown
+```{r}
+#| echo: true
+#| fig-cap: "MPG distribution"
+library(ggplot2)
+ggplot(mtcars, aes(mpg)) + geom_histogram(bins = 20)
+```
+````
+
+`#|` lines configure the chunk: `echo` (show code), `eval` (run it), `fig-cap`, `fig-width`, etc. See <https://quarto.org/docs/computations/execution-options.html>.
+
+#### Two-column layouts
+
+```markdown
+::: {.columns}
+::: {.column width="55%"}
+Left side: explanation text, equations, narrative.
+:::
+::: {.column width="45%"}
+![Right side: figure](images/diagram.png){width=100%}
+:::
+:::
+```
+
+#### Callouts
+
+```markdown
+::: {.callout-note title="Learning objective"}
+By the end of this slide you can …
+:::
+```
+
+Top-level callouts on a slide are pinned to a fixed bottom band by the SMF theme. Available variants: `callout-note`, `callout-tip`, `callout-warning`, `callout-important`, `callout-caution` (all rendered in the same monochrome style).
+
+#### Speaker notes
+
+```markdown
+::: notes
+What you say while presenting; never shown on the slide. Press **S** in
+revealjs for the speaker view.
+:::
+```
+
+#### Incremental reveal
+
+```markdown
+::: incremental
+- First bullet appears on click
+- Then this one
+- Then this one
+:::
+```
+
+#### Math
+
+Inline `$E[r_i] = \beta_i \cdot \lambda$`, display:
+
+```markdown
+$$
+\hat{\beta} = (X'X)^{-1} X'y
+$$
+```
+
+Quarto compiles math via MathJax in HTML / revealjs and natively in PDF.
+
+#### Tweaking the theme
+
+| Where | What it controls |
+|---|---|
+| `_extensions/ulm-academic/theme.scss` | reveal.js slide theme (slide background, headings, callouts, tables, code) |
+| `assets/styles/html.scss` | HTML website pages (course homepage, syllabus, notes view) |
+| `_brand.yml` | brand colour palette and font tokens (read by Quarto's brand layer) |
+| `assets/styles/pptx-reference.pptx` | PowerPoint export — regenerate with `python scripts/build-pptx-reference.py` |
+| `courses/<id>/lectures/_metadata.yml` | per-format options: footer text, slide size, transitions, slide-level |
+
+After SCSS edits, `quarto preview` hot-reloads. For a big colour change, edit the palette tokens at the top of `theme.scss` and `html.scss` together so slides and website match.
+
+The full Quarto reveal.js reference: <https://quarto.org/docs/presentations/revealjs/>. For inline-execution computations: <https://quarto.org/docs/computations/>.
+
 ---
 
 ## D. Repository conventions
