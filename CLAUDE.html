@@ -113,7 +113,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./assets/logos/smf.svg" alt="SMF Institute" class="navbar-logo">
+    <img src="./assets/logos/uulm.svg" alt="Ulm University" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -209,25 +209,31 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="repository-identity">Repository identity</h2>
 <ul>
 <li><strong>Owner:</strong> Institute of Strategic Management and Finance (SMF), Ulm University.</li>
-<li><strong>Visibility:</strong> Private GitHub repo. Solutions and exam keys may live in-tree.</li>
+<li><strong>Visibility:</strong> Public GitHub repo (only solutions are gated, via the <code>solutions:</code> parameter). Solutions may live in-tree.</li>
 <li><strong>Student-facing surface:</strong> GitHub Pages site, linked from Moodle. Never expose solutions in deployed output.</li>
+<li><strong>One folder per course, ever.</strong> Slides are stable across semesters. Per-semester data (dates, exam id, deadlines, venue, term string) lives in <code>courses/&lt;course-id&gt;/schedule.yml</code>. The pre-render hook <code>scripts/apply-schedule.py</code> injects those values into Quarto metadata, so qmd files reference them via <code>?meta:key</code> shortcodes.</li>
 </ul>
 </section>
 <section id="folder-layout-must-match-exactly" class="level2">
 <h2 class="anchored" data-anchor-id="folder-layout-must-match-exactly">Folder layout (must match exactly)</h2>
 <pre><code>courses/&lt;course-id&gt;/
-├── _metadata.yml
+├── _metadata.yml               # static + auto-generated managed block
+├── schedule.yml                # ★ per-semester source of truth (term, dates, deadlines)
 ├── index.qmd
 ├── syllabus.qmd
 ├── gradebook.qmd
 ├── grades.csv
 ├── MOODLE-SETUP.md             # generated, do not hand-edit
+├── assignments/
+│   ├── assignment-1-…​.qmd
+│   └── assignment-2-…​.qmd
 └── lectures/
-    ├── _metadata.yml
+    ├── _metadata.yml           # multi-format render config (revealjs + pdf + html)
     └── lecture-NN-&lt;slug&gt;/
-        ├── slides.qmd
-        ├── assignment.qmd      # optional
-        ├── exam.qmd            # optional
+        ├── slides.qmd          # stable across semesters; no date/week/authors front-matter
+        ├── _metadata.yml       # AUTO-GENERATED from schedule.yml (gitignored)
+        ├── assignment.qmd      # optional, lecture-local
+        ├── exam.qmd            # optional, lecture-local
         └── images/</code></pre>
 <p>Rules:</p>
 <ul>
@@ -241,16 +247,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode" id="cb2"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Lecture 01: Introduction to Research in Finance"</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">subtitle</span><span class="kw">:</span><span class="at"> </span><span class="st">"Course overview and methodology"</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">date</span><span class="kw">:</span><span class="at"> 2026-04-21</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">week</span><span class="kw">:</span><span class="at"> </span><span class="dv">1</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="fu">topics</span><span class="kw">:</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> Course logistics</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> What is "research in finance"?</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> Empirical vs theoretical methods</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="fu">authors</span><span class="kw">:</span></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="st">"Prof. Dr. Andre Guettler"</span></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>The <code>date</code>, <code>week</code>, <code>title</code>, and <code>topics</code> fields are read by Quarto listings to populate the syllabus timetable and course homepage. <strong>Do not skip them.</strong></p>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">topics</span><span class="kw">:</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> Course logistics</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> What is "research in finance"?</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> Empirical vs theoretical methods</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>That’s it. <strong>Do NOT</strong> add <code>date:</code>, <code>week:</code>, or <code>authors:</code> to slides front-matter — those values come from <code>schedule.yml</code> via the pre-render hook. The course homepage / syllabus listings read week &amp; date from the auto-generated lecture-level <code>_metadata.yml</code>.</p>
+<p>When body content references a date, exam id, registration deadline, or assignment deadline, use a <code>?meta:KEY</code> shortcode rather than a hard-coded string. The keys exposed by <code>apply-schedule.py</code> include:</p>
+<ul>
+<li><code>semester</code>, <code>exam-id</code>, <code>registration-deadline</code>, <code>registration-system</code>, <code>default-venue</code>, <code>default-time</code></li>
+<li><code>&lt;assignment-slug&gt;-deadline</code>, <code>&lt;assignment-slug&gt;-weight</code></li>
+<li><code>&lt;lecture-folder&gt;-date</code>, <code>&lt;lecture-folder&gt;-date-short</code> (DD.MM.YYYY), <code>&lt;lecture-folder&gt;-week</code>, optional <code>-time</code> and <code>-venue</code></li>
+</ul>
 </section>
 <section id="workflow-a-create-a-new-lecture" class="level2">
 <h2 class="anchored" data-anchor-id="workflow-a-create-a-new-lecture">Workflow A — Create a new lecture</h2>
@@ -264,7 +272,8 @@ Trigger: a prompt of the form *“Create Lecture NN for the <code>&lt;course-id&
 &lt;li&gt;&lt;strong&gt;Slugify title&lt;/strong&gt; — lowercase, ASCII, kebab-case, max 6 words.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Folder name&lt;/strong&gt; — &lt;code&gt;lecture-NN-&lt;slug&gt;/&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Copy templates&lt;/strong&gt; — copy &lt;code&gt;_templates/slides.qmd&lt;/code&gt; to the new folder. If user asked for assignment / exam, also copy those templates.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Fill front-matter&lt;/strong&gt; — write &lt;code&gt;title&lt;/code&gt;, &lt;code&gt;subtitle&lt;/code&gt; (if given), &lt;code&gt;date&lt;/code&gt; (if given), &lt;code&gt;week&lt;/code&gt; (week number = lecture number unless user says otherwise), &lt;code&gt;topics&lt;/code&gt; (list from prompt).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Fill front-matter&lt;/strong&gt; — write &lt;code&gt;title&lt;/code&gt;, &lt;code&gt;subtitle&lt;/code&gt; (if given), and &lt;code&gt;topics&lt;/code&gt; (list from prompt). &lt;strong&gt;Do NOT add &lt;code&gt;date:&lt;/code&gt; or &lt;code&gt;week:&lt;/code&gt;&lt;/strong&gt; — those go in &lt;code&gt;schedule.yml&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Add the lecture to &lt;code&gt;courses/&lt;course-id&gt;/schedule.yml&lt;/code&gt;&lt;/strong&gt; under &lt;code&gt;lectures:&lt;/code&gt; with the user-supplied date and a &lt;code&gt;week:&lt;/code&gt; number (default = lecture number).&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Stub topic sections&lt;/strong&gt; — for each topic, add &lt;code&gt;## &lt;Topic&gt;&lt;/code&gt; followed by a placeholder bullet list.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Do NOT edit the syllabus&lt;/strong&gt; — it auto-updates via Quarto listings.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Do NOT manually update navbar / index&lt;/strong&gt; — the listing covers it.&lt;/li&gt;
@@ -278,7 +287,7 @@ Trigger: a prompt of the form *“Create Lecture NN for the <code>&lt;course-id&
 &lt;li&gt;&lt;strong&gt;Locate the target file&lt;/strong&gt; using glob (&lt;code&gt;courses/**/lecture-*/slides.qmd&lt;/code&gt; etc.). Confirm with user if ambiguous.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Read&lt;/strong&gt; the file before editing.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Edit in place&lt;/strong&gt; — preserve YAML front-matter structure, preserve callout blocks, preserve solution gating in exams.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Date shifts&lt;/strong&gt;: when asked to “shift all dates by N days”, read every &lt;code&gt;slides.qmd&lt;/code&gt; in the named course’s &lt;code&gt;lectures/&lt;/code&gt;, parse &lt;code&gt;date:&lt;/code&gt;, add the offset, write back.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Date shifts&lt;/strong&gt;: when asked to “shift all dates by N days” or “roll over to a new semester”, edit &lt;code&gt;courses/&lt;course-id&gt;/schedule.yml&lt;/code&gt; (NOT slides.qmd front-matter). Apply the offset to each lecture’s &lt;code&gt;date:&lt;/code&gt; and to assignment deadlines / &lt;code&gt;registration-deadline&lt;/code&gt; if appropriate.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Cross-file consistency&lt;/strong&gt; — if updating a topic, also check &lt;code&gt;assignment.qmd&lt;/code&gt; and &lt;code&gt;exam.qmd&lt;/code&gt; in the same lecture folder; ask the user before propagating.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Never silently rename folders&lt;/strong&gt; — folder renames break URLs already pasted into Moodle. If a rename is needed, flag it explicitly to the user.&lt;/li&gt;
 &lt;/ol&gt;
@@ -298,7 +307,7 @@ Trigger: a prompt of the form *“Create Lecture NN for the <code>&lt;course-id&
 &lt;li&gt;Tables → Markdown pipe tables.&lt;/li&gt;
 &lt;li&gt;Figures and complex diagrams → leave a TODO marker: &lt;code&gt;&lt;!-- TODO: figure from PDF p.&lt;n&gt; — describe and recreate or import as image --&gt;&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Map to slide template&lt;/strong&gt; — copy &lt;code&gt;_templates/slides.qmd&lt;/code&gt;, fill front-matter (title, date, week, topics inferred from headings).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Map to slide template&lt;/strong&gt; — copy &lt;code&gt;_templates/slides.qmd&lt;/code&gt;, fill front-matter (title, subtitle, topics inferred from headings). Per Workflow A, dates and weeks go in &lt;code&gt;schedule.yml&lt;/code&gt;, not in front-matter.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Place output&lt;/strong&gt; — at &lt;code&gt;courses/&lt;course-id&gt;/lectures/lecture-NN-&lt;slug&gt;/slides.qmd&lt;/code&gt; (use Workflow A’s numbering rules).&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Report TODOs&lt;/strong&gt; — summarize at end of conversion how many figures/tables need manual review and where they are.&lt;/li&gt;
 &lt;/ol&gt;
@@ -328,7 +337,8 @@ Trigger: *“Scaffold a new course called &lt;code&gt;&lt;course-id&gt;&lt;/code
 &lt;p&gt;Steps:&lt;/p&gt;
 &lt;ol type="1"&gt;
 &lt;li&gt;Copy &lt;code&gt;_templates/new-course/&lt;/code&gt; to &lt;code&gt;courses/&lt;course-id&gt;/&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Fill &lt;code&gt;_metadata.yml&lt;/code&gt; (course title, term, instructor).&lt;/li&gt;
+&lt;li&gt;Fill &lt;code&gt;_metadata.yml&lt;/code&gt; with the &lt;strong&gt;static&lt;/strong&gt; course info (title, language, ects, level, instructors, contact). &lt;strong&gt;Do NOT&lt;/strong&gt; put &lt;code&gt;term:&lt;/code&gt; or &lt;code&gt;exam-number:&lt;/code&gt; here — those go in &lt;code&gt;schedule.yml&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Create &lt;code&gt;courses/&lt;course-id&gt;/schedule.yml&lt;/code&gt; with semester string, exam-id, registration-deadline, default-venue/time, plus &lt;code&gt;lectures:&lt;/code&gt; and &lt;code&gt;assignments:&lt;/code&gt; sections (initially empty).&lt;/li&gt;
 &lt;li&gt;Add a navbar entry to root &lt;code&gt;_quarto.yml&lt;/code&gt; for the new course.&lt;/li&gt;
 &lt;li&gt;Do NOT create any lectures — user will trigger Workflow A separately.&lt;/li&gt;
 &lt;/ol&gt;
